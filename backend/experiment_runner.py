@@ -175,7 +175,6 @@ Results: {json.dumps(results, indent=2) if results else 'None'}
 Return JSON: {{"suggestions": [{{"label": "Config A", "composition": {{}}, "conditions": {{}}, "rationale": "", "risk": "low"}}]}}"""
         result = client.generate(model=LLM_MODEL, prompt=prompt,
                                   system="Return only valid JSON.", temperature=0.4, json_mode=True)
-        client.close()
         if result and isinstance(result, dict):
             return result.get("suggestions", [])
     except Exception as e:

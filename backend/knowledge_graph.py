@@ -10,12 +10,14 @@ Graph-aware search replaces flat cosine similarity:
   3. Re-rank: 0.6×vector_score + 0.3×PageRank + 0.1×connectivity
 """
 
+import hashlib
 import time
 import logging
 import threading
 from typing import List, Dict, Any, Optional, Set
 
 from config import GRAPH_CACHE_TTL
+from cache import get_pagerank_cache
 
 logger = logging.getLogger(__name__)
 
@@ -60,6 +62,12 @@ class KnowledgeGraphManager:
         with self._lock:
             self._graph = g
             self._last_built = time.time()
+
+        # Invalidate stale PageRank cache — graph has changed
+        pagerank_cache = get_pagerank_cache()
+        for key in list(pagerank_cache._l1._cache.keys()):
+            if "pagerank" in key:
+                pagerank_cache.invalidate(key)
 
         logger.info(f"[KG] Graph built: {g.number_of_nodes()} nodes, {g.number_of_edges()} edges")
 
@@ -110,11 +118,16 @@ class KnowledgeGraphManager:
 
         import networkx as nx
 
-        # Compute PageRank for graph-based scoring
-        try:
-            pagerank = nx.pagerank(graph, alpha=0.85, max_iter=100)
-        except Exception:
-            pagerank = {}
+        # Cache PageRank scores: recomputed only when graph is rebuilt
+        pagerank_cache = get_pagerank_cache()
+        pagerank_key = f"pagerank_{self._last_built}"
+        pagerank = pagerank_cache.get(pagerank_key)
+        if pagerank is None:
+            try:
+                pagerank = nx.pagerank(graph, alpha=0.85, max_iter=100)
+                pagerank_cache.set(pagerank_key, pagerank)
+            except Exception:
+                pagerank = {}
 
         # Step 2 + 3: Re-rank each result by combined score
         scored = []

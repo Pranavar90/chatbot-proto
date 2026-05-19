@@ -294,7 +294,6 @@ Return ONLY this JSON:
                 temperature=0.4,
                 json_mode=True,
             )
-            client.close()
 
             if result and isinstance(result, dict):
                 # client.generate with json_mode=True returns parsed dict directly
@@ -446,7 +445,6 @@ Return JSON:
                 temperature=0.3,
                 json_mode=True,
             )
-            client.close()
 
             if result and isinstance(result, dict):
                 reasoning = result.get("reasoning", default_reasoning)

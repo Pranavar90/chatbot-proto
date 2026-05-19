@@ -12,10 +12,12 @@ from pathlib import Path
 from config import API_PORT, DATA_DIR, PARSED_DIR
 from parser import extract_text
 from extractor import extract_from_text, extract_properties_list
-from llm import get_client
+from llm import get_client, shutdown_client
 from qdrant_mgr import get_qdrant_manager
 from qdrant_store import get_store
 from job_queue import get_job_queue, JobStatus
+from twin_routes import twin_router
+from cache import get_stats_cache, clear_all_caches
 
 app = FastAPI(title="Planet Material Labs Backend", version="0.5.0")
 
@@ -37,7 +39,6 @@ async def startup():
     DATA_DIR.mkdir(exist_ok=True)
     PARSED_DIR.mkdir(exist_ok=True)
 
-    # Initialize Qdrant collections (all 7 + job_status)
     try:
         store = get_store()
         print("Qdrant collections initialized")
@@ -50,6 +51,12 @@ async def startup():
     print("Planet Material Labs Backend v0.6.0 started!")
 
 
+@app.on_event("shutdown")
+async def shutdown():
+    shutdown_client()
+    print("LLM client connection pool closed.")
+
+
 @app.get("/")
 async def root():
     return {"message": "MatResOps Backend API", "version": "0.5.0"}
@@ -59,7 +66,6 @@ async def root():
 async def health_check():
     client = get_client()
     ollama_status = "running" if client.is_running() else "not running"
-    client.close()
 
     qdrant_status = "connected"
     try:
@@ -73,15 +79,18 @@ async def health_check():
 
 @app.get("/api/stats")
 async def get_stats():
+    stats_cache = get_stats_cache()
+    cached = stats_cache.get("stats")
+    if cached is not None:
+        return cached
     store = get_store()
-    # Use server-side count() — no payload transfer, fast Qdrant RPCs
     total_docs = store.count_documents()
     tds_count = store.count_documents_by_type("tds")
     papers_count = store.count_documents_by_type("paper")
     experiments_count = store.count_experiments()
     chunks_count = store.count_chunks()
 
-    return {
+    result = {
         "documents": total_docs,
         "tds": tds_count,
         "papers": papers_count,
@@ -89,6 +98,8 @@ async def get_stats():
         "qdrant_parsed": total_docs,
         "chunks": chunks_count,
     }
+    stats_cache.set("stats", result)
+    return result
 
 
 @app.post("/api/documents/upload")
@@ -122,7 +133,7 @@ async def upload_document(file: UploadFile = File(...)):
 
 
 @app.get("/api/jobs")
-async def list_jobs(limit: int = 50):
+async def list_jobs(limit: int = 2000):
     job_queue = get_job_queue()
     jobs = job_queue.get_all_jobs(limit=limit)
     return {"jobs": [job.to_dict() for job in jobs], "count": len(jobs)}
@@ -175,7 +186,7 @@ async def cancel_all_jobs():
 @app.get("/api/documents")
 async def list_documents():
     store = get_store()
-    docs = store.get_all_documents(limit=500)
+    docs = store.get_all_documents(limit=10000)
     return [
         {
             "id": d["payload"].get("doc_id", d["id"]),
@@ -195,9 +206,7 @@ async def list_documents():
 @app.get("/api/documents/{doc_id}")
 async def get_document(doc_id: str):
     store = get_store()
-    # Find document by doc_id in payload
-    all_docs = store.get_all_documents(limit=2000)
-    doc = next((d for d in all_docs if d["payload"].get("doc_id") == doc_id or str(d["id"]) == doc_id), None)
+    doc = store.get_document_by_id(doc_id)
     if not doc:
         raise HTTPException(status_code=404, detail="Document not found")
 
@@ -285,8 +294,7 @@ async def reprocess_document(doc_id: str):
     from pathlib import Path
 
     store = get_store()
-    all_docs = store.get_all_documents(limit=2000)
-    doc = next((d for d in all_docs if d["payload"].get("doc_id") == doc_id or str(d["id"]) == doc_id), None)
+    doc = store.get_document_by_id(doc_id)
     if not doc:
         raise HTTPException(status_code=404, detail="Document not found")
 
@@ -366,8 +374,7 @@ async def reprocess_document(doc_id: str):
 @app.get("/api/documents/{doc_id}/extraction")
 async def get_extraction_data(doc_id: str):
     store = get_store()
-    all_docs = store.get_all_documents(limit=2000)
-    doc = next((d for d in all_docs if d["payload"].get("doc_id") == doc_id), None)
+    doc = store.get_document_by_id(doc_id)
     if not doc:
         raise HTTPException(status_code=404, detail="Document not found")
     payload = doc["payload"]
@@ -438,19 +445,33 @@ async def list_parsed_documents(limit: int = 100):
 
 @app.get("/api/parsed/{point_id}")
 async def get_parsed_document(point_id: str):
+    from config import COLL_DOCUMENTS
     try:
-        qdrant = get_qdrant_manager()
-        result = qdrant.client.retrieve(
-            collection_name="parsed_materials", ids=[point_id]
+        store = get_store()
+
+        # Try direct point retrieval by Qdrant point ID
+        try:
+            result = store.client.retrieve(
+                collection_name=COLL_DOCUMENTS, ids=[point_id], with_payload=True
+            )
+            if result:
+                doc = result[0]
+                payload = doc.payload or {}
+                return {"id": str(doc.id), "payload": payload}
+        except Exception:
+            pass
+
+        # Fallback: scan by doc_id payload field (handles UUID vs string mismatch)
+        all_docs = store.get_all_documents(limit=10000)
+        doc = next(
+            (d for d in all_docs
+             if str(d["id"]) == point_id or d["payload"].get("doc_id") == point_id),
+            None,
         )
-        if not result:
+        if not doc:
             raise HTTPException(status_code=404, detail="Document not found")
 
-        doc = result[0]
-        raw = doc.payload or {}
-        nested_meta = raw.get("metadata", {})
-        flat_payload = {**raw, **nested_meta}
-        return {"id": doc.id, "payload": flat_payload}
+        return {"id": str(doc["id"]), "payload": doc["payload"]}
     except HTTPException:
         raise
     except Exception as e:
@@ -960,7 +981,7 @@ async def edit_hypothesis(req: HypothesisEditRequest):
 async def reprocess_all_documents():
     """Re-run LLM extraction on all documents that have 0 properties."""
     store = get_store()
-    all_docs = store.get_all_documents(limit=2000)
+    all_docs = store.get_all_documents(limit=10000)
     results = []
     for d in all_docs:
         doc_id = d["payload"].get("doc_id", str(d["id"]))

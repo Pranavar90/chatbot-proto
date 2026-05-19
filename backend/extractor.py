@@ -10,9 +10,11 @@ Schema (what the LLM must return, what extract_properties_list reads):
           "key_findings": [...], "methodology": str}
 """
 
+import hashlib
+import json
 from typing import Dict, Any, List, Optional
 from llm import get_client, LLM_MODEL
-import json
+from cache import cached_llm_response, store_llm_response
 
 # ── Prompts ────────────────────────────────────────────────────────────────────
 # Kept tight — 3b models choke on long system prompts.
@@ -248,7 +250,9 @@ def _merge_results(results: List[Dict], doc_type: str) -> Dict[str, Any]:
 # ── Public API ─────────────────────────────────────────────────────────────────
 
 def extract_from_text(text: str, doc_type: Optional[str] = None) -> Dict[str, Any]:
-    """Extract structured data from text. Uses first N chars only — TDS tables are front-loaded."""
+    """Extract structured data from text. Uses first N chars only — TDS tables are front-loaded.
+    Results are cached by content hash for deterministic extraction (temperature=0).
+    """
     if not text or not text.strip():
         return _empty_result(doc_type or "paper", "Empty text")
 
@@ -258,6 +262,13 @@ def extract_from_text(text: str, doc_type: Optional[str] = None) -> Dict[str, An
     max_chars = TDS_EXTRACT_CHARS if doc_type == "tds" else PAPER_EXTRACT_CHARS
     extract_text = text[:max_chars]
 
+    # Cache key based on truncated text + doc_type (deterministic at temperature=0)
+    cache_key = hashlib.sha256(f"{doc_type}:{extract_text}".encode()).hexdigest()
+    cached = cached_llm_response(f"extract:{cache_key}")
+    if cached is not None:
+        print(f"[EXTRACTOR] Cache HIT for {doc_type} doc ({len(extract_text)} chars)")
+        return cached
+
     chunks = _split_into_chunks(extract_text)
     if not chunks:
         return _empty_result(doc_type, "No text to process")
@@ -266,20 +277,21 @@ def extract_from_text(text: str, doc_type: Optional[str] = None) -> Dict[str, An
 
     system_prompt = SYSTEM_PROMPT_TDS if doc_type == "tds" else SYSTEM_PROMPT_PAPER
     results = []
-    client = get_client()
+    client = get_client()  # Singleton — no close needed
 
     for i, chunk in enumerate(chunks):
         print(f"[EXTRACTOR] Chunk {i+1}/{len(chunks)}...")
         parsed = None
         for attempt in range(MAX_RETRIES + 1):
             if attempt > 0:
-                chunk = chunk[:len(chunk) // 2]  # halve on retry
+                chunk = chunk[:len(chunk) // 2]
             result = client.generate(
                 model=LLM_MODEL,
                 prompt=chunk,
                 system=system_prompt,
                 temperature=0.0,
                 json_mode=True,
+                use_cache=True,
             )
             if result and isinstance(result, dict) and "raw_text" not in result:
                 parsed = result
@@ -291,13 +303,13 @@ def extract_from_text(text: str, doc_type: Optional[str] = None) -> Dict[str, An
         else:
             print(f"[EXTRACTOR] Chunk {i+1} FAILED")
 
-    client.close()
-
     if not results:
         return _empty_result(doc_type, "All chunks failed")
 
     merged = _merge_results(results, doc_type)
     merged["chunks_processed"] = len(results)
+
+    store_llm_response(f"extract:{cache_key}", merged)
     return merged
 
 

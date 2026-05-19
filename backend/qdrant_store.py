@@ -29,6 +29,7 @@ from qdrant_client.models import (
     MatchValue,
 )
 from langchain_ollama import OllamaEmbeddings
+from cache import cached_embedding, store_embedding, InMemoryCache
 
 from config import (
     QDRANT_URL,
@@ -47,8 +48,11 @@ from config import (
 logger = logging.getLogger(__name__)
 
 EMBED_DIM = 768
-CHUNK_SIZE_CHARS = 2000  # ~512 tokens @ 4 chars/token
+CHUNK_SIZE_CHARS = 2000
 CHUNK_OVERLAP_CHARS = 200
+
+# In-memory cache for document lookups (60s TTL avoids stale data during ingestion)
+_doc_lookup_cache = InMemoryCache(maxsize=500, ttl=60)
 
 
 def calculate_file_hash(file_path: str) -> str:
@@ -148,13 +152,75 @@ class QdrantStore:
             except Exception:
                 pass  # Already exists or collection doesn't exist yet
 
-    # ── Embedding helpers ─────────────────────────────────────────────────────
+    # ── Embedding helpers with caching ────────────────────────────────────────
 
     def _embed_texts(self, texts: List[str]) -> List[List[float]]:
-        return self.embeddings.embed_documents(texts)
+        result = []
+        uncached_indices = []
+        uncached_texts = []
+        for i, t in enumerate(texts):
+            cached = cached_embedding(t)
+            if cached is not None:
+                result.append(cached)
+            else:
+                result.append(None)
+                uncached_indices.append(i)
+                uncached_texts.append(t)
+        if uncached_texts:
+            fresh = self.embeddings.embed_documents(uncached_texts)
+            for idx, vec in zip(uncached_indices, fresh):
+                result[idx] = vec
+                store_embedding(texts[idx], vec)
+        return result
 
     def _embed_query(self, text: str) -> List[float]:
-        return self.embeddings.embed_query(text[:500])
+        truncated = text[:500]
+        cached = cached_embedding(truncated)
+        if cached is not None:
+            return cached
+        vector = self.embeddings.embed_query(truncated)
+        store_embedding(truncated, vector)
+        return vector
+
+    # ── Direct document lookup (avoids scanning all docs) ──────────────────────
+
+    def get_document_by_id(self, doc_id: str) -> Optional[Dict[str, Any]]:
+        """Direct Qdrant point retrieval by point ID or doc_id payload field.
+        10-100x faster than scanning all documents with get_all_documents()."""
+        cached = _doc_lookup_cache.get(doc_id)
+        if cached is not None:
+            return cached
+        try:
+            result = self.client.retrieve(
+                collection_name=COLL_DOCUMENTS,
+                ids=[doc_id],
+                with_payload=True,
+                with_vectors=False,
+            )
+            if result:
+                p = result[0]
+                entry = {"id": str(p.id), "payload": p.payload}
+                _doc_lookup_cache.set(doc_id, entry)
+                return entry
+        except Exception:
+            pass
+        try:
+            results, _ = self.client.scroll(
+                collection_name=COLL_DOCUMENTS,
+                scroll_filter=Filter(
+                    must=[FieldCondition(key="doc_id", match=MatchValue(value=doc_id))]
+                ),
+                limit=1,
+                with_vectors=False,
+            )
+            if results:
+                p = results[0]
+                entry = {"id": str(p.id), "payload": p.payload}
+                _doc_lookup_cache.set(doc_id, entry)
+                return entry
+        except Exception:
+            pass
+        return None
 
     # ── Text chunking for embedding ───────────────────────────────────────────
 
@@ -232,14 +298,24 @@ class QdrantStore:
             logger.error(f"get_document_by_hash error: {e}")
         return None
 
-    def get_all_documents(self, limit: int = 200) -> List[Dict[str, Any]]:
+    def get_all_documents(self, limit: int = 10000) -> List[Dict[str, Any]]:
+        """Paginate through ALL documents — never silently truncates."""
         try:
-            results, _ = self.client.scroll(
-                collection_name=COLL_DOCUMENTS,
-                limit=limit,
-                with_vectors=False,
-            )
-            return [{"id": p.id, "payload": p.payload} for p in results]
+            all_results = []
+            offset = None
+            page_size = 250
+            while True:
+                results, next_offset = self.client.scroll(
+                    collection_name=COLL_DOCUMENTS,
+                    limit=page_size,
+                    offset=offset,
+                    with_vectors=False,
+                )
+                all_results.extend(results)
+                if next_offset is None or (limit and len(all_results) >= limit):
+                    break
+                offset = next_offset
+            return [{"id": p.id, "payload": p.payload} for p in all_results[:limit]]
         except Exception as e:
             logger.error(f"get_all_documents error: {e}")
             return []
@@ -285,15 +361,23 @@ class QdrantStore:
 
     def _scroll_ids(self, collection: str, field: str, value: str) -> List[str]:
         try:
-            results, _ = self.client.scroll(
-                collection_name=collection,
-                scroll_filter=Filter(
-                    must=[FieldCondition(key=field, match=MatchValue(value=value))]
-                ),
-                limit=1000,
-                with_vectors=False,
-            )
-            return [str(p.id) for p in results]
+            all_ids = []
+            offset = None
+            while True:
+                results, next_offset = self.client.scroll(
+                    collection_name=collection,
+                    scroll_filter=Filter(
+                        must=[FieldCondition(key=field, match=MatchValue(value=value))]
+                    ),
+                    limit=5000,
+                    offset=offset,
+                    with_vectors=False,
+                )
+                all_ids.extend([str(p.id) for p in results])
+                if next_offset is None:
+                    break
+                offset = next_offset
+            return all_ids
         except Exception:
             return []
 
@@ -558,18 +642,26 @@ class QdrantStore:
         )
 
     def get_all_file_hashes(self) -> set:
-        """Return set of all known file hashes for deduplication."""
+        """Return set of ALL known file hashes for deduplication (paginated).
+        Uses larger page size (2000) to reduce round trips."""
         try:
-            results, _ = self.client.scroll(
-                collection_name=COLL_DOCUMENTS,
-                limit=10000,
-                with_vectors=False,
-            )
-            return {
-                p.payload.get("file_hash", "")
-                for p in results
-                if p.payload.get("file_hash")
-            }
+            hashes = set()
+            offset = None
+            while True:
+                results, next_offset = self.client.scroll(
+                    collection_name=COLL_DOCUMENTS,
+                    limit=2000,
+                    offset=offset,
+                    with_vectors=False,
+                )
+                for p in results:
+                    h = p.payload.get("file_hash", "")
+                    if h:
+                        hashes.add(h)
+                if next_offset is None:
+                    break
+                offset = next_offset
+            return hashes
         except Exception:
             return set()
 

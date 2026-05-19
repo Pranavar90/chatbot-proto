@@ -194,7 +194,6 @@ def _rephrase_query(query: str, history: List[Dict[str, str]]) -> str:
             temperature=0.0,
             json_mode=False,
         )
-        client.close()
 
         raw = ""
         if result and isinstance(result, dict):
@@ -413,7 +412,6 @@ def generate_response(
             temperature=0.1,
             json_mode=False,
         )
-        client.close()
 
         response = None
         if result and isinstance(result, dict):

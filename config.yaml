@@ -1,0 +1,198 @@
+# ============================================================================
+# MatResOps — Central Configuration
+# ============================================================================
+# Change any value here and restart the backend.
+# All backend modules read from this file via config.py.
+# ============================================================================
+
+# ── Server ────────────────────────────────────────────────────────────────────
+server:
+  api_port: 8000
+  host: "0.0.0.0"
+  cors_origins:
+    - "http://localhost:5173"
+    - "http://127.0.0.1:5173"
+    - "http://localhost:5174"
+
+# ── Paths ─────────────────────────────────────────────────────────────────────
+paths:
+  data_dir: "data"
+  uploads_dir: "data/uploads"
+  parsed_dir: "data/parsed"
+  qdrant_storage: "data/qdrant_storage"
+  surrogates_dir: "data/surrogates"
+  cache_dir: "data/.cache"
+
+# ── Ollama / LLM ──────────────────────────────────────────────────────────────
+llm:
+  base_url: "http://localhost:11434"
+
+  # Models per task — change these to swap models without code changes
+  models:
+    extraction: "qwen2.5:3b-instruct-q4_K_S"   # Property extraction from PDFs
+    chat:       "qwen2.5:3b-instruct-q4_K_S"   # RAG chat responses
+    orchestrator: "qwen2.5:3b-instruct-q4_K_S" # Hypothesis generation
+    embedding:  "nomic-embed-text"              # Vector embeddings (768-dim)
+
+  # Available models for UI selection
+  available_models:
+    - "phi3:mini"
+    - "qwen2.5:3b-instruct-q4_K_S"
+    - "qwen2.5:7b-instruct-q4_K_S"
+    - "qwen2.5:14b-instruct-q4_K_S"
+    - "llama3.2:3b"
+    - "gemma3:4b"
+
+  # GPU offload settings (Ollama options)
+  gpu:
+    num_gpu: 99          # Offload all layers to GPU (set to 0 for CPU-only)
+    num_ctx: 8192        # Context window size (tokens)
+    keep_alive: "15m"    # How long to keep model in VRAM after last request
+
+  # Generation defaults
+  generation:
+    extraction_temperature: 0.0   # Deterministic for extraction
+    chat_temperature: 0.1         # Slight creativity for chat
+    orchestrator_temperature: 0.4 # More creative hypotheses
+    decision_temperature: 0.3     # Balanced for decisions
+    max_retries: 1                # Retry failed LLM calls
+
+# ── Embedding ─────────────────────────────────────────────────────────────────
+embedding:
+  model: "nomic-embed-text"
+  dimension: 768
+  gpu_layers: 35                # num_gpu for embedding model
+
+# ── Document Processing ───────────────────────────────────────────────────────
+documents:
+  # How many characters to feed the LLM per document type
+  extraction:
+    tds_max_chars: 7000         # TDS tables are front-loaded
+    paper_max_chars: 12000      # Papers scatter data throughout
+
+  # Chunking for embedding (qdrant_store.py)
+  chunking:
+    chunk_size_chars: 2000      # ~512 tokens @ 4 chars/token
+    chunk_overlap_chars: 200
+
+  # Chunking for LLM extraction (extractor.py)
+  extraction_chunking:
+    chunk_size: 4000            # Each chunk fits in context window
+    chunk_overlap: 300
+
+  # Document type detection bias
+  doctype:
+    tds_bias: 2                 # Bias toward TDS classification
+
+  supported_extensions:
+    - ".pdf"
+    - ".docx"
+    - ".doc"
+
+# ── Qdrant Vector Database ───────────────────────────────────────────────────
+qdrant:
+  url: "http://localhost:6333"
+  local_path: "data/qdrant_storage"
+  connect_timeout: 1            # Seconds for connection test
+
+  # Collection names (do not change after data is stored)
+  collections:
+    documents: "documents"
+    chunks: "doc_chunks"
+    properties: "material_properties"
+    experiments: "experiments"
+    edges: "knowledge_edges"
+    folders: "scanned_folders"
+    jobs: "job_status"
+    chat_sessions: "chat_sessions"
+    schemas: "experiment_schemas"
+    legacy: "parsed_materials"  # Legacy collection — kept for fallback search
+
+# ── Job Queue ─────────────────────────────────────────────────────────────────
+job_queue:
+  priority:
+    high_max_bytes: 1048576       # < 1 MB = HIGH priority
+    medium_max_bytes: 10485760    # 1-10 MB = MEDIUM priority
+                                  # > 10 MB = LOW priority
+  max_retries: 3                  # Retry failed jobs this many times
+
+# ── Knowledge Graph ───────────────────────────────────────────────────────────
+knowledge_graph:
+  cache_ttl: 300                  # Seconds before graph rebuild from Qdrant
+  pagerank_alpha: 0.85            # PageRank damping factor
+  pagerank_max_iter: 100          # PageRank convergence iterations
+  search_k: 10                    # Default number of results
+  # Re-ranking weights
+  rerank:
+    vector_weight: 0.6
+    pagerank_weight: 0.3
+    connectivity_weight: 0.1
+
+# ── Autonomous Research Loop (Orchestrator) ───────────────────────────────────
+orchestrator:
+  default_weights:
+    strength: 0.50
+    flexibility: 0.35
+    cost: 0.15
+  n_candidates: 3                 # Candidates per iteration
+  bo_n_candidates: 5              # BO mode candidates
+
+# ── Chat ──────────────────────────────────────────────────────────────────────
+chat:
+  memory_turns: 4                 # Conversation turns kept in context
+  search_limit: 5                 # Qdrant search results for RAG
+  strip_thinking_tags: true       # Remove <thinking> XML tags from output
+  web_search:
+    enabled: false
+    provider: "tavily"            # "tavily" or "duckduckgo"
+    api_key: ""                   # Tavily API key (leave empty to disable)
+
+# ── Surrogate Models (BoTorch GP) ────────────────────────────────────────────
+surrogate:
+  persistence_dir: "data/surrogates"
+  literature_seed_max_points: 50  # Max synthetic points from literature seeding
+  min_training_points: 3          # Minimum points before GP trains
+  doe_n_samples: 10               # Latin Hypercube samples for initial design
+
+# ── Caching ───────────────────────────────────────────────────────────────────
+cache:
+  embeddings:
+    l1_maxsize: 1000              # In-memory LRU entries
+    l1_ttl: 3600                  # In-memory TTL (seconds)
+    l2_ttl: 604800                # Disk cache TTL (7 days, seconds)
+  llm_responses:
+    l1_maxsize: 200
+    l1_ttl: 1800                  # 30 minutes
+    l2_ttl: 2592000               # 30 days
+  pagerank:
+    l1_maxsize: 50
+    l1_ttl: 60                    # 1 minute
+    l2_ttl: 3600                  # 1 hour
+  stats:
+    maxsize: 20
+    ttl: 5                        # 5 seconds
+  document_lookup:
+    maxsize: 500
+    ttl: 60                       # 60 seconds
+
+# ── Frontend ──────────────────────────────────────────────────────────────────
+frontend:
+  api_base: "http://localhost:8000"
+  polling:
+    stats_interval: 30000         # Milliseconds
+    loop_status_interval: 10000   # Milliseconds
+  sidebar:
+    expanded_width: 220
+    collapsed_width: 56
+
+# ── Tauri Desktop (Phase 9) ──────────────────────────────────────────────────
+tauri:
+  enabled: false                  # Set true when packaging desktop app
+  product_name: "MatResOps"
+  identifier: "com.matresops.app"
+  window:
+    title: "MatResOps — AI Research Operator"
+    width: 1400
+    height: 900
+    min_width: 1000
+    min_height: 700

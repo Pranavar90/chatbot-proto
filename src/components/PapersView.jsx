@@ -77,23 +77,27 @@ export default function PapersView() {
 
   const fetchJobs = async () => {
     try {
-      const res = await fetch(`${API_BASE}/api/jobs?limit=20`);
+      const res = await fetch(`${API_BASE}/api/jobs?limit=2000`);
       if (res.ok) {
         const data = await res.json();
-        const activeJobs = data.jobs.filter(j => 
-          ['queued', 'running', 'pending'].includes(j.status)
-        );
+        const activeJobs  = data.jobs.filter(j => ['queued', 'running', 'pending'].includes(j.status));
+        const failedJobs  = data.jobs.filter(j => j.status === 'failed');
+        const completedJobs = data.jobs.filter(j => j.status === 'completed');
+        const total = data.jobs.length;
+
         setQueuedJobs(activeJobs);
-        
+
         if (activeJobs.length > 0) {
           const running = activeJobs.find(j => j.status === 'running');
           if (running) {
             setBulkProcessing(true);
             setBulkProgress({
-              current: activeJobs.length,
-              total: data.jobs.length,
-              pct: ((data.jobs.length - activeJobs.length) / data.jobs.length) * 100,
-              message: running.current_step || 'Processing...'
+              current:   activeJobs.length,
+              completed: completedJobs.length,
+              failed:    failedJobs.length,
+              total,
+              pct: total > 0 ? (completedJobs.length / total) * 100 : 0,
+              message: `${completedJobs.length}/${total} processed${failedJobs.length > 0 ? ` · ${failedJobs.length} FAILED` : ''} · ${activeJobs.length} remaining`,
             });
           }
         } else {
@@ -108,45 +112,49 @@ export default function PapersView() {
 
   const handleFiles = async (files) => {
     if (!files?.length) return;
-    
-    const pdfFiles = Array.from(files).filter(f => f.name.endsWith('.pdf'));
+
+    const pdfFiles = Array.from(files).filter(f => f.name.toLowerCase().endsWith('.pdf'));
     if (pdfFiles.length === 0) return;
-    
+
     setUploading(true);
-    setUploadProgress({ current: 0, total: pdfFiles.length, queued: 0 });
-    
-    const uploadPromises = pdfFiles.map(async (file, index) => {
+    setUploadProgress({ total: pdfFiles.length, queued: 0 });
+
+    const uploadOne = async (file) => {
       const formData = new FormData();
       formData.append('file', file);
-      
       try {
         const res = await fetch(`${API_BASE}/api/documents/upload`, {
           method: 'POST',
           body: formData,
         });
-        
         const result = await res.json();
         setUploadProgress(prev => ({ ...prev, queued: (prev?.queued || 0) + 1 }));
-        
         if (res.ok) {
-          await fetchJobs();
           return { success: true, filename: file.name, job_id: result.job_id };
-        } else {
-          return { success: false, filename: file.name, error: result.detail };
         }
+        return { success: false, filename: file.name, error: result.detail };
       } catch (err) {
+        setUploadProgress(prev => ({ ...prev, queued: (prev?.queued || 0) + 1 }));
         return { success: false, filename: file.name, error: err.message };
       }
-    });
-    
-    const results = await Promise.all(uploadPromises);
-    
+    };
+
+    // Batch uploads 5 at a time to avoid overwhelming the server
+    const BATCH_SIZE = 5;
+    const results = [];
+    for (let i = 0; i < pdfFiles.length; i += BATCH_SIZE) {
+      const batch = pdfFiles.slice(i, i + BATCH_SIZE);
+      const batchResults = await Promise.all(batch.map(uploadOne));
+      results.push(...batchResults);
+      await fetchJobs();
+    }
+
     setUploading(false);
     setUploadProgress(null);
-    
+
     const successCount = results.filter(r => r.success).length;
     console.log(`Queued ${successCount}/${pdfFiles.length} files for processing`);
-    
+
     await fetchJobs();
     await fetchStats();
   };
@@ -215,7 +223,7 @@ export default function PapersView() {
 
   const fetchParsedDocs = async () => {
     try {
-      const res = await fetch(`${API_BASE}/api/parsed?limit=50`);
+      const res = await fetch(`${API_BASE}/api/parsed?limit=1000`);
       if (res.ok) {
         const data = await res.json();
         setParsedDocs(data.documents);
@@ -344,20 +352,27 @@ export default function PapersView() {
         {bulkProcessing && bulkProgress && (
           <div className="glass-panel" style={{ padding: '12px 16px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
-              <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>Bulk Processing</span>
+              <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
+                Processing Queue
+                {bulkProgress.total > 0 && (
+                  <span style={{ marginLeft: 8, color: 'var(--text-muted)', fontFamily: 'var(--font-mono)', fontSize: 11 }}>
+                    {bulkProgress.completed ?? 0}/{bulkProgress.total}
+                    {(bulkProgress.failed ?? 0) > 0 && (
+                      <span style={{ color: 'var(--score-low)', marginLeft: 6 }}>
+                        · {bulkProgress.failed} failed
+                      </span>
+                    )}
+                  </span>
+                )}
+              </span>
               <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>{bulkProgress.pct.toFixed(1)}%</span>
             </div>
-            <div style={{ 
-              height: 6, 
-              background: 'var(--glass-border)', 
-              borderRadius: 3, 
-              overflow: 'hidden' 
-            }}>
-              <div style={{ 
-                height: '100%', 
-                width: `${bulkProgress.pct}%`, 
-                background: 'var(--accent)',
-                transition: 'width 0.3s'
+            <div style={{ height: 6, background: 'var(--glass-border)', borderRadius: 3, overflow: 'hidden' }}>
+              <div style={{
+                height: '100%',
+                width: `${bulkProgress.pct}%`,
+                background: (bulkProgress.failed ?? 0) > 0 ? 'var(--score-low)' : 'var(--accent)',
+                transition: 'width 0.3s',
               }} />
             </div>
             <div style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 6 }}>{bulkProgress.message}</div>
@@ -368,17 +383,17 @@ export default function PapersView() {
           <div className="glass-panel" style={{ padding: '12px 16px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
               <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>Uploading Files</span>
-              <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>{uploadProgress.current}/{uploadProgress.total}</span>
+              <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>{uploadProgress.queued}/{uploadProgress.total}</span>
             </div>
-            <div style={{ 
-              height: 6, 
-              background: 'var(--glass-border)', 
-              borderRadius: 3, 
-              overflow: 'hidden' 
+            <div style={{
+              height: 6,
+              background: 'var(--glass-border)',
+              borderRadius: 3,
+              overflow: 'hidden'
             }}>
-              <div style={{ 
-                height: '100%', 
-                width: `${(uploadProgress.current / uploadProgress.total) * 100}%`, 
+              <div style={{
+                height: '100%',
+                width: `${(uploadProgress.queued / uploadProgress.total) * 100}%`,
                 background: 'var(--score-high)',
                 transition: 'width 0.3s'
               }} />
@@ -396,11 +411,26 @@ export default function PapersView() {
               Search Results ({searchResults.length})
             </div>
             {searchResults.map((r, i) => (
-              <div key={i} style={{ 
-                padding: '8px 12px', 
-                borderTop: i > 0 ? '1px solid var(--glass-border)' : 'none',
-                cursor: 'pointer'
-              }}>
+              <div
+                key={i}
+                style={{
+                  padding: '8px 12px',
+                  borderTop: i > 0 ? '1px solid var(--glass-border)' : 'none',
+                  cursor: 'pointer',
+                }}
+                onClick={() => setSelectedDoc({
+                  id: r.id || r.doc_id,
+                  filename: r.filename,
+                  doc_type: r.doc_type || 'paper',
+                  isQdrant: true,
+                  properties: [],
+                  processing_conditions: [],
+                  material_name: r.material_name || '',
+                  extraction_confidence: r.score || 0,
+                })}
+                onMouseEnter={e => e.currentTarget.style.background = 'var(--glass-hover)'}
+                onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
+              >
                 <div style={{ fontWeight: 500, fontSize: 13, color: 'var(--text-primary)' }}>{r.filename}</div>
                 <div style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 4 }}>{r.content?.substring(0, 150)}...</div>
                 <div style={{ fontSize: 10, color: 'var(--accent)', marginTop: 4 }}>Score: {(r.score || 0).toFixed(3)}</div>
@@ -523,16 +553,23 @@ export default function PapersView() {
                             transition: 'background 0.15s',
                             cursor: 'pointer',
                           }}
-                          onClick={() => setSelectedDoc({
-                            id: p.id,
-                            filename: payload.filename || 'Unknown',
-                            doc_type: payload.doc_type || 'paper',
-                            isQdrant: true,
-                            properties: payload.properties || [],
-                            processing_conditions: payload.processing_conditions || [],
-                            material_name: payload.material_name || payload.filename || '',
-                            extraction_confidence: payload.extraction_confidence || 0,
-                          })}
+                          onClick={() => {
+                            const parseField = (v) => {
+                              if (!v) return [];
+                              if (typeof v === 'string') { try { return JSON.parse(v); } catch { return []; } }
+                              return Array.isArray(v) ? v : [];
+                            };
+                            setSelectedDoc({
+                              id: p.id,
+                              filename: payload.filename || 'Unknown',
+                              doc_type: payload.doc_type || 'paper',
+                              isQdrant: true,
+                              properties: parseField(payload.properties),
+                              processing_conditions: parseField(payload.processing_conditions),
+                              material_name: payload.material_name || payload.filename || '',
+                              extraction_confidence: payload.extraction_confidence || 0,
+                            });
+                          }}
                           onMouseEnter={e => e.currentTarget.style.background = 'var(--glass-hover)'}
                           onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
                         >
@@ -854,11 +891,11 @@ function CyberExtractionBanner({ jobs, onTerminate }) {
       {/* Queue list (compact, only if multiple jobs) */}
       {jobs.length > 1 && (
         <div style={{ marginTop: 10, borderTop: '1px solid var(--glass-border)', paddingTop: 8 }}>
-          {jobs.slice(0, 5).map((job, i) => (
+          {jobs.slice(0, 10).map((job, i) => (
             <div key={job.job_id} style={{
               display: 'flex', alignItems: 'center', gap: 8,
               padding: '3px 0', fontSize: 11,
-              borderBottom: i < Math.min(jobs.length, 5) - 1 ? '1px solid rgba(52,130,90,0.08)' : 'none',
+              borderBottom: i < Math.min(jobs.length, 10) - 1 ? '1px solid rgba(52,130,90,0.08)' : 'none',
             }}>
               {job.status === 'running'
                 ? <Loader size={11} style={{ color: 'var(--accent-bright)', animation: 'spin 1s linear infinite', flexShrink: 0 }} />
@@ -879,9 +916,9 @@ function CyberExtractionBanner({ jobs, onTerminate }) {
               </span>
             </div>
           ))}
-          {jobs.length > 5 && (
+          {jobs.length > 10 && (
             <div style={{ fontSize: 10, color: 'var(--text-muted)', paddingTop: 4, fontFamily: 'var(--font-mono)' }}>
-              +{jobs.length - 5} MORE IN QUEUE
+              +{jobs.length - 10} MORE IN QUEUE
             </div>
           )}
         </div>

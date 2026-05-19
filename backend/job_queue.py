@@ -219,12 +219,24 @@ class JobQueue:
             pass
         return None
 
-    def get_all_jobs(self, limit: int = 100) -> List[Job]:
+    def get_all_jobs(self, limit: int = 1000) -> List[Job]:
+        """Paginated — returns ALL jobs up to limit, never silently truncates."""
         try:
-            results, _ = self._qdrant_client.scroll(
-                collection_name="job_status", limit=limit, with_vectors=False
-            )
-            jobs = [self._job_from_payload(p.payload) for p in results if p.payload]
+            all_results = []
+            offset = None
+            page_size = 250
+            while True:
+                results, next_offset = self._qdrant_client.scroll(
+                    collection_name="job_status",
+                    limit=page_size,
+                    offset=offset,
+                    with_vectors=False,
+                )
+                all_results.extend(results)
+                if next_offset is None or len(all_results) >= limit:
+                    break
+                offset = next_offset
+            jobs = [self._job_from_payload(p.payload) for p in all_results[:limit] if p.payload]
             jobs = [j for j in jobs if j]
             return sorted(jobs, key=lambda j: j.created_at, reverse=True)
         except Exception as e:
@@ -302,23 +314,28 @@ class JobQueue:
                 job.completed_at = datetime.now().isoformat()
                 self._save_job(job)
                 cancelled += 1
-        # Persist cancellation of any queued jobs still only in Qdrant
+        # Persist cancellation of any queued jobs still only in Qdrant (paginated)
         try:
             from qdrant_client.models import Filter, FieldCondition, MatchAny
-            results, _ = self._qdrant_client.scroll(
-                collection_name="job_status",
-                scroll_filter=Filter(must=[FieldCondition(
-                    key="status", match=MatchAny(any=["queued", "pending", "running"]),
-                )]),
-                limit=200, with_vectors=False,
-            )
-            for point in results:
-                job = self._job_from_payload(point.payload)
-                if job and job.status not in [JobStatus.COMPLETED, JobStatus.FAILED, JobStatus.CANCELLED]:
-                    job.status = JobStatus.CANCELLED
-                    job.completed_at = datetime.now().isoformat()
-                    self._save_job(job)
-                    cancelled += 1
+            offset = None
+            while True:
+                results, next_offset = self._qdrant_client.scroll(
+                    collection_name="job_status",
+                    scroll_filter=Filter(must=[FieldCondition(
+                        key="status", match=MatchAny(any=["queued", "pending", "running"]),
+                    )]),
+                    limit=250, offset=offset, with_vectors=False,
+                )
+                for point in results:
+                    job = self._job_from_payload(point.payload)
+                    if job and job.status not in [JobStatus.COMPLETED, JobStatus.FAILED, JobStatus.CANCELLED]:
+                        job.status = JobStatus.CANCELLED
+                        job.completed_at = datetime.now().isoformat()
+                        self._save_job(job)
+                        cancelled += 1
+                if next_offset is None:
+                    break
+                offset = next_offset
         except Exception as e:
             logger.warning(f"cancel_all Qdrant scan failed: {e}")
         print(f"[QUEUE] Cancelled {cancelled} job(s)")
@@ -480,42 +497,66 @@ class JobQueue:
         print("[WORKER] Background worker stopped")
 
     def recover_queued_jobs(self) -> int:
-        """On startup: reload any jobs that were queued/running when the backend last stopped."""
+        """
+        On startup: reload any jobs that were PENDING/QUEUED/RUNNING when the
+        backend last stopped.  Paginated — handles arbitrarily large backlogs.
+        RUNNING jobs are reset to QUEUED so they restart from scratch (the
+        previous partial Qdrant write, if any, is idempotent via file_hash dedup).
+        """
         try:
             from qdrant_client.models import Filter, FieldCondition, MatchAny
-            results, _ = self._qdrant_client.scroll(
-                collection_name="job_status",
-                scroll_filter=Filter(
-                    must=[FieldCondition(
-                        key="status",
-                        match=MatchAny(any=["queued", "running"]),
-                    )]
-                ),
-                limit=200,
-                with_vectors=False,
+
+            scroll_filter = Filter(
+                must=[FieldCondition(
+                    key="status",
+                    match=MatchAny(any=["pending", "queued", "running"]),
+                )]
             )
+
             recovered = 0
-            for point in results:
-                job = self._job_from_payload(point.payload)
-                if not job:
-                    continue
-                # Only recover if the file still exists
-                if not Path(job.file_path).exists():
-                    job.status = JobStatus.FAILED
-                    job.error_message = "File missing after restart"
-                    job.completed_at = datetime.now().isoformat()
+            missing = 0
+            offset = None
+
+            while True:
+                results, next_offset = self._qdrant_client.scroll(
+                    collection_name="job_status",
+                    scroll_filter=scroll_filter,
+                    limit=250,
+                    offset=offset,
+                    with_vectors=False,
+                )
+
+                for point in results:
+                    job = self._job_from_payload(point.payload)
+                    if not job:
+                        continue
+
+                    # File was deleted (e.g. partially processed then cleaned up)
+                    if not Path(job.file_path).exists():
+                        job.status = JobStatus.FAILED
+                        job.error_message = "Source file missing after restart"
+                        job.completed_at = datetime.now().isoformat()
+                        self._save_job(job)
+                        missing += 1
+                        continue
+
+                    # Reset to QUEUED so the worker processes it from scratch
+                    job.status = JobStatus.QUEUED
+                    job.current_step = "Recovered after restart"
+                    job.progress = 0.0
+                    job.started_at = ""
+                    job.retry_count = 0
                     self._save_job(job)
-                    continue
-                # Reset running → queued so it starts fresh
-                job.status = JobStatus.QUEUED
-                job.current_step = ""
-                job.progress = 0.0
-                job.started_at = ""
-                self._save_job(job)
-                self.queue_job(job)
-                recovered += 1
-            if recovered:
-                print(f"[WORKER] Recovered {recovered} queued job(s) from Qdrant")
+                    self.queue_job(job)
+                    recovered += 1
+
+                if next_offset is None:
+                    break
+                offset = next_offset
+
+            if recovered or missing:
+                print(f"[WORKER] Startup recovery: {recovered} job(s) re-queued, "
+                      f"{missing} marked failed (file missing)")
             return recovered
         except Exception as e:
             logger.warning(f"Job recovery failed: {e}")
@@ -523,8 +564,7 @@ class JobQueue:
 
     def start_worker(self):
         if self.worker_task is None or self.worker_task.done():
-            # Disabled auto-recovery to prevent re-processing old files
-            # self.recover_queued_jobs()
+            self.recover_queued_jobs()
             self.worker_task = asyncio.create_task(self.worker_loop())
 
     def stop_worker(self):
