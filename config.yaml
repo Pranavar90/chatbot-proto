@@ -30,8 +30,8 @@ llm:
   # Models per task — change these to swap models without code changes
   models:
     extraction: "qwen2.5:3b-instruct-q4_K_S"   # Property extraction from PDFs
-    chat:       "qwen2.5:3b-instruct-q4_K_S"   # RAG chat responses
-    orchestrator: "qwen2.5:3b-instruct-q4_K_S" # Hypothesis generation
+    chat:       "qwen2.5:7b-instruct-q4_K_S"   # RAG chat responses
+    orchestrator: "qwen2.5:3b-instruct-q4_K_M" # Hypothesis generation
     embedding:  "nomic-embed-text"              # Vector embeddings (768-dim)
 
   # Available models for UI selection

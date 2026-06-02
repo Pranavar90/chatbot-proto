@@ -1,0 +1,245 @@
+{
+  "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+  "filename": "fibers-06-00084.pdf",
+  "doc_type": "paper",
+  "material_name": "fibers",
+  "extraction_confidence": 0.8999999999999999,
+  "methodology": "The study involved preparing chitosan-coated poly(L-lactic acid) (PLA) fibers through plasma treatment followed by layer-by-layer (LBL) method for increasing the number of CS and sodium alginate (SA) coating layers.",
+  "research_objective": "To develop improved PLA-based materials with enhanced surface properties, biocompatibility, and strength suitable for biomedical applications such as sutures.",
+  "key_findings": [
+    {
+      "finding": "CS-coated PLA fibers can be used in biomedical applications such as sutures without damaging the PLAsurface and with no influence on degradation.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "CS-coating-modifiedPLA is applicable as sutures due to its antibacterial and wound-healing abilities reducing postoperative infections risk.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "Plasmatreatment improves surface properties of PLA fiber without damaging the material",
+      "confidence": 1.0
+    },
+    {
+      "finding": "CS coatings improved tensile strength and surface properties of PLA fibers.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "Degradation rate calculated from the weight change using Equation (5).",
+      "confidence": 1.0
+    }
+  ],
+  "processing_conditions": [],
+  "properties_count": 19,
+  "properties": [
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "volume of H2SO4 or NaOH solution",
+      "value": "<V>",
+      "unit": "(L)",
+      "confidence": 1.0,
+      "context": "Equation (4)",
+      "created_at": "2026-04-25T21:40:49.678204"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "CS-coating-modifiedPLA",
+      "value": "readily modified through the formation of polyelectrolyte layers",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "characterized by tensile testing, SEM, XPS, nitrogen analysis, and degradation testing",
+      "created_at": "2026-04-25T21:40:49.351847"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "tensile strength",
+      "value": "<not specified>",
+      "unit": "MPa or N/mm²",
+      "confidence": 1.0,
+      "context": "Tensile strengths and strains of the prepared fibers were measured according to JIS 1013-8 methods using an STA-1150 universal testing machine.",
+      "created_at": "2026-04-25T21:40:49.517262"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "Plasma treatment effectiveness",
+      "value": "<optimum for 100 W, 60 s>",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Optimal plasma treatment conditions for fiber preparation",
+      "created_at": "2026-04-25T21:40:49.184315"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "concentration of H2SO4 or NaOH solution",
+      "value": "<C>",
+      "unit": "(mol/L)",
+      "confidence": 1.0,
+      "context": "Equation (4)",
+      "created_at": "2026-04-25T21:40:49.646741"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "plasmatreatment",
+      "value": "effective for coating CS onto PLA surface without damaging the material",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "improves surface properties of PLA fiber without damaging the material",
+      "created_at": "2026-04-25T21:40:49.284622"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "plasmatreatment",
+      "value": "effective",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "improves surface properties of PLA fiber without damaging the material",
+      "created_at": "2026-04-25T21:40:49.218821"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "CS-coating-modifiedPLA",
+      "value": "applicable as sutures",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "due to antibacterial and wound-healing abilities of CS reducing postoperative infections risk",
+      "created_at": "2026-04-25T21:40:49.251582"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "CS-coating-modifiedPLA",
+      "value": "uniform, thin, hard, adhesive, and slightly soluble",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "characterized by tensile testing, SEM, XPS, nitrogen analysis, and degradation testing",
+      "created_at": "2026-04-25T21:40:49.318340"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "SA-coating-modifiedPLA",
+      "value": "SA solution prepared by overnight stirring of 2g of SA in 200mL of water",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "described in Materials section",
+      "created_at": "2026-04-25T21:40:49.483766"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "Tensile strength",
+      "value": "<not specified>",
+      "unit": "MPa or N/mm²",
+      "confidence": 1.0,
+      "context": "Characterized by tensile testing",
+      "created_at": "2026-04-25T21:40:49.078921"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "CS-coating-modifiedPLA",
+      "value": "CS solution prepared as follows: dissolve 2g of CS in 1% aqueous acetic acid and freeze-dried to remove excess acetic acid and water; then dissolve obtained CS-acetate salt in 200mL of water",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "described in Materials section",
+      "created_at": "2026-04-25T21:40:49.449321"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "Layer-by-layer (LBL) method efficiency",
+      "value": "<increased number of CS and SA coating layers>",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Effectiveness of LBL method in increasing the number of coatings",
+      "created_at": "2026-04-25T21:40:49.149168"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "Surface hydrophilicity",
+      "value": "<effectively improved>",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Effect of plasmatreatment and LBL method on surface properties",
+      "created_at": "2026-04-25T21:40:49.111321"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "molecular weight",
+      "value": "<calculated using Equations (3) and (4)>",
+      "unit": "(g/mol)",
+      "confidence": 1.0,
+      "context": "Equations (3) and (4)",
+      "created_at": "2026-04-25T21:40:49.612855"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "CS-coating-modifiedPLA",
+      "value": "degradable",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "characterized by degradation testing",
+      "created_at": "2026-04-25T21:40:49.382357"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "CS layer thickness",
+      "value": "<not specified>",
+      "unit": "nm",
+      "confidence": 1.0,
+      "context": "The thickness of the CS layers on the PLA fibers was summarized in Table 2.",
+      "created_at": "2026-04-25T21:40:49.580763"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "plasmatreatment",
+      "value": "time,30-1800s;power,100-200W; andoxygen-gasflow,70mL/min",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Table 1 describes the conditions for plasmatreatment",
+      "created_at": "2026-04-25T21:40:49.417944"
+    },
+    {
+      "doc_id": "b73fb739-908b-47c3-8751-f6fa101917e2",
+      "filename": "fibers-06-00084.pdf",
+      "material_name": "fibers",
+      "property_name": "CS content",
+      "value": "<not specified>",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "The CS content on the PLA fiber was determined using the Kjeldahl method and calculated using Equations (3) and (4).",
+      "created_at": "2026-04-25T21:40:49.550414"
+    }
+  ],
+  "source_text": "fibers Article Preparation of Chitosan-Coated Poly(L-Lactic Acid) Fibers for Suture Threads DaikiKomoto,RyokaIkeda,TetsuyaFuruikeandHiroshiTamura* FacultyofChemistry,MaterialsandBioengineering,KansaiUniversity,Suita,Osaka564-8680,Japan; k246956@kansai-u.ac.jp(D.K.);shineeworld99@yahoo.co.jp(R.I.);furuike@kansai-u.ac.jp(T.F.) * Correspondence:tamura@kansai-u.ac.jp;Tel.:+81-6-6368-1121 (cid:1)(cid:2)(cid:3)(cid:1)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:1) (cid:1)(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7) Received:26September2018;Accepted:24October2018;Published:25October2018 Abstract: Poly(L-lactic acid) (PLA) is a biodegradable fiber, and a promising material for use in biomedicalapplications. However,itshydrophobicity,lowhydrolyzability,andpoorcelladhesion canbeproblematicinsomecases;consequently,thedevelopmentofimprovedPLA-basedmaterials isrequired. Inthisstudy,chitosan-coated(CS-coated)PLAwaspreparedbyplasmatreatmentand thelayer-by-layer(LBL)method. PlasmatreatmentpriortoCScoatingeffectivelyhydrophilized andactivatedthePLAsurface. TheLBLmethodwasusedtoincreasethenumberofCSandsodium alginate(SA)coatinglayersbyelectrostaticallysuperposingalternatinganionicandcationicpolymers. The prepared fibers were characterized by tensile testing, scanning electron microscopy (SEM), X-rayphotoelectronspectroscopy(XPS),nitrogenanalysisanddegradationtesting,whichrevealed that the 100 W plasma treatment for 60 s was optimum, and that plasma treatment and the LBL methodeffectivelycoatedCSontothePLAfibers. TheexistenceornotofacoatingonthePLAfiber didnotappeartoinfluencethedegradationofthefiber,whichisascribabletotheextremelythin coating,asevidencedbynitrogenanalysisandSEM.TheCS-coatedPLAfiberswerepreparedwithout damagingthePLAsurfaceandcanbeusedinbiomaterialapplicationssuchassuturethreads. Keywords: PLAfiber;chitosan;sodiumalginate;layer-by-layermethod;plasmatreatment 1. Introduction Suturethreadsrequirepropertiessuchasbiocompatibilityandstrengthforsurgicalapplications, becausetheremo . Keywords: PLAfiber;chitosan;sodiumalginate;layer-by-layermethod;plasmatreatment 1. Introduction Suturethreadsrequirepropertiessuchasbiocompatibilityandstrengthforsurgicalapplications, becausetheremovalofstitchesiscumbersomeforthedoctor,aburdentodoctorandpatient,andposes ariskofinfection.Poly(L-lacticacid)(PLA)fiberisoneofthebiodegradablesuturethreadscurrentlyin use. PLAisanaliphaticlactic-acid-basedpolyester,andiswellknowntobeacarbon-neutralmaterial obtained from some plants [1]. PLA has good mechanical properties and characteristics, such as biodegradability,biocompatibility,andlackoftoxicity[2-4]. Therefore,PLAisaninterestingmaterial for use in applications that include tissue engineering, drug delivery systems, and implants [5-8]. However,thehydrophobicity,lowhydrolyzability,andpoorcelladhesionexhibitedbythePLAsurface areproblematicinsomebiomaterialapplications[9]. Severaltechniqueshaverecentlybeenreported tomodifyPLAsurfaces. Forexample,PLAsurfacescanbecoatedbyhydrophilicpolymers,suchas proteins,chitosan(CS),andsodiumalginate(SA)byalkaline,enzymatic,orplasmatreatments[10-14]. CSisderivedfromchitin,whichiswellknowntobethemostabundantnaturalbiopolymer[15-17]. In addition, CS is used prominently as a biomaterial because of its numerous excellent properties, whichincludebiocompatibility,biodegradability,andantibacterialandwound-healingabilities[18-21]. CS is a cationic polymer bearing amino (-NH ) groups, a consequence of its glucosamine units, 2 and is soluble in acidic aqueous solutions [22]. SA is also a natural biopolymer composed of (1,4) β-D-mannuronateandα-L-guluronate[23].SAisextractedfromseaweedandusedinthefoodindustryas athickener,stabilizerandgelatinizer,aconsequenceofitssuperiorpropertiesthatincludebiocompatibility, Fibers2018,6,84;doi:10.3390/fib6040084 www.mdpi.com/journal/fibers Fibers2018,6,84 2of12 moisture-retention,highviscosity,andeasygelation[24-26].SAisthesodiumsaltofananionicpolymer bearingcarboxylate(-COO−)groups,andissolubleinneutralandbas ww.mdpi.com/journal/fibers Fibers2018,6,84 2of12 moisture-retention,highviscosity,andeasygelation[24-26].SAisthesodiumsaltofananionicpolymer bearingcarboxylate(-COO−)groups,andissolubleinneutralandbasicaqueoussolution[27]. In this study, we modified the PLA surface with CS and SA coatings to improve its surface properties while maintaining its biodegradability. Plasma treatment and layer-by-layer (LBL) deposition were employed for preparation. To the best of our knowledge, this is the first report ofaCS-andSA-coatedPLAfiberprepared. PlasmatreatmentiseffectiveforcoatingCSontothePLA surfacewithoutdamagingthePLAbecauseithydrophilizesandactivatesthesurfacelayer. Moreover, theLBLmethodeffectivelyincreasestheamountofCScoating. TheLBLmethodhasreceivedattention asacoatingtechniquecapableofformingmultiplelayersofionicpolymersonthesurfaceofamaterial, and many reports have noted that multilayers can be easily prepared via this method on several materials [28]. The prepared multilayers are uniform, thin, hard, adhesive, and slightly soluble; moreover,thesurfacescanbereadilymodifiedthroughtheformationofpolyelectrolytelayers[29,30]. Inthisstudy,SAandCS,asanionicandcationiclayers,werecoatedviatheelectrostaticsuperposition ofalternatingpolymersontoPLAfiberswiththesemethods. Themechanicalproperties,morphologies, CS-PLA and SA-CS interactions, nitrogen content, and degradability of the prepared fibers were characterizedbytensiletesting,scanningelectronmicroscopy(SEM),X-rayphotoelectronspectroscopy (XPS),nitrogenanalysis,anddegradationtesting,respectively. TheCS-coating-modifiedPLAwillbe applicableassuturethreads,becausetheantibacterialandwound-healingabilitiesofCSreducethe riskofpostoperativeinfections. 2. MaterialsandMethods 2.1. Materials CS (FM-80, Mw = 24.8 × 103, degree of deacetylation (DDA) = 84.7%) was provided by Koyo Chemical Co., Ltd. (Sakaiminato, Japan). The weight-average molecular weight (Mw) and theDDAofCSweredeterminedbygelpermeationchromatography(GPC)and1H-NMRspectr tion (DDA) = 84.7%) was provided by Koyo Chemical Co., Ltd. (Sakaiminato, Japan). The weight-average molecular weight (Mw) and theDDAofCSweredeterminedbygelpermeationchromatography(GPC)and1H-NMRspectroscopy, respectively. SA(GradIL-2,viscosity=44mPa·s)wasprovidedbyKimicaCorporation(Tokyo,Japan). OtherchemicalswerepurchasedfromFUJIFILMWakoPureChemicalCorporation(Osaka,Japan),and wereusedwithoutpurification. PLAfiber(167T48)wascomposedof48filamentsofdiameter20µm. 2.2. Methods ThePLAfiberwascoiledonaframeandwashedtwicewith1%Tween20solution. Thewashed PLAwasrinsedthreetimeswithdistilledwateranddriedatroomtemperature. A1%CSsolutionwas preparedasfollows. A2gsampleofCSwasdissolvedin1%aqueousaceticacidandfreeze-dried toremoveexcessaceticacidandwater. TheobtainedCS-acetatesaltwasthendissolvedin200mL ofwater. ThePLAfiberwasprotectedagainstacetic-aciddamagethroughthepreparationofthe1% CS solution used in this method. A 1% SA solution was prepared by the overnight stirring of 2 g ofSAin200mLofwater. ThecoatingmethodinvolvingplasmatreatmentandtheLBLmethodis describedbelow. TocoatthemwithCS,thePLA-fibersurfaceswereactivatedbyplasmatreatment(CUTE-MR/R, FEMTO SCIENCE, Hwaseong, Korea) prior to immersion in the above-mentioned CS solution. Plasmatreatmentwasperformedunderthefollowingconditions: time,30-1800s;power,100-200W; andoxygen-gasflow,70mL/min(Table1). ThePLAfibers,plasma-treatedunderavarietyofconditions,wereimmediatelyimmersedin1% CSsolutionandstirredfor1minatroomtemperature. ThePLAfiberswerethenrinsedthreetimes withdistilledwateranddriedatroomtemperature. PLAfiberscoatedwithasinglelayerofCSwere obtainedinthismanner. TocoatwithCSandSAusingtheLBLmethod,theCS-coatedPLAfiberswerefirstimmersedin 1%SAsolutionandstirredfor1minatroomtemperature,afterwhichthePLAfiberswererinsedthree Fibers2018,6,84 3of12 timeswithdistilledwater. CS-coatedPLAfiberscoatedwithSAthroughelectrostaticinteractionswith CSwereproducedinthismanner. ThePLAfibersformedinthismannerwerethenimmersedin1%CSsolutiona ers2018,6,84 3of12 timeswithdistilledwater. CS-coatedPLAfiberscoatedwithSAthroughelectrostaticinteractionswith CSwereproducedinthismanner. ThePLAfibersformedinthismannerwerethenimmersedin1%CSsolutionandstirredfor 1minatroomtemperature,afterwhichthePLAfiberswererinsedthreetimeswithdistilledwaterto giveCS/SA/CS-coatedPLAfibers. Multilayer-coatedPLAfiberswereproducedbyrepeatingthesesteps. Thesequencewasrepeated inamannerthatensuredthatthefinalcoatinglayerwascomposedofCS.Thecoatingprocedureis schematicallydisplayedinFigure1,whilethenumbersofthecoatinglayersonthevarioussamples aresummarizedinTable2. Preformed PLA samples were treated under a variety of conditions to investigate the effect of plasma treatment and the LBL method on the surface of the samples. Tables 1 and 2 show the conditionsusedfortheplasmatreatmentandtheLBLmethod,respectively. Table1.ConditionsusedfortheplasmatreatmentconditionofPLAfibers. Sample Power(W) Time(s) P1 100 60 P2 100 300 P3 100 1800 P4 200 60 P5 200 300 P6 200 1800 Table2.Conditions(C1-C5)usedduringtheCScoatingoftheP1PLA-fibersample. Sample NumberofCSLayers CSContent(%) ThicknessoftheCSLayer(nm) C1 1 0.331 31.5 C2 3 0.377 35.9 C3 5 0.585 55.8 C4 10 0.730 69.7 C5 15 1.083 103.7 Figure1.TheLBLmethodusedtoCS-coatthePLAfibers. 2.3. TensileTesting The tensile strengths and strains of the prepared fibers were measured according to the Japanese Industrial Standard (JIS) 1013-8.5 methods using an STA-1150 universal testing machine (OrientecCo.,Ltd.,Tokyo,Japan). Samplesfortestingwerecuttotheappropriatelengthandattached Fibers2018,6,84 4of12 topaper. Theinitialsamplelengthwas10mm,andthestretchingratewas10.0mm/min. Theforce at the breaking point was measured as tensile stress, which was converted into tensile strength. Dataobtainedweretheaveragesoffifteentests. 2.4. SurfaceCharacterization ThesurfacemorphologiesofthesampleswereinvestigatedbySEM(JSM-6700microscope,JEOL, Tokyo, Japan). Allsampleswerevacuum-driedovernightanddepositedonplatinumfoilpriort ntests. 2.4. SurfaceCharacterization ThesurfacemorphologiesofthesampleswereinvestigatedbySEM(JSM-6700microscope,JEOL, Tokyo, Japan). Allsampleswerevacuum-driedovernightanddepositedonplatinumfoilpriorto SEM.TheCScoatingsonthesurfacesofthePLAfiberswereexaminedbyXPS(ESCA-3400,Kratos AnalyticalLtd.,Manchester,UK)fittedwithamonochromaticMg-KαX-raysource,at10kVand20mA. SpectraintheC1s(300-276.9eV),O1s(524.9-543eV),andN1s(410-389.9eV)binding-energyranges wereacquired. TheC1speakwasseparatedtothreepeaksaccordingtothechemicalcomponents asfollows: hydrocarbonmainchain(C-C)at285.0eV,ether(C-O)at286.5eV,andester(COO)at 289.2eV.TocomparetheamountsofCSinthevarioussamples,theester(COO/C)andamine(N/C) ratioswerecalculatedusingEquations(1)and(2): COOpeakintensityat289.2eV ester(COO/C) = , (1) C−Cpeakintensityat285.0eV C−NHpeakintensityat400.0eV amino(N/C) = . (2) C−Cpeakintensityat285.0eV 2.5. DeterminingtheAmountofCS The Kjeldahl method for the quantitative analysis of nitrogen was used to determine the CS content on the PLA fiber. The samples were vacuum-dried at room temperature overnight prior toanalysis. The sample was degraded in the first step, as follows. A 0.2 g sample was decomposed in a Kjeldahlflaskwith10mLofconcentratedH SO and3gofthecatalyst(9:1K SO :CuSO )at500◦C 2 4 2 4 4 for3h;ifcoloredatthisstage,hydrogenperoxide(35vol%)wasaddedtothesolutiontodecolorizeit. Thecolorlesssolutionobtainedinthismannerwasthenheatedagainat500◦Cfor1handthencooled toroomtemperature,afterwhich40mLofdeionizedwaterwasadded. The degraded sample was steam-distilled and back-titrated in the second step, as follows. The Kjeldahl flask containing the degraded sample was attached to a steam distillation system and 30% w/v aqueous NaOH was added until the solution turned black, which is an indicator of alkalinity. The sample was steam-distilled for 20 min. The free-NH -trapping solution was 3 prepared by mixing 4 mL of 0.01 M H SO , 26 mL of deionized water, and a small amount of 2 4 ethanolicbromocr lkalinity. The sample was steam-distilled for 20 min. The free-NH -trapping solution was 3 prepared by mixing 4 mL of 0.01 M H SO , 26 mL of deionized water, and a small amount of 2 4 ethanolicbromocresol-green/methyl-redindicatorsolution. Back-titrationwasperformedagainsta standardized0.01MNaOHsolution. TheCSpercentagewascalculatedusingEquations(3)and(4): DDA 100 −DDA MW = MW × + MW × , (3) CTS GlcN GlcNAc 100 100 MW × (C ×V −2 × C × V ) chitosancontent(%) = CTS H2SO4 H2SO4 NaOH NaOH , (4) W whereMW isthemolecularweightoftheCSunit(g/mol),MW isthemolecularweightof CTS GlcN theglucosamineunit,MW isthemolecularweightoftheN-acetylglucosamineunit,Cisthe GlcNAc concentration of the H SO or NaOH solution (mol/L), V is the volume of the H SO or NaOH 2 4 2 4 solution(L),andWistheweightofthetestedsample(g). Fibers2018,6,84 5of12 2.6. DegradationTestinginPBSSolution ThePLAfiberswereimmersedforfivemonthsinphosphate-bufferedsaline(PBS,pH7.2)solution at37◦C.Attheendofthisperiod,thesampleswererinsedthreetimeswithdistilledwateranddried at35◦C.ThedegradationratewascalculatedfromtheweightusingEquation(5): W − W weightchangerate(%) = 0 1 × 100, (5) W 0 whereW andW aretheweightsoftheinitialanddegradedPLAfibers,respectively. 0 1 ThedegradedPLAfibersweretensile-testedandexaminedbySEMasdescribedinSections2.3and2.4. 3. ResultsandDiscussion 3.1. TensileTesting 3.1.1. Plasma-TreatedPLAFibers Figure 2 displays the tensile stresses and strains of the various plasma-treated PLA fibers. TheaveragetensilestressesofsamplesP1-P6were359,345,334,378,359and15.7MPa,respectively. OtherthanP6,thetensilestressesofthesampleswereslightlyhigherthanthat(312MPa)oftheoriginal PLA fiber; however, the differences were not significant. Fibers treated for longer times exhibited decreasedtensilestrengths. Inparticular,thetensilestrengthofP6wasextremelylow,withastress ofabout15.7MPa,whichisascribabletotheobservationthatP6meltedwhenexposedtotheheat producedduringhigh-powerplasmatreatmentforlongtimes;clearly,PLAisdama thetensilestrengthofP6wasextremelylow,withastress ofabout15.7MPa,whichisascribabletotheobservationthatP6meltedwhenexposedtotheheat producedduringhigh-powerplasmatreatmentforlongtimes;clearly,PLAisdamagedbylongplasma treatments. Theaveragestrainofeachsamplewasalmostidenticaltothatoftheoriginal(untreated) fiber. However,P3-P6showedlowervaluesthanP1andP2,becausePLAfibersgotdamagedunder treatmentwithahighpowerof200Woralongtimeof30min. Theseresultsrevealthatthestrengths andstrainsofthePLAfibersarenotaffectedbyplasmatreatmentundertheappropriateconditions, namely,treatmentatlowpowerforshorttimes. Figure2.Tensilestressesandstrainsoftheplasma-treatedPLAfibers. 3.1.2. CS-CoatedPLAFibersPreparedbytheLBLMethod Figure 3 displays the tensile strengths and strains of the CS-coated PLA fibers based on P1, whichwerechosenbasedontheresultspresentedinSections3.1.1and3.2.1(seebelow). Theaverage tensile strengths of samples C1-C5 were 346, 341, 328, 325, and 341 MPa, respectively, with C1 exhibitingthesametensilestrengthandstrainastheoriginalPLAfiber. Thetensilestrengthsand Fibers2018,6,84 6of12 strains of C2-C5 were almost identical to that of the original fiber, despite the different number of coating layers. Therefore, all samples prepared by the LBL method have equivalent flexibility comparablewiththatoftheoriginalPLAfiber,whichconfirmsthattheLBLmethodneitherdamages thePLAfibersnordoesitadverselyaffecttheirmechanicalproperties. Figure3.TensilestressesandstrainsoftheCS-coatedPLAfibersbasedonP1. 3.2. SurfaceCharacterization 3.2.1. Plasma-TreatedPLAFibers SEMimagesoftheplasma-treatedPLAfibers(P1-P6)aredisplayedinFigure4. P1exhibiteda smoothsurfacesimilartothatoftheoriginalPLAfiber. ThesurfacesofthePLAfibersplasma-treated forlongertimeswereincreasinglyroughcomparedwiththatofP1,especiallyP6. Thefiberdiameters oftheP1-P5sampleswereabout19µm,whilethatofP6wasabout74µm,aresultofitspartialmelting duringplasmatreatment,aspreviouslydiscussed;thischangeindiameterresultedinadecreasein tensilestre Thefiberdiameters oftheP1-P5sampleswereabout19µm,whilethatofP6wasabout74µm,aresultofitspartialmelting duringplasmatreatment,aspreviouslydiscussed;thischangeindiameterresultedinadecreasein tensilestrength. WeconfirmedthatthesurfacesofthePLAfibersweredamagedbyplasmatreatment athighpowerforlongtimes. Wanetal.[31]reportedasimilarbehavior,inthatthemodifyingdepth onPLAincreasedwithincreasingplasmatreatmenttime. Inaddition,Dingetal.[12]reportedthat theamountofcoated-CSonPLAbyplasmatreatmentdidnotchangeevenfortreatmentdurations exceeding1min. Consequently,theplasmatreatmentconditionsusedtopreparetheP1fiberswere determined to be optimum for their further coating with CS; thus, all CS-coated PLA fibers were preparedfromP1. Figure4. SEMimagesofplasma-treatedPLAfibers: (a)untreatedPLAfiber;(b)P1;(c)P2;(d)P3; (e)P4;(f)P5;and(g)P6(magnification:5000×,scalebar:5µm). Fibers2018,6,84 7of12 3.2.2. CS-CoatedPLAFibersPreparedbytheLBLMethod SEM images of the CS-coated PLA fibers are displayed in Figure 5. C1 exhibited a smooth surface similar to that of the original (untreated) PLA fiber. The surfaces of the remaining fibers becameincreasinglyroughwithincreasingnumbersofcoatinglayers,especiallyC4andC5. However, theCS-coatedfiberswereconfirmedtobeuniformlycoatedwithCS,asdeterminedbytheattachment ofeachfiber,thepresenceofCS,andpartialCScoatingsonthePLAsurfaces.Inaddition,thediameters ofthefiberswereunchangedfollowingCScoating,despitethePLAsurfacesbeingcoatedwith30layers ofCSandSAinthecaseofC5,whichconfirmsthattheCSandSAlayersareverythinanduniform. Figure5.SEMimagesofCS-coatedPLAfibers:(a)untreatedPLAfiber;(b)C1;(c)C2;(d)C3;(e)C4; and(f)C5(magnification:5000×,scalebar:5µm). The nitrogen-to-carbon (N/C) ratios of the CS-coated PLA fibers were determined by XPS, theresults ofwhicharedisplayedin Figure6. Theamountof CScoatingonthePLAsurfacewas determinedbymeasuringthenitrogenandcarboncontents,asamidegroupsarepresentonlyinthe structureofCSandnotinthePLA.ThenitrogencontentoftheoriginalPLAfiber Figure6. Theamountof CScoatingonthePLAsurfacewas determinedbymeasuringthenitrogenandcarboncontents,asamidegroupsarepresentonlyinthe structureofCSandnotinthePLA.ThenitrogencontentoftheoriginalPLAfiberwasalsodetermined becauseaplasticizerisusuallyaddedduringthepreparationofPLA.However,theplasticizercontent doesnotinfluenceotherdatabecausethePLAsurfacewasdeterminedtohaveanN/Cratioofonly 0.005andiscoveredbytheCSlayer. TheC1sampleexhibitedahigherN/Cratiocomparedtothat of the original PLA fiber. While the N/C ratios were higher in C2-C5 than C1, these samples all exhibitedsimilarN/Cratios. ThisobservationrevealsthattheLBLmethodproduceshomogeneous CScoatings,sinceXPSexaminesthetopsurfaceandtheC2samplealreadycontainsahomogeneous CSlayer. TheseresultssuggestthatplasmatreatmentandtheLBLmethodeffectivelycoatthePLA fiberswithCS. Figure6.Nitrogen-to-carbon(N/C)ratiosoftheCS-coatedPLAfibersdeterminedbyXPS. Fibers2018,6,84 8of12 3.3. NitrogenAnalysis Figure7showstheCSpercentagescalculatedfromtheamountofnitrogendeterminedbythe Kjeldahlmethod. SincetheoriginalPLAfibercontainsnitrogen,theCSamountsoftheCS-coatedPLA fiberswerecalculatedafterthesubtractionofthisnitrogencontent,andweredeterminedtobe0.33%, 0.38%,0.58%,0.73%,and1.08%forC1-C5,respectively. C1,withonlyoneCSlayer,displayedalarger stepinCScontentthanthoseoftheothersamplesbecauseC1wasformedbydirectCScoatingon theplasma-treatedPLAsurface. Theseresultssuggestthatplasmatreatmentfacilitatestheefficient coatingofthePLAsurfacebyCS.TheamountofCSwasobservedtoincreaseproportionatelywith thenumberofCS-coatinglayers;thisalsoagreeswithsimilarresultsforCS/Alginatemultilayerfilms obtainedbyGabrielaetal.[32]. Inaddition,C5containedover1.0wt%CS. Figure7.AmountofCS,calculatedfromtheKjeldahl-determinedamountofnitrogen,asafunctionof thenumberofCSlayers. Table 2 lists the thicknesses of the CS layers calculated from the Kjeldahl-determined data. ThecoatingthicknessesofC1-C5werefoundtobe31.5,35.9,55.8,69.7and103.7nm,respectively. Clearly,theCSandS ers. Table 2 lists the thicknesses of the CS layers calculated from the Kjeldahl-determined data. ThecoatingthicknessesofC1-C5werefoundtobe31.5,35.9,55.8,69.7and103.7nm,respectively. Clearly,theCSandSAlayersareverythinanduniform,anddonotaffectthetensilepropertiesofthe fibers;allsamplesexhibitsimilarmorphologiesbySEM.TheseresultsconfirmthattheLBLmethod improvestheamountofCSonthefibers. 3.4. DegradationTesting Figures8-10displaytheratesofweightchange,SEMimages,andtensilestrengths,respectively, of P1, P3, C3, and C5. Figures 8 and 9 reveal that all degraded samples exhibited at least 95% of their original weights and retained their shapes after five months of immersion in PBS solution. TheobserveddecreasesinweightindicatethatthePLAsamplesbecomehydrolyzedinPBSovertime. No samples could be retrieved from the PBS solution when immersed for longer than six months becausethePLAfibershadcollapsedbyhydrolysis. TheCS-coatedfibersappearedtobeslightlymore stablethantheuncoatedplasma-treatedfibers,becausethepolyelectrolytelayersofCSandSAhad lowsolubility. However,thedifferenceinstabilitywasnotsignificant;thus,itwasconcludedthatthe degradabilityofthefibercoatedwithCSandSAwasmaintained. Fibers2018,6,84 9of12 Figure8.RatesofweightchangeofvariousfibersinPBS. Figure9. SEMimagesofPLAfibers: (a)P1; (b)P3; (c)C3; and(d)C5beforedegradationtesting; and(e)P1;(f)P3;(g)C3;and(h)C5aftersixmonthsinPBS(magnification:5000×,scalebar:5µm). TheSEMimagesrevealthatthePLAsurfaces,aswellasthefiberdiameters,changedlittleafter six months of immersion in PBS solution. We suggest that the observed weight losses are due to internalfiberhydrolysis. Thetensilestrengthsofthedegradedsamplesatthreeandfourmonthswere 90%and80%ofthoseoftheoriginalPLAfiber,respectively. Theratesofweightchangeofthesamples decreasedenormouslyoverfivemonths,andthesamplesdegradedforsixmonthsweretooweakto subjecttotensiletesting;however,theirsurfacemorphologiesdidnotchangeasextensivelyastheir tensileproperties. WesuggestthatthePLAmolecule slyoverfivemonths,andthesamplesdegradedforsixmonthsweretooweakto subjecttotensiletesting;however,theirsurfacemorphologiesdidnotchangeasextensivelyastheir tensileproperties. WesuggestthatthePLAmoleculesreducetheirmolecularweightsbyhydrolysis. Moreover,thedegradationbehaviorofallsampleswassimilar. Theexistenceornotofacoatingonthe PLAfiberdidnotappeartoinfluencethedegradationofthefiber,whichisascribabletotheextremely thincoating,asevidencedbynitrogenanalysisandSEM.TheseresultsconfirmthatthesePLAfibers areresistanttoPBSforfourmonthsanddegradeoverlongtimes. Fibers2018,6,84 10of12 Figure10.Tensilepropertiesofthedegradedsamples. 4. Conclusions Novel CS-coated PLA fibers were prepared by plasma treatment and the LBL method. SEM, tensiletesting,andXPSrevealthatplasmatreatmentfacilitatesthedamage-freeandeffectivecoating of PLA with CS. In particular, PLA fibers treated with plasma at 100 W for 60 s exhibit almost identical properties to those of the original PLA fibers. Nitrogen analysis revealed that the LBL method effectively increased the amount of coated CS; moreover, the mechanical strengths of the obtainedfibersweremaintainedfollowingcoatingwithCS.ThesePLAfiberswereresistanttoPBS forfourmonthsduringdegradationtesting. Inaddition,thesesamplesexhibitedsimilardegradation behavior; PLA hydrolysis was unaffected by the presence or absence of the extremely thin ionic polymer. ThepresenceofCSonPLAfiberisexpectedtoimprovethesurfacepropertyofthefiber, owingtotheantibacterialandwound-healingabilitiesofCS.Therefore,theseCS-coatedPLAfibers aresuitableforuseinbiomaterialsapplicationsassuturethreads. AuthorContributions:T.F.andH.T.designedexperiments.D.K.andR.I.performedtheexperiments.D.K.wrote themanuscript. Acknowledgments:ThisworkwasfinanciallysupportedbyPrivateUniversityResearchBrandingProject,MEXT, 2016-2020andinpartbytheKansaiUniversityOutlaySupportforEstablishingResearchCenters,2016−2017. \"Developmentandapplicationofbiocompatiblepolymermaterialshavingsol-geltransition\". Confli ingProject,MEXT, 2016-2020andinpartbytheKansaiUniversityOutlaySupportforEstablishingResearchCenters,2016−2017. \"Developmentandapplicationofbiocompatiblepolymermaterialshavingsol-geltransition\". ConflictsofInterest:Theauthorsdeclarenoconflictofinterest. References 1. Tomita,K.;Kuroki,Y.;Nagai,K.Isolationofthermophilesdegradingpoly(L-lacticacid). J.Biosci. Bioeng. 1999,87,752-755.[CrossRef] 2. Ikada, Y.; Tsuji, H. Biodegradable polyesters for medical and ecological applications. Macromol.RapidCommun.2000,21,117-132.[CrossRef] 3. Tsuji,H.;Ikada,Y.Blendsofaliphaticpolyesters.II.Hydrolysisofsolution-castblendsfrompoly(L-lactide) andpoly(ε-caprolactone)inphosphate-bufferedsolution.J.Appl.Polym.Sci.1998,67,405-415.[CrossRef] 4. Lunt, J. Large-scale production, properties and commercial applications of polylactic acid polymers. Polym.Degrad.Stabil.1998,59,145-152.[CrossRef] 5. Saravanan, M.; Domb, A.J. A contemporary review on--Polymer stereocomplexes and its biomedical application.Eur.J.Nanomed.2013,5,81-96.[CrossRef] Fibers2018,6,84 11of12 6. Jain,R.A.Themanufacturingtechniquesofvariousdrugloadedbiodegradablepoly(lactide-co-glycolide) (PLGA)devices.Biomaterials2000,21,2475-2490.[CrossRef] 7. Mikos,A.G.;Lyman,M.D.;Freed,L.E.;Langer,R.Wettingofpoly(L-lacticacid)andpoly(DL-lactic-co-glycolic acid)foamsfortissueculture.Biomaterials1994,15,55-58.[CrossRef] 8. Nagahama, K.; Mori, Y.; Ohya, Y.; Ouchi, T. Biodegradable nanogel formation of polylactide-grafted dextran copolymer in dilute aqueous solution and enhancement of its stability by stereocomplexation. Biomacromolecules2007,8,2135-2141.[CrossRef][PubMed] 9. Rasal,R.M.;Janorkar,A.V.;Hirt,D.E.Poly(lacticacid)modifications. Prog. Polym. Sci. 2010,35,338-356. [CrossRef] 10. Furuike,T.;Nagahama,H.;Chaochai,T.;Tamura,H.Preparationandcharacterizationofchitosan-coated poly(L-lacticacid)fibersandtheirbraidedrope.Fibers2015,3,380-393.[CrossRef] 11. Zhu, A.; Zhang, M.; Wu, J.; Shen, J. Covalent immobilization of chitosan/heparin compl characterizationofchitosan-coated poly(L-lacticacid)fibersandtheirbraidedrope.Fibers2015,3,380-393.[CrossRef] 11. Zhu, A.; Zhang, M.; Wu, J.; Shen, J. Covalent immobilization of chitosan/heparin complex with a photosensitivehetero-bifunctionalcrosslinkingreagentonPLAsurface. Biomaterials2002,23,4657-4665. [CrossRef] 12. Ding,Z.;Chen,J.;Gao,S.;Chang,J.;Zhang,J.;Kang,E.T.Immobilizationofchitosanontopoly-L-lactic acidfilmsurfacebyplasmagraftpolymerizationtocontrolthemorphologyoffibroblastandlivercells. Biomaterials2004,25,1059-1067.[CrossRef] 13. Tsuji, H.; Ishida, T. Poly(L-lactide). X. Enhanced surface hydrophilicity and chain-scission mechanisms of poly(L-lactide)filminenzymatic,alkali,andphosphate-bufferedsolutions.J.Appl.Polym.Sci.2003,87,1628-1633. [CrossRef] 14. Park, G.E.; Pattison, M.A.; Park, K.; Webster, T.J. Accelerated chondrocyte functions on NaOH-treated PLGAscaffolds.Biomaterials2005,26,3075-3082.[CrossRef][PubMed] 15. Nagahama,H.; Nwe,N.; Jayakumar,R.; Koiwa,S.; Furuike,T.; Tamura,H.Novelbiodegradablechitin membranesfortissueengineeringapplications.Carbohyd.Polym.2008,73,295-302.[CrossRef] 16. Tamura,H.;Nagahama,H.;Tokura,S.Preparationofchitinhydrogelundermildconditions.Cellulose2006, 13,357-364.[CrossRef] 17. Jayakumar,R.;Menon,D.;Manzoor,K.;Nair,S.V.;Tamura,H.Biomedicalapplicationsofchitinandchitosan basednanomaterials--AshortReview.Carbohyd.Polym.2010,82,227-232.[CrossRef] 18. Anitha,A.;Rani,V.V.D.;Krishna,R.;Sreeja,V.;Selvamurugan,N.;Nair,S.V.;Tamura,H.;Jayakumar,R. Synthesis, characterization, cytotoxicity and antibacterial studies of chitosan, O-carboxymethyl and N,O-carboxymethylchitosannanoparticles.Carbohyd.Polym.2009,78,672-677.[CrossRef] 19. Carvalho,C.R.;López-Cebral,R.;Silva-Correia,J.;Silva,J.M.;Mano,J.F.;Silva,T.H.;Freier,T.;Reis,R.L.; Oliveira, J.M. Investigation of cell adhesion in chitosan membranes for peripheral nerve regeneration. Mater.Sci.Eng.C2017,71,1122-1134.[CrossRef][PubMed] 20. Dodane,V.;Vilivalam,V.D.Pharmaceuticalapplicat ira, J.M. Investigation of cell adhesion in chitosan membranes for peripheral nerve regeneration. Mater.Sci.Eng.C2017,71,1122-1134.[CrossRef][PubMed] 20. Dodane,V.;Vilivalam,V.D.Pharmaceuticalapplicationsofchitosan.Pharm.Sci.Technol.Today1998,1,246-253. [CrossRef] 21. Jayakumar, R.; Prabaharan, M.; Kumar, P.T.S.; Nair, S.V.; Tamura, H. Biomaterials based on chitin and chitosaninwounddressingapplications.Biotechnol.Adv.2011,29,322-337.[CrossRef][PubMed] 22. Chen,Y.;Javvaji,V.;MacIntire,I.C.;Raghavan,S.R.Gelationofvesiclesandnanoparticlesusingwater-soluble hydrophobicallymodifiedchitosan.Langmuir2013,29,15302-15308.[CrossRef][PubMed] 23. Davis,T.A.;Llanes,F.;Volesky,B.;Diaz-Pulido,G.;McCook,L.;Mucci,A.1H-NMRstudyofNaalginates extractedfromsargassumspp. inrelationtometalbiosorption. Appl. Biochem. Biotech. 2003,110,75-90. [CrossRef] 24. Gomez, C.G.; Lambrecht, M.V.P.; Lozano, J.E.; Rinaudo, M.; Villar, M.A. Influence of the extraction-purification conditions on final properties of alginates obtained from brown algae (Macrocystispyrifera).Int.J.Biol.Macromol.2009,44,365-371.[CrossRef][PubMed] 25. Tamura,H.;Tsuruta,Y.;Tokura,S.Preparationofchitosan-coatedalginatefilament.Mater.Sci.Eng.C2002, 20,143-147.[CrossRef] 26. Lee,K.Y.;Mooney,D.J.Alginate:Propertiesandbiomedicalapplications.Prog.Polym.Sci.2012,37,106-126. [CrossRef][PubMed] 27. Zhang,M.;Lin,H.;Shen,L.;Liao,B.-Q.;Wu,X.;Li,R.Effectofcalciumionsonfoulingpropertiesofalginate solutionanditsmechanisms.J.Membr.Sci.2017,525,320-329.[CrossRef] Fibers2018,6,84 12of12 28. Ariga,K.;Hill,J.P.;Ji,Q.Layer-by-layerassemblyasaversatilebottom-upnanofabricationtechniquefor exploratoryresearchandrealisticapplication. Phys. Chem. Chem. Phys. 2007,9,2319-2340. [CrossRef] [PubMed] 29. Antipov,A.A.;Sukhorukov,G.B.;Donath,E.;Mohwald,H.Sustainedreleasepropertiesofpolyelectrolyte multilayercapsules.J.Phys.Chem.B2001,105,2281-2284.[CrossRef] 30. Kyung,W.K.-H.;Kim,S.-H.;Siratori,S.Preparationandcharacterizationofantithrombogenicchitosan/algin edreleasepropertiesofpolyelectrolyte multilayercapsules.J.Phys.Chem.B2001,105,2281-2284.[CrossRef] 30. Kyung,W.K.-H.;Kim,S.-H.;Siratori,S.Preparationandcharacterizationofantithrombogenicchitosan/alginate filmswithenhancedphysicalstabilitybycross-linkingusinglayer-bylayer.MATECWebConf.2013,4,05008. [CrossRef] 31. Wan,Y.;Tu,C.;Yang,J.;Bei,J.;Wang,S.Influencesofammoniaplasmatreatmentonmodifyingdepthand degradationofpoly(L-lactide)scaffolds.Biomaterials2006,27,2699-2704.[CrossRef][PubMed] 32. Martins, G.V.; Merino, E.G.; Mano, J.F.; Alves, N.M. Crosslink Effect and Albumin Adsorption onto Chitosan/AlginateMultilayeredSystems:AninsituQCM-DStudy.Macromol.Biosci.2010,10,1444-1455. [CrossRef][PubMed] ©2018bytheauthors.LicenseeMDPI,Basel,Switzerland.Thisarticleisanopenaccess articledistributedunderthetermsandconditionsoftheCreativeCommonsAttribution (CCBY)license(http://creativecommons.org/licenses/by/4.0/)."
+}

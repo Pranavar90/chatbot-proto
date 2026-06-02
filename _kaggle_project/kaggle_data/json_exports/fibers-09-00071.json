@@ -1,0 +1,319 @@
+{
+  "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+  "filename": "fibers-09-00071.pdf",
+  "doc_type": "paper",
+  "material_name": "fibers",
+  "extraction_confidence": 0.9249999999999999,
+  "methodology": "The fibers and composites were produced using compression molding technique, and their morphological properties were studied with SEM.",
+  "research_objective": "To reinforce high-density polyethylene (HDPE) matrix with treated jute fiber (JF)/oil palm pressed fruit fibers (OPPF) at varying weight proportions.",
+  "key_findings": [
+    {
+      "finding": "20 wt.% treated jute fiber addition shows the most significant enhancements in tensile and flexural properties.",
+      "confidence": 0.95
+    },
+    {
+      "finding": "Surface modification of JF/OPPF hybridization on HDPE matrix composite exposed the effect of surfacemodification.",
+      "confidence": 0.95
+    },
+    {
+      "finding": "Alkaline/silanetreatment improves interfacial adhesion between jute and matrix material, leading to enhanced mechanical properties.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "Blending of jute and oil palm fibers (treated with alkaline/silanetreatment) can improve the properties and performance of polymer matrices.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "Hybridization of jute and oil palm fiber with high-density polyethylene (HDPE) improved the mechanical properties of the resulting HDPE/JF/OPPF hybrid composites.",
+      "confidence": 0.95
+    },
+    {
+      "finding": "The tensile and flexural properties of the produced composites were evaluated using a universal tester (Instron3369model) following ASTM standards.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "Three identical samples were evaluated to obtain an average value for each composition, indicating reproducibility in testing conditions.",
+      "confidence": 1.0
+    }
+  ],
+  "processing_conditions": [],
+  "properties_count": 25,
+  "properties": [
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "Flexural strength",
+      "value": "Not specified in the text, but it was observed that 20 wt.% treated jute fiber addition shows the most significant enhancements in flexural properties.",
+      "unit": "",
+      "confidence": 0.95,
+      "context": "From the results of the study",
+      "created_at": "2026-04-26T00:03:11.589143"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "glass transition temperature (Tg)",
+      "value": "<not specified>",
+      "unit": "°C",
+      "confidence": 1.0,
+      "context": "Not explicitly mentioned in the provided text.",
+      "created_at": "2026-04-26T00:03:11.703108"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "impact strength",
+      "value": "<not specified>",
+      "unit": "J/m²",
+      "confidence": 1.0,
+      "context": "Not explicitly mentioned in the provided text.",
+      "created_at": "2026-04-26T00:03:11.766738"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "tensile strength",
+      "value": "<not specified>",
+      "unit": "MPa",
+      "confidence": 0.95,
+      "context": "tensile test was carried out to evaluate the ultimate tensile strength, tensile modulus,andtensilestrength",
+      "created_at": "2026-04-26T00:03:11.994501"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "ultimate tensile strength",
+      "value": "<not specified in the provided text>",
+      "unit": "MPa",
+      "confidence": 1.0,
+      "context": "evaluated using a universal tester (Instron3369model) following ASTM D636 at room temperature (25°C), strain rate of 5 mm/min, and relative humidity of 40%",
+      "created_at": "2026-04-26T00:03:12.188596"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "flexural modulus",
+      "value": "<not specified in the provided text>",
+      "unit": "GPa",
+      "confidence": 1.0,
+      "context": "carried out with the aid of a universal testing machine following ASTM D790 at three-point bend fixtures at a rate of 10 mm/min",
+      "created_at": "2026-04-26T00:03:12.322125"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "tensile strain",
+      "value": "<not specified in the provided text>",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "evaluated using a universal tester (Instron3369model) following ASTM D636 at room temperature (25°C), strain rate of 5 mm/min, and relative humidity of 40%",
+      "created_at": "2026-04-26T00:03:12.288064"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "Tensile strength",
+      "value": "Not specified in the text, but it was observed that 20 wt.% treated jute fiber addition shows the most significant enhancements in tensile properties.",
+      "unit": "",
+      "confidence": 0.95,
+      "context": "From the results of the study",
+      "created_at": "2026-04-26T00:03:11.544132"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "flexural strength increase",
+      "value": "increase in flexural modulus with a corresponding decrease in impact and flexural strengths",
+      "unit": "<none>",
+      "confidence": 1.0,
+      "context": "Flexural modulus increased when oil palm empty fruit bunch (OPF) fibers were added to unplasticized polyvinyl chloride (PVC)",
+      "created_at": "2026-04-26T00:03:11.963258"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "ultimate flexural strength",
+      "value": "<not specified in the provided text>",
+      "unit": "MPa",
+      "confidence": 1.0,
+      "context": "carried out with the aid of a universal testing machine following ASTM D790 at three-point bend fixtures at a rate of 10 mm/min",
+      "created_at": "2026-04-26T00:03:12.221711"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "fiber content (wt%)",
+      "value": "10-30",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "Tensile strength reduced from 3.4-24.3% while flexural strength appreciated by 4-8.6%",
+      "created_at": "2026-04-26T00:03:11.862423"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "Young's modulus",
+      "value": "<not specified>",
+      "unit": "GPa",
+      "confidence": 0.95,
+      "context": "tensile test was carried out to evaluate the ultimate tensile strength, tensile modulus,andtensilestrength",
+      "created_at": "2026-04-26T00:03:12.027545"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "melting point of HDPE",
+      "value": "130 °C",
+      "unit": "",
+      "confidence": 0.95,
+      "context": "High-density polyethylene(HDPE)pelletswithameltflowindex(MFI)of8g/10min(XZ89712-00RD 10140182040), a molecular weight of 168,000 g mol−1, a melting point of 130 ◦C, and a densityof0.954gcm−3wassuppliedbyDOWChemicals,SouthAfrica[24]",
+      "created_at": "2026-04-26T00:03:12.060492"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "fiber loading",
+      "value": "<not specified>",
+      "unit": "% (wt.)",
+      "confidence": 0.95,
+      "context": "Mixing OPPFFiber and JF with HDPE matrix in a tumble mixer for 30 min to obtain a homogeneous mixture",
+      "created_at": "2026-04-26T00:03:12.124017"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "mechanical property reduction",
+      "value": "3.4-24.3%",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "Tensile strength reduced from 3.4-24.3% when jute fiber content increased from 10-30 wt.%",
+      "created_at": "2026-04-26T00:03:11.797844"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "Aspect ratio",
+      "value": "Not specified in the text, but it was observed that treated jute fiber addition shows significant enhancements in tensile and flexural properties.",
+      "unit": "",
+      "confidence": 0.95,
+      "context": "From the results of the study",
+      "created_at": "2026-04-26T00:03:11.670088"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "Surface morphology",
+      "value": "Obvious exposure of the fiber surface and removal of impurities as influenced the microstructure of the composites.",
+      "unit": "",
+      "confidence": 0.95,
+      "context": "From the results of the study",
+      "created_at": "2026-04-26T00:03:11.636325"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "chemical treatment (alkali/silanetreatment)",
+      "value": "<not specified>",
+      "unit": "<none>",
+      "confidence": 1.0,
+      "context": "Alkaline/silanetreatment was used to improve interfacial adhesion between fibers and matrix material",
+      "created_at": "2026-04-26T00:03:11.929227"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "flexural strength",
+      "value": "<not specified>",
+      "unit": "MPa",
+      "confidence": 1.0,
+      "context": "Not explicitly mentioned in the provided text.",
+      "created_at": "2026-04-26T00:03:11.735752"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "mechanical property increase",
+      "value": "4-8.6%",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "Flexural strength appreciated by 4-8.6% when jute fiber content increased from 10-30 wt.%",
+      "created_at": "2026-04-26T00:03:11.831076"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "fiber content (wt%) in polypropylene matrix",
+      "value": "20",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "Samples containing 20 wt.% jute fiber had higher mechanical properties than others with fire retardants",
+      "created_at": "2026-04-26T00:03:11.895151"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "flexural strain",
+      "value": "<not specified in the provided text>",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "carried out with the aid of a universal testing machine following ASTM D790 at three-point bend fixtures at a rate of 10 mm/min",
+      "created_at": "2026-04-26T00:03:12.356527"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "density of HDPE",
+      "value": "0.954 g/cm³",
+      "unit": "",
+      "confidence": 0.95,
+      "context": "High-density polyethylene(HDPE)pelletswithameltflowindex(MFI)of8g/10min(XZ89712-00RD 10140182040), a molecular weight of 168,000 g mol−1, a melting point of 130 ◦C, and a densityof0.954gcm−3wassuppliedbyDOWChemicals,SouthAfrica[24]",
+      "created_at": "2026-04-26T00:03:12.091496"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "aspect ratio of treated fibers",
+      "value": "<not specified>",
+      "unit": "-",
+      "confidence": 0.95,
+      "context": "Untreated jute fibers were also oven-dried at 60°C for 4h while the Jute fibers were treated by soaking in 1.3M NaOH at 26°C for 12h",
+      "created_at": "2026-04-26T00:03:12.156419"
+    },
+    {
+      "doc_id": "f465ceec-2a23-4619-a9d7-3398e98e242a",
+      "filename": "fibers-09-00071.pdf",
+      "material_name": "fibers",
+      "property_name": "tensile modulus",
+      "value": "<not specified in the provided text>",
+      "unit": "GPa",
+      "confidence": 1.0,
+      "context": "evaluated using a universal tester (Instron3369model) following ASTM D636 at room temperature (25°C), strain rate of 5 mm/min, and relative humidity of 40%",
+      "created_at": "2026-04-26T00:03:12.255956"
+    }
+  ],
+  "source_text": "fibers Article Tensile, Flexural, and Morphological Properties of Jute/Oil Palm Pressed Fruit Fibers Reinforced High Density Polyethylene Hybrid Composites OluyemiOjoDaramola1,* ,OluwatosinAbiodunBalogun1 ,AdeoluAdesojiAdediran2,* , SheriffOlalekanSaka1,IsiakaOluwoleOladele1andEstherTitilayoAkinlabi3,4 1 DepartmentofMetallurgicalandMaterialsEngineering,FederalUniversityofTechnology, Akure340001,Nigeria;tobalogs39@gmail.com(O.A.B.);sheriffsaka@gmail.com(S.O.S.); wolesuccess2000@yahoo.com(I.O.O.) 2 DepartmentofMechanicalEngineering,LandmarkUniversity,Omu-Aran,PMB1001, Omu-Aran251101,Nigeria 3 Directorate,PanAfricanUniversityofLifeSciencesInstitute,Ibadan110115,Nigeria;etakinlabi@gmail.com 4 DepartmentofMechanicalScience,AucklandParkCampus,UniversityofJohannesburg, Johannesburg2006,SouthAfrica * Correspondence:oodaramola@futa.edu.ng(O.O.D.);adediran.adeolu@lmu.edu.ng(A.A.A.); Tel.:+234-816-681-4002(O.O.D.) Abstract: Theincorporationofmaterialsthatwereformallyregardedasagriculturalwastesinto polymericmatrixhasdrawntheattentionofmanyresearchersinrecentyears.Thisresearchfocused (cid:1)(cid:2)(cid:3)(cid:1)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:1) (cid:1)(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7) onreinforcinghigh-densitypolyethylene(HDPE)matrixwithtreatedjutefiber(JF)/oilpalmpressed fruitfibers(OPPFF)atvaryingweightproportions. JFandOPPFFwerecutto2.5mmlengthand Citation: Daramola,O.O.;Balogun, werechemicallytreatedthereafterwith1Mand1.5Msodiumhydroxidesolutionrespectively.The O.A.;Adediran,A.A.;Saka,S.O.; compositeswereproducedusingthecompressionmoldingtechnique.Themorphologicalcharacteri- Oladele,I.O.;Akinlabi,E.T.Tensile, zationofthefibersandcompositesforuntreatedandtreatedsampleswasstudiedwiththeaidof Flexural,andMorphological ascanningelectronmicroscope(SEM).Tensileandflexuralpropertiesoftheproducedcomposite PropertiesofJute/OilPalmPressed sampleswerealsodetermined.Fromtheresult,thesurfacemorphologyofthefiberaftertreatment FruitFibersReinforcedHighDensity showed that exuralpropertiesoftheproducedcomposite PropertiesofJute/OilPalmPressed sampleswerealsodetermined.Fromtheresult,thesurfacemorphologyofthefiberaftertreatment FruitFibersReinforcedHighDensity showed that there was obvious exposure of the fiber surface and removal of impurities as this PolyethyleneHybridComposites. Fibers2021,9,71. https://doi.org/ influencedthemicrostructureofthecompositesandinturnthetensileandflexuralproperties.Hence, 10.3390/fib9110071 itwasobservedthat20wt.%treatedjutefiberadditionshowsthemostsignificantenhancements intermsoftensileandflexuralproperties.Thestudyexposedtheeffectofsurfacemodificationof AcademicEditor:VincenzoFiore JF/OPPFhybridizationonHDPEmatrixcomposite. Received:11February2021 Keywords:high-densitypolyethylene;fibers;composites;tensile;morphology;flexuralproperties Accepted:31August2021 Published:2November2021 Publisher'sNote:MDPIstaysneutral 1. Introduction withregardtojurisdictionalclaimsin The improvements in technology over the years have led to the constant need for publishedmapsandinstitutionalaffil- materialswithimprovedpropertiesforhigh-performanceapplicationssuchasaerospace, iations. structural, automobile, and marine applications. These applications employ the use of compositematerials[1,2]. Acompositeisthecombinationoftwoormoreengineeringma- terialsofclearlydistinctproperties,tocombinetheirattractivepropertieswhileneglecting theirdrawbacks. Thecompositeislargelymadeupoftwophases: thematrixphaseand Copyright: © 2021 by the authors. thereinforcementphase[3]. However,thepolymericmatrixcanbeclassifiedasthermo- Licensee MDPI, Basel, Switzerland. plastics(includehighandlowdensitiespolyethylene,polyvinylchloride,polypropylene, This article is an open access article andpolyethyleneTerephthalate)andthermoset(epoxy,polyester,andvinylester)poly- distributed under the terms and mers [4,5]. Likewise, reinforcing materials such as Kevlar, glass fiber, and carbon fiber conditionsoftheCreativeCommons had also been used in producing comp ster)poly- distributed under the terms and mers [4,5]. Likewise, reinforcing materials such as Kevlar, glass fiber, and carbon fiber conditionsoftheCreativeCommons had also been used in producing composites in the past, these materials improved the Attribution(CCBY)license(https:// propertiesofthematrix,buttheyaredetrimentaltohumanhealthandtheenvironment creativecommons.org/licenses/by/ atlarge. Forthisreason,theattentionofresearchershasbeendrawntotheuseofnatural 4.0/). Fibers2021,9,71.https://doi.org/10.3390/fib9110071 https://www.mdpi.com/journal/fibers Fibers2021,9,71 2of12 fibersfortheproductionofenvironmentallyfriendlyandecoefficientmaterials. Natural fibersarenon-toxic,theyarerenewablewhenusedincompositeproduction,availablein abundance, andtheyimproveservicelifeandperformancewhilereducingenergyand serviceintensity[4,6]. Naturalfiberssuchasjute,bamboo,coir,cotton,dombeyabutneri, hemp,andoilpalmfibershavebeenusedasreinforcementsinrecentresearchbutthese fibers are hydrophilic which has been their main drawback [7-9]. They readily absorb moistureleadingtopoorinterfacialadhesionbetweenthematrixmaterialandtherein- forcementsused. Thisproblemcanleadtopoormechanicalandwearpropertiesofthe composite. Therefore, there is a need to modify the hydrophilic nature of these fibers. Researchershaverecentlyemployedvariouschemicaltreatmentssuchassilanetreatment, benzoylation,acrylation,andalkalitreatment. However,forthisstudy,alkalitreatment wasemployedforthetreatmentofthefibers. Thisisbecausethetreatmentshavebeen reportedtoimprovetheinterfacialadhesionbetweenthefibersandthematrix[7,8]. Fiber likeJuteisabastfiberthatpossessesgoodmechanicalpropertiesthatiscomparabletothat ofglassfiber[10]. Theyareusedforproducingbagsandropesandtheirpropertiescan varybasedontheiroriginandlocation. Whenjutefibersareusedasreinforcementtheyact asthemainload-carryingcomponentsbeingheldtogetherbythematrix[11]. Meanwhile, oilpalmpressedfruit(OPPF)fiberisaproductfromoilpalm(Elaeisguineensis),which is reg njutefibersareusedasreinforcementtheyact asthemainload-carryingcomponentsbeingheldtogetherbythematrix[11]. Meanwhile, oilpalmpressedfruit(OPPF)fiberisaproductfromoilpalm(Elaeisguineensis),which is regarded as an agricultural waste that is available in abundance. According to [12], the production of palm oil throughout the world is increasing yearly. For instance, in 2012/2013,56.38millionmetrictonsofpalmoilwasproducedcomparedto75.45million metrictonsrecordedin2020/2021. Thisseemstosuggestthatoilpalmbyproductpro- ducedhasalsoincreasedovertheyearswhichprovokesmoreproblemsregardinghowto disposeofwastegeneratedduringpalmoilproduction. Insteadofburningordumping oilpalmbiomassinlandfills,theycanberenewedasreinforcementinthepolymermatrix. Throughthis,oilpalmbyproductscanbegiveneconomicvaluebymakingthemusefulin variousengineeringapplications.Pastresearchhasexploredthepossibilityofusingnatural fibersasreinforcementtoimprovethemechanical,physical,andthermalpropertiesofthe polymer. Inabidtoenhancesustainability,astudyby[13]developedpolymercomposite using50%recycledHDPE/50%virginHDPEandmatrixmaterial. Jutefiberwasusedas reinforcementataproportionof10-30wt.%byweightofthematrix,theirresultrevealed thattensilestrengthreducedfrom3.4-24.3%whileflexuralstrengthappreciatedby4-8.6% asthefibercontentincreasedfrom10-30wt.%. Previousresearchemployedtheuseof shortjutefibersasreinforcementsinpolypropylenematrix,sampleswereproducedvia ascrewextrusionprocess. Theresultshowedthatsamplescontaining20wt.%jutefiber hadhighermechanicalpropertiesthanothersampleswithfireretardants(suchasMgO, Al O ,andH PO )[14]. Astudyontheeffectofchemicaltreatmentonthepropertiesof 2 3 3 4 jutefiber/low-densitypolyethyleneby[15]provedthattheuseofalkali/silanetreatment gavethebestenhancementinflexural,tensile,andimpactsstrengthswhenmatchedwith theuntreatedones. Theuseofoilpalmfibershasalsobeeninvestigatedby[16],where theadditionofoilpalmemptyfruitbunchtounplasticizedpolyvinylchlorideshowed anincreaseinflexuralmodulusw rengthswhenmatchedwith theuntreatedones. Theuseofoilpalmfibershasalsobeeninvestigatedby[16],where theadditionofoilpalmemptyfruitbunchtounplasticizedpolyvinylchlorideshowed anincreaseinflexuralmoduluswithacorrespondingdecreaseintheimpactandflexural strength. Hybridizationofoilpalmfiberwithglassfiber[17-19],kaolinite[20],andsisal fiber[21-23]hasbeeninvestigatedtoimprovethepropertiesandperformanceofpolymer matrixinpreviousresearch. Inthepresentstudy,theinfluenceofblendingjuteandOPPF fibers(treatedanduntreated)withhigh-densitypolyethylene(HDPE).Thiswasdoneto determinetheeffectofchemicaltreatmentandfiberloadingonthemechanicalproperties oftheresultantHDPE/JF/OPPFhybridcomposites. 2. MaterialsandMethods The materials used for this research include: oil palm pressed fruit fiber (OPPFF), whichwasextractedfromoilpressedpalmfruitcollectedfromBolorunduro,OndoState, South Western part of Nigeria. Jute fiber (JF) was obtained from a local store in Akure alsointheSouthwesternpartofNigeria. Sodiumhydroxide(NaOH),andreleasingagent Fibers2021,9,71 3of12 were purchased from Pascal Chemical Ltd., Akure, Ondo State, Nigeria. High-density polyethylene(HDPE)pelletswithameltflowindex(MFI)of8g/10min(XZ89712-00RD 10140182040), a molecular weight of 168,000 g mol−1, a melting point of 130 ◦C, and a densityof0.954gcm−3wassuppliedbyDOWChemicals,SouthAfrica[24]. OPPFF was extracted by pouring the oil palm fruit into a screw press machine at elevatedtemperaturefor1h. Thiswasdonetomeltthepalmoiltoaconsiderableextent and the oil was further removed via washing in water leaving behind the palm kernel shellandOPPFfiber. ThepalmkernelshellandOPPFfiberswerecollectedusingasieve andthefiberwasdetachedfromtheshellthereafter. TheOPPFfiberswereoven-driedat 60◦Cinanairblastovenfor4hfollowedbytreatingwith1MNaOHat50◦Cfor4hin awaterbathshaker. Thetreatedfiberswererinsedwithdistilledwater,afterwhichthey wereoven-driedagainat80◦C(atemperaturebelowthefiber'sdegradationtemperature) for6htoensurethecompleteremovalof 50◦Cfor4hin awaterbathshaker. Thetreatedfiberswererinsedwithdistilledwater,afterwhichthey wereoven-driedagainat80◦C(atemperaturebelowthefiber'sdegradationtemperature) for6htoensurethecompleteremovalofmoisture. SimilartoOPPFfiber,untreatedjute fiberswerealsooven-driedat60◦Cfor4hwhiletheJutefibersweretreatedbysoaking themin1.3MNaOHat26◦Cfor12h,theywerethereafterrinsedwithdistilledwaterand oven-driedat80◦Cfor6h. ThejuteandOPPFfibersweretrimmedtoalengthof2.5mm. Thechemicalconstituents(lignin,cellulose,andhemicellulose)oftheJFandOPPFF wereobtainedusingtheneutraldetergentandaciddetergentmethods.Thetestwascarried outinconcertwithVanSoestandWine[25]andGeoringandVansoest[26]toestimate theweightfractionofaciddetergentfiberandneutraldetergentfiberwhichwasusedto determinethepercentageoflignin,cellulose,andhemicelluloseofjuteandOPPFfibers. Thecompositesweredevelopedusingthecompressionmoldingtechniquebyrandom dispersionofjuteandOPPFfibersinthepolypropylenematrix. Predeterminedpropor- tionsasshowninTable1ofOPPFFandJFweremixedwithHDPEmatrixinatumbler mixer for 30 min to obtain a homogeneous mixture. A rectangular mold of dimension 150mm×100mm×4mm. wasfilledupwithmixedmaterials. Compressionwasdone at130◦Cfor12minunderanappliedpressureof0.2kPawiththeaidofacompression moldingmachinetodevelopstandardsamplesoftensileandflexuraltestspecimens. The testsamplesweredesignatedasshowninTable1. Degassingofthecompositesamples wascarriedoutataspecifictimeaftertheintroductionofthecompositesampleintothe compressionmoldingmachine,toremoveentrappedgases. Thedevelopedsampleswere allowedtocoolatroomtemperature. Table1.MixRatioforHDPE/OPPFFiber/Jutefiber(JF)Composites. SampleDesignation HDPE(wt.%) OPPFFiber(wt.%) JF(wt.%) Control(A) 100 - - B 80 8 12 C 80 12 8 D 80 - 20 E 80 20 - TheScanningElectronMicroscope(SEM)(JOELJSM-7600F)attachedwithEnergy Dispersive X-ray Spectrometer was used to characterize the surface and fracture mor- phologyofthefibersandthedevelopedcompositesrespectively. Thefiberswerecoat pe(SEM)(JOELJSM-7600F)attachedwithEnergy Dispersive X-ray Spectrometer was used to characterize the surface and fracture mor- phologyofthefibersandthedevelopedcompositesrespectively. Thefiberswerecoated withplatinumandthesampleswereplacedinahigh-pressurechamber. Thesecondary electronswereamplifiedduetothechargeneutralizationaroundthesamplecausedby thehigh-pressureregions. Themorphologyofthefracturedsurfacewascarriedoutto investigatetheinterfacialadhesionbetweentheHDPEmatrixandthefibersused. The tensile test was carried out to evaluate the ultimate tensile strength, tensile modulus,andtensilestrainoftheproducedcompositesamplesusingauniversaltester (Instron3369model)followingASTMD636[27]atroomtemperature(25◦C),strainrate of 5 mm/min, and relative humidity of 40% with a load cell of 10 kg. Three identical sampleswereevaluated,andtheiraveragewascomputedandusedastherepresentative valueforeachcomposition. Flexuralpropertiessuchasultimateflexuralstrength,flexural Fibers2021,9,71 4of12 modulus,andflexuralstrainofthecompositesproducedwerecarriedoutwiththeaid oftestometricuniversaltestingmachinefollowingASTMD790[28]. Thesampleswere placedunderthree-pointbendfixturesatarateof10mm/min. Threesimilarsampleswere subjectedtoflexuraltestandtheiraveragewasadoptedastherepresentativevaluefor eachweightfraction. 3. ResultsandDiscussion 3.1. CompositionalAnalysisoftheFibers Table2showsthechemicalcompositionofthefibers. Itwasobservedthattherewasa decreaseinthepercentageofligninandhemicelluloseofthetreatedfiberswhencompared with the untreated ones, while there was an increase in the percentage of cellulose for bothjuteandOPPFfibers. Previousresearch[29]affirmedthefactthatthepresenceof ligninandhemicelluloseinnaturalfiberscausespoorinterfacialadhesionwhichemanates fromtheirhydrophilicnature. Theyalsoleadtofiberdegradationwhichcancausethe lossofmechanicalpropertieswhileinservice. Inthisstudy,alkalitreatmentimprovedthe adhesionbetweenthereinforcingphaseandmatrixphasebyenhancingtheinteraction eyalsoleadtofiberdegradationwhichcancausethe lossofmechanicalpropertieswhileinservice. Inthisstudy,alkalitreatmentimprovedthe adhesionbetweenthereinforcingphaseandmatrixphasebyenhancingtheinteraction betweenthetwophases[30].Thistreatmentselectivelyeliminatedthelignin(theunreactive partofnaturalfiber)andhemicelluloseinbothJuteandOPPFfibersandalsoimprovedthe surfaceroughnessofbothfibersashighlightedinFigures3and4.Hemicelluloseandlignin werenotedtobe21.47%and13.3%foruntreatedjutefiberwhile18.34%and10.9%were recordedaftertreatment. ThesametrendwasobservedforOPPFfiberwherehemicellulose andligninalsoreducedafterchemicaltreatment. Inaddition,thecellulosecontentsofjute andOPPFfiberswereobservedtohaveincreaseddrasticallyduetothistreatment. This couldalsoleadtoimprovedadhesionbecausetheamountofmodifiedcellulosepresentat thefibersurfacehasincreased[31,32]. Table2.CompositionalAnalysisoftheFibers. Cellulose(%) Hemicellulose(%) Lignin(%) Others(%) Untreatedjutefiber 58.47 21.47 13.3 6.76 Treatedjutefiber 66.28 18.34 10.9 4.48 UntreatedOPPFfiber 49.43 23.78 19.43 7.36 TreatedOPPFfiber 56.72 19.74 17.23 6.31 3.2. EnergyDispersiveX-ray(EDX)SpectroscopicAnalysisofJuteandOPPFFibers TheEDXspectroscopicanalysesofthefiberswerecarriedouttoinvestigatetheextentof Fibers 2021, 9, x FOR PEER RpEuVrIEiWfic ationofthefibersduetotheNaOHtreatmentsgiventothefibers.Figure5s o1f 1a2 nd2present theelementalcompositionofuntreatedandtreatedjutefiberandOPPFfiberrespectively. Figure1.FiEgluerme 1e. nEtleamlCenotaml Cpoomspitoiosintioonf o(fa ()a)U Unnttrreeaatetedd JuJtue tFeibFeri baenrd a(bn) dTr(ebat)eTdr Jeuatet eFdibeJru. teFiber. Figure 2. Elemental composition of (a) untreated OPPF fiber and (b) treated OPPF Fiber. Figures 1 and 2 revealed the presence of elements such as silicon, oxygen, iron, cal- cium, carbon, gold, and magnesium. Potassium, sodium, and sulfur were also discovered in the untreated jute fiber, which are regarded as impurities. The alkaline treatment given to the fiber caused th cium, carbon, gold, and magnesium. Potassium, sodium, and sulfur were also discovered in the untreated jute fiber, which are regarded as impurities. The alkaline treatment given to the fiber caused the removal of these impurities and the presence of gold was discov- ered in the treated jute along with both treated and untreated OPPF fibers. The EDX anal- ysis also showed the presence of silica in the form of silicon and oxygen. Silica is known to be a hard ceramics material that improves the strength of a polymer matrix [33,34]. 3.3. Surface Morphology of the Jute and OPPF Fibers Figures 3a and 4a show the presence of impurities such as lignin and hemicelluloses on the surface of the fibers with respective flaky and cloudy like appearances which are gums when compared to Figures 3b and 4b that shows fibers with rough and exposed surface; the impurities have been removed as a result of the chemical treatment given to the fibers [35]. The reduction in the amount of lignin and hemicellulose brings about an Fibers 2021, 9, x FOR PEER REVIEW 5 of 12 Fibers2021,9,71 5of12 Figure 1. Elemental Composition of (a) Untreated Jute Fiber and (b) Treated Jute Fiber. FiFgiugruere2 .2E. Elelmemeenntatallc coommppoossiittiioonn ooff ((aa)) uunnttrreeaatteedd OOPPPPFF fifibbeer raanndd (b(b) t)rteraetaetde dOPOPPFP FFibFeibr.e r. FFigiguurreess1 1a anndd2 2r erveevaelaeldedt htheep prerseesnenceceo foef leelmemenentstss usuchcha sass isliicliocno,no, xoyxgyegnen,i,r iorno,nc, aclacli-um, cacirubmon, ,cgarobldon,,a gnodldm, aangdn emsiaugmne.sPiuomta.s sPioutmas,ssiuomdi,u smod,iaunmd, saunldfu sruwlfuerr ewaelrseo adlsiosc doivsceorevderiendt he uinnt rtheaet uedntjruetaetefidb jeurt,ew fihbiecrh, warheicrhe gaarerd reedgaarsdeimd pasu irmitipeusr.iTtihese. aTlhkea lailnkealtirneea ttmreaetnmtegnivt egnivteont he fitboe trhcea fuibseerd ctahueseredm thoev raelmofovthael soef itmhepseu rimitipeusraitnieds tahnedp trhees epnrceeseonfceg oolfd gwolads wdaiss cdoivsceorevd- in theeretdre aetnmtegnivt egnivteont he fitboe trhcea fuibseerd ctahueseredm thoev raelmofovthael soef itmhepseu rimitipeusraitnieds tahnedp trhees epnrceeseonfceg oolfd gwolads wdaiss cdoivsceorevd- in theeretdre iant ethdej utrteeataeldon jugtew ailtohnbgo wthitthr ebaottehd traenadteudn atnreda utendtrOeaPtePdF OfiPbPerFs .fiTbehres.E TDhXe EaDnaXl yasniasla-lso shyosiws aeldsot hsheopwreesde tnhcee porfesseilniccae oinf stihliecafo irnm thoef fosirlmic oonf sainlicdoonx ayngde nox.ySgileinc.a Siislikcan oisw knnotwonb ea htaor dbec ear haamrdic csemraamteicrisa mltahtaetriiaml tphraotv imesptrhoevsetsr ethneg sthtreonfgathp oolfy am peorlymmaetrr imxa[3tr3i,x3 4[3]3.,34]. 3.33.3..S Suurrfafaccee MMoorrpphhoollooggyy ooff tthhee JJuuttee aanndd OOPPPPFF FFibiebresr s FFigiguurreess3 3aa aanndd 44aa sshhooww tthhee pprreesseennccee oof fimimppuurirtiiteise ssuscuhc hasa lsiglniginn iannadn hdemheimceilcluelloluselos ses oonnt hthees suurrffaaccee ooff tthhee fifibbeerrss wwiitthh rreessppeeccttivivee flflaakkyy aanndd clcoluoduyd ylikliek aepappepaeraanracensc ewshwichhi cahrea re gguummssw whheenn ccoommppaarreedd ttoo FFiigguurreess 33bb aanndd 44bb ththaat tshshowows sfibfiebresr ws withit hroruoguhg ahndan edxpeoxspeods ed Fibers 2021, 9, x FOR PEER REVsIusEuWrfr afaccee;; tthhee iimmppuurriittiieess hhaavvee bbeeene nrermemovoevde ads aas raesruelst uolft tohfe tchheemchiceaml tirceaaltmtreean6 totm fg 1i2ev netng tiov en tothteh efibfiebres r[s35[3].5 T].hTe hreedruedctuiocnti oinn tihne tahmeoaumnot uonf tligonfilnig annind ahnemdihceelmluilcoeslelu blroisnegsb raibnogust aabno ut anincreasein thepercentage ofcellulose atthefiber surfacewhich promptsimproved adheinsciorenasaes inc othnefi premrceendtabgye o[3f 0ce,3ll3u]l.osAe datd thitei ofinbaerl lsyu,rtfhacee nwuhmichb eprroamnpdtsd imiapmroevteedr aodfhteh-etreated sion as confirmed by [30,33]. Additionally, the number and diameter of the treated fibers fibersvaryasisobservedbetweenFigures3band4b. vary as is observe prroamnpdtsd imiapmroevteedr aodfhteh-etreated sion as confirmed by [30,33]. Additionally, the number and diameter of the treated fibers fibersvaryasisobservedbetweenFigures3band4b. vary as is observed between Figures 3b and 4b. FigurFeig3u.rSe E3.M SEIMm Iamgaegoe fo(fa ()a)U Unnttrreeaatteedd JuJutet eFiFbiebr e(br)( Tbr)eTatreeda tJuedte JFuibteerF. iber. Figure 4. SEM Image of (a) Untreated OPPF Fiber (b) Treated OPPF Fiber. 3.4. Microstructural Examination of the Developed Composites The SEM images in Figure 4. Revealed the microstructural features of the developed hybrid composites. From Figure 5a the presence of cavities was observed in the hybrid composites. These features may result in the reduction of tensile and flexural properties of the samples developed [36]. The SEM image of HDPE//20 wt.% JF single reinforcement composite shown in Figure 5b displayed the minimum amount of cavities, leading to ef- ficient stress transfer from the matrix to the fibers. Therefore, the good adhesion between Fibers 2021, 9, x FOR PEER REVIEW 6 of 12 increase in the percentage of cellulose at the fiber surface which prompts improved adhe- sion as confirmed by [30,33]. Additionally, the number and diameter of the treated fibers vary as is observed between Figures 3b and 4b. Fibers2021,9,71 6of12 Figure 3. SEM Image of (a) Untreated Jute Fiber (b) Treated Jute Fiber. FFiigguurree 44.. SSEEMM IImmaaggee ooff ((aa)) UUnnttrreeaatteedd OOPPPPFF FFiibbeerr ((bb)) TTrreeaatteedd OOPPPPFF FFiibbeerr.. 33..44.. MMiiccrroossttrruuccttuurraall EExxaammiinnaattiioonn ooff tthhee DDeevveellooppeedd CCoommppoossiitteess TThhee SSEEMM iimmaaggeess iinn FFiigguurree 44.. RReevveeaalleedd tthhee mmiiccrroossttrruuccttuurraall ffeeaattuurreess ooff tthhee ddeevveellooppeedd hhyybbrriidd ccoommppoossiitteess.. FFrroomm FFiigguurree 55aa tthhee pprreesseennccee ooff ccaavviittiieess wwaass oobbsseerrvveedd iinn tthhee hhyybbrriidd ccoommppoossiitteess.. TThheessee ffeeaattuurreess mmaayy rrees oossiitteess.. FFrroomm FFiigguurree 55aa tthhee pprreesseennccee ooff ccaavviittiieess wwaass oobbsseerrvveedd iinn tthhee hhyybbrriidd ccoommppoossiitteess.. TThheessee ffeeaattuurreess mmaayy rreessuultlti nint htheer erdeduuctcitoinono fotfe tnesnilseilaen adndfl efxleuxrualraplr opproeprteiertsieosf othf ethsea msapmlepsledse dveevloeploepde[d3 6[3].6T]. hTehSeE SMEMim imagaegoe foHf HDDPEP/E///2200 wwtt..%% JJFF ssiinnggllee rreeiinnffoorrcceemmeenntt F ibers 2021, 9, x FOR PEER RE ccV ooIE mmW p poossiittee sshhoowwnn inin FFigiguurere 5b5b ddisipslpalyaeyde dthteh emminiinmimumu mamaomuonut notf ocafvciatvieisti, el7se ,o af dl 1e2 ia ndgi ntog etfo- feifcfiiecnietn sttrsetrsess tsratrnasnfsefre frrformom ththe emmatartirxix toto ththee fifibbeerrss. .TThheerreefoforree, ,tthhee ggoooodd aaddhheessiioonn bbeettwweeeenn thefiberandthematrixobservedinthisstudyjustifiedthegoodmechanicalproperties the fiber and the matrix observed in this study justified the good mechanical properties noticedinthiscomposite[37]. Samplecontaining12wt.%OPPFfiberwascharacterized noticed in this composite [37]. Sample containing 12 wt.% OPPF fiber was characterized with high level of cavities which leads to a reduction in its mechanical properties [38]. with high level of cavities which leads to a reduction in its mechanical properties [38]. AddiAtidodniatilolny,allloyw, loewreprr porpoepretriteiesso obbsseerrvveedd mmaya ybeb lienlkiendk teod thteo inthheeriennht perroepnetrptireos pofe OrtPiePsF ofOPPF fiber.fiTbehri. sTihsisd ies tdeertmerimniendedb byy tthhee ffiibbeerr oorirgiigni nanadn tdhet hexetreaxcttiroanc ptirooncepssr otecnedsss ttoe anfdfesctt tohea ffectthe mechmaencihcaanlipcarlo ppreorpteiretsieos foft hthee ddeevveellooppeedd cocmompopsiotessi.t e s. Figure 5. SEM image of (a) HDPE/12 wt.% OPPFF/8 wt.% JF Hybrid Composites (Sample B); (b) HDPE/20 wt.% OPPFF Figure5.SEMimageof(a)HDPE/12wt.%OPPFF/8wt.%JFHybridComposites(SampleB);(b)HDPE/20wt.%OPPFF Composite (Sample e of (a) HDPE/12 wt.% OPPFF/8 wt.% JF Hybrid Composites (Sample B); (b) HDPE/20 wt.% OPPFF Figure5.SEMimageof(a)HDPE/12wt.%OPPFF/8wt.%JFHybridComposites(SampleB);(b)HDPE/20wt.%OPPFF Composite (Sample E). Composite(SampleE). 3.5. Tensile Properties of HDPE/Jute Fiber/OPPF Fiber Composite 3.5.1. Ultimate Tensile Strength (UTS) The result of the UTS of the developed composites is as presented in Figure 6. 35 UNTREATED 30 TREATED 25 CONTROL 20 15 10 5 0 A(Control) B C D E Samples Designations Figure 6. The ultimate tensile strength of the control sample and the developed composites. )aPM( htgnertS elisneT etamitlU  |  |  | \n |  |  | \n |  |  |  \n Fibers 2021, 9, x FOR PEER REVIEW 7 of 12 the fiber and the matrix observed in this study justified the good mechanical properties noticed in this composite [37]. Sample containing 12 wt.% OPPF fiber was characterized with high level of cavities which leads to a reduction in its mechanical properties [38]. Additionally, lower properties observed may be linked to the inherent properties of OPPF fiber. This is determined by the fiber origin and the extraction process tends to affect the mechanical properties of the developed composites. Figure 5. SEM image of (a) HDPE/12 wt.% OPPFF/8 wt.% JF Hybrid Composites (Sample B); (b) HDPE/20 wt.% OPPFF Fibers2021,9,71 7of12 Composite (Sample E). 3.5. Tensile Properties of HDPE/Jute Fiber/OPPF Fiber Composite 3.5. TensilePropertiesofHDPE/JuteFiber/OPPFFiberComposite 3.5.1. Ultimate Tensile Strength (UTS) 3.5.1. UltimateTensileStrength(UTS) The result of the UTS of the developed composites is as presented in Figure 6. TheresultoftheUTSofthedevelopedcompositesisaspresentedinFigure6. 35 UNTREATED 30 TREATED 25 CONTROL 20 15 10 5 0 A(Control) B C D E Samples Designations FFiigguurree 66..T Thheeu ultlitmimataettee ntesnilseisletr estnrgetnhgotfht hoef cthone tcroolnstarmolp slaemanpdlet haendde tvheelo dpeevdecloompepdo scitoems.posites. FromFigure6,itwasobservedthattheultimatetensilestrengthfo ltlitmimataettee ntesnilseisletr estnrgetnhgotfht hoef cthone tcroolnstarmolp slaemanpdlet haendde tvheelo dpeevdecloompepdo scitoems.posites. FromFigure6,itwasobservedthattheultimatetensilestrengthforboththetreated anduntreatedsamplesfollowedthesametrend. Initially,therewasaconsistentdecrease in the hybrid composites and OPPF fiber-reinforced composite (samples B and C; and sampleErespectively)whileanincreasewasrecordedforsampleDwhencomparedto the control sample A. The decrease in those samples may be attributed to the increase intheOPPFfiberinthematrix. Additionally, fromtheSEMimagesinFigure5, itwas observedthatsampleswithmoreOPPFfibercontainmorecavities. Thereductioninthe tensilestrengthobservedisinagreementwiththeworkof[8]. Similarly,hybridizationof oilpalmandsisalfiberasreinforcementinrubbercompositeswasstudiedby[39,40],the authorsexaminedtheeffectoffiberratio,fiberloading,andsurfacemodificationsonthe mechanicalperformanceofoilpalm/sisalrubbercomposites. Thetensilepropertieswere observedtobedependentonfiberloading. Duetothehightensilestrengthofsisalfibers, sampleswithhighercontentofsisalfibersandloweroilpalmfibershadimprovedtensile strengththanthosewithlowersisalfiberandahigherpercentageofoilpalmfibers. Jute asasinglereinforcementgaveimprovedpropertiesandhastheoptimumstrengthinthe developedcomposite(sampleD)withvaluesof28.09MPaand29.34MPaforuntreated andtreatedsamplesrespectively. Thisisabout9.98%(2.55MPa)and14.87%(3.80MPa) enhancementinthepropertywhencomparedwiththecontrolsample(HDPE)whichhas anultimatetensilestrengthof25.54MPa. Thetreatedsampleshavebetterstrengththan theiruntreatedcounterpartbecausethealkalinetreatmentisusuallyknowntoenhancethe tensilepropertiesofnaturalfiber,byreducingtheimpuritieslevelsuchashemicellulose andlignintherebyincreasestheadhesionpropertyofthefiber[24,41,42]. 3.5.2. TensileModulus AsshowninFigure7,itwasobservedthatthetensilemodulusforboththetreatedand untreatedsamplesfollowsthesametrend. Thetensilemodulusofthesinglejutereinforced ertyofthefiber[24,41,42]. 3.5.2. TensileModulus AsshowninFigure7,itwasobservedthatthetensilemodulusforboththetreatedand untreatedsamplesfollowsthesametrend. Thetensilemodulusofthesinglejutereinforced compositeincreasesatsampleDwhencomparedtothecontrol. Thisimprovementisabout 12.77% and 14.15% for untreated and treated samples respectively. A little drop of the tensilemoduliofthehybridsamplesandOPPFfiberreinforcedcompositeswereobserved )aPM( htgnertS elisneT etamitlU  |  |  | \n |  |  | \n |  |  |  \n  |  | \n |  |  Fibers2021,9,71 8of12 insamplesBandC,andsampleErespectively. SampleD(ajutefiber-reinforcedcomposite) hasthehighestvalueof1261.85MPaand1277.26MPaforuntreatedandtreatedfibers respectively,whileSampleE(anOPPFfiber-reinforcedcomposite)hasthelowesttensile modulusof1142.12MPaand1182.59MPaforuntreatedandtreatedfibers,respectively. Thereductioninthetensilemodulusmaybelinkedtothepresenceofcavitiesandfiber entanglementasrevealedbythemicrostructuresofthesesamplesinFigure5a,bwhich hinderseffectivestresstransferbetweenthefiberandthematrix. Theresearchworkof[43] showedthatbyincreasingthefiberweightfractionofjuteto22wt.%,aftera15%decrease intensilemodulusexperiencedwhen11wt.%fiberweightfractionofjutefiberwasused, thetensilemodulusimprovedby71%comparedtothoseofthecontrolHDPEsample. The Fibers 2021, 9, xd FeOcRr PeEaEsRe RinEVtIhEeWt ensilestrengthandmodulusofsampleEmaybeduetothepresenceof 9 of 12 cavities,andpoorinterfacialadhesionbetweenthefiberandthematrix[7,19,44]. 1600 1400 1200 1000 800 UNTREATED 600 TREATED CONTROL 400 200 0 A(Control) B C D E Samples Designations Figure7.ThetensiFleigmuroed 7u. lTuhseo tfetnhseileco mnotrdoullsuasm opf ltehea ncodntthroel dsaemveplolep aenddc tohme pdoevsietleosp.ed composites. 3.6. FlexuralPropertiesoftheCompositeandtheControlSample 3.6. Flexural Properties of the Composite and the Control Sample 3.6.1. FlexuralStrengthatPeak 3.6.1. Flexural Strength at Peak ItcanbeobservedfromFigure8thatforthehybridcomposite,asthejutefiberweight It Flexural Properties of the Composite and the Control Sample 3.6.1. FlexuralStrengthatPeak 3.6.1. Flexural Strength at Peak ItcanbeobservedfromFigure8thatforthehybridcomposite,asthejutefiberweight It can be observed from Figure 8 that for the hybrid composite, as the jute fiber weight fractiondecreasesandOPPFfiberweightfractionincreases,theflexuralstrengthdecreases, fraction decreases and OPPF fiber weight fraction increases, the flexural strength de- asseenintheOPPFfibersinglereinforcedHDPEmatrixcomposite,thestrengthexhibited creases, as seen in the OPPF fiber single reinforced HDPE matrix composite, the strength islowascompareedxhtiobistaemd ipsl eloDw (aJsF csoinmgplearreedin tfoo sracemdpHleD DP (EJFm siantgrilxe Creoinmfoprocseidte H)tDhPatEs mhoawtrisx Composite) thehighestenhanthcaetm sehnotwvsa tlhuee .hTighhiesset nehnahnancecmemenentti nvatlhuee.fl Tehxuisr eanlhstarnecnegmthenotc icnu trhreed flaextuthrael strength oc- singlereinforcedcjuutrerefidb aetr tchoen steinngtslew reitihnftohrecevda ljuueteo ffib3e4r.1 c8oMntePnatsa nwdit3h9 t.7h4e MvaPluae, wofh 3ic4h.1w8 aMsPa and 39.74 enhancedby3%ManPda, 1w9%hicfho rwuanst reenahtaendceadn dbytr e3a%t eadndre 1sp9%ec tfiovre ulyntcroematepda raenddt otrethataetdo rfetshpeectively com- control. Thiswaspianrecdo ntoce trhtawt iothf tthhee csotundtryolo. fT[h4i5s] wwahso inre cpoonrcteerdt awriethd uthctei osntuidnyt eonf s[i4le5]a wndho reported a flexuralstrengthraesdtuhcetiwone iignh ttecnosniltee anntdo fflreaxnudraolm stlryedngistphe arss ethdeo wilepigalhmt cfiobneternint ocrfe raasnedsofmrolmy dispersed oil 0-20wt.%. palm fiber increases from 0-20 wt.%. 45 UNTREATED 40 TREATED 35 CONTROL 30 25 20 15 10 5 0 A(Control) B C D E Sample Designations Figure 8. The flexural strength of the control sample and the developed composites. )aPM( suludoM elisneT )aPM( htgnertS laruxelF \n  | \n |  Fibers 2021, 9, x FOR PEER REVIEW 9 of 12 1600 1400 1200 1000 800 UNTREATED 600 TREATED CONTROL 400 200 0 A(Control) B C D E eloped composites. )aPM( suludoM elisneT )aPM( htgnertS laruxelF \n  | \n |  Fibers 2021, 9, x FOR PEER REVIEW 9 of 12 1600 1400 1200 1000 800 UNTREATED 600 TREATED CONTROL 400 200 0 A(Control) B C D E Samples Designations Figure 7. The tensile modulus of the control sample and the developed composites. 3.6. Flexural Properties of the Composite and the Control Sample 3.6.1. Flexural Strength at Peak It can be observed from Figure 8 that for the hybrid composite, as the jute fiber weight fraction decreases and OPPF fiber weight fraction increases, the flexural strength de- creases, as seen in the OPPF fiber single reinforced HDPE matrix composite, the strength exhibited is low as compared to sample D (JF single reinforced HDPE matrix Composite) that shows the highest enhancement value. This enhancement in the flexural strength oc- curred at the single reinforced jute fiber contents with the value of 34.18 MPa and 39.74 MPa, which was enhanced by 3% and 19% for untreated and treated respectively com- pared to that of the control. This was in concert with the study of [45] who reported a Fibers2021,9,71 9of12 reduction in tensile and flexural strength as the weight content of randomly dispersed oil palm fiber increases from 0-20 wt.%. 45 UNTREATED 40 TREATED 35 CONTROL 30 25 20 15 10 5 0 A(Control) B C D E Sample Designations Fibers 2021, 9, x FOR PEER REVIEW 10 of 12 FFiigguurree 88.. TThhee fflleexxuurraall ssttrreennggtthh ooff tthhee ccoonnttrrooll ssaammppllee aanndd tthhee ddeevveellooppeedd ccoommppoossiitteess.. 33..66..22.. FFlleexxuurraall MMoodduulluuss TThhee flfleexxuurraall mmoodduulluuss ttrreenndd aass sshhoowwnn iinn FFiigguurree 99 wwaass ssiimmiillaarr ttoo wwhhaatt wwaass oobbttaaiinneedd iinn FFiigguurree 88.. TThhee flfleexxuurraall mmoodduulluuss rreedduucceess wwiitthh aann iinnccrreeaassee iinn tthhee rreeiinnffoorrcceemmeenntt wweeiigghhtt ffrraaccttiioonn pprrooggrreessssiivveellyy.. TThhee aaddddiittiioonn ooff JJFF aass aa ssiinnggllee rreeii duucceess wwiitthh aann iinnccrreeaassee iinn tthhee rreeiinnffoorrcceemmeenntt wweeiigghhtt ffrraaccttiioonn pprrooggrreessssiivveellyy.. TThhee aaddddiittiioonn ooff JJFF aass aa ssiinnggllee rreeiinnffoorrcceemmeenntt ggaavvee iimmpprroovveedd mmoodd-- uulluuss.. SSaammppllee wwiitthh jjuuttee ffiibbeerr oonnllyy hhaass tthhee hhiigghheesstt flfleexxuurraall mmoodduulluuss ooff 11228855..1155 MMPPaa aanndd 11339955..3388 MMPPaa wwhhiicchh aammoouunnttss ttoo 77..3322%% aanndd 1166..5533%% eennhhaanncceemmeenntt iinn iittss pprrooppeerrttyy ffoorr tthhee uunnttrreeaatteedd aanndd ttrreeaatteedd ssaammppllee rreessppeeccttiivveellyy.. TThhiiss ccaann bbee aattttrriibbuutteedd ttoo tthhee ggoooodd iinnhheerreenntt pprrooppeerrttiieess ooff tthhee jjuuttee fifibbeerr aass ssttaatteedd iinn [[4466,,4477]].. FFrroomm FFiigguurreess 88 aanndd 99,, iitt bbeeccaammee aappppaarreenntt tthhaatt tthhee hhyybbrriidd ccoommppoossiitteess ddiidd nnoott ggiivvee ggoooodd flfleexxuurraall ssttrreennggtthh aanndd mmoodduulluuss aass ccoommppaarreedd ttoo tthhaatt ooff jjuuttee ffiibbeerr.. HHoowweevveerr,, tthhee pprreesseennccee ooff jjuuttee fifibbeerr iimmpprroovveedd flfleexxuurraall mmoodduulluuss wwhheenn ccoouupplleedd wwiitthh OOPPPPFFfi fbibeer.r.H Higihgehrerv avlauleusews ewreeroeb otabitnaeindefdo rfothre thhey bhryidbrciodm cpoomspitoessiwtehs ewnhtheen fltheex uflreaxlumraold muloudsuwluass wmaast cmheadtchweidth wthitaht othfatth eofs itnhgel esiOngPlPe FOrPeiPnFf orreciendfocrocmedp coosmitep.oTshities. aTghriese asgwreieths wthiethfi tnhdei nfignsdoinfg[4s8 o].f [48]. 1600 UNTREATED 1400 TREATED 1200 CONTROL 1000 800 600 400 200 0 A(Control) B C D E Samples FFiigguurree 99.. TThhee fflleexxuurraall mmoodduulluuss ooff tthhee ccoonnttrrooll ssaammppllee aanndd tthhee ddeevveellooppeedd ccoommppoossiitteess.. 4. Conclusions HDPE matrix composites reinforced with Jute and OPPF fibers were successfully produced using the compression molding technique, they were probed deevveellooppeedd ccoommppoossiitteess.. 4. Conclusions HDPE matrix composites reinforced with Jute and OPPF fibers were successfully produced using the compression molding technique, they were probed for tensile and mechanical properties. Afterward, the following conclusions were drawn. 1. Alkaline treatment of the fibers was instrumental in the removal of hemicellulose and lignin contents present in the fiber which was demonstrated by the improved prop- erties observed in treated fibers reinforced HDPE as compared to the untreated ones. 2. Treated 20 wt.% jute fiber reinforced HDPE came out with the best tensile and flex- ural properties, signifying the reinforcing efficiency of jute fiber while the hybrid composites showed intermediate property particularly 8 wt.% JF and 12 wt.% OPPFF. 3. The research showed that as the weight fraction of OPPF fiber increases in the mix, microstructural features such as a cavity, fiber fracture, and fiber touching were more prominent. This led to a reduction in flexural and tensile properties while the increase in jute fiber resulted in improved adhesion and reduced cavities and fiber fracture. )aPM( suludoM elisneT )aPM( htgnertS laruxelF )aPM( suludoM laruxelF \n  | \n |  Fibers2021,9,71 10of12 4. Conclusions HDPE matrix composites reinforced with Jute and OPPF fibers were successfully produced using the compression molding technique, they were probed for tensile and mechanicalproperties. Afterward,thefollowingconclusionsweredrawn. 1. Alkalinetreatmentofthefiberswasinstrumentalintheremovalofhemicelluloseand lignincontentspresentinthefiberwhichwasdemonstratedbytheimprovedproper- tiesobservedintreatedfibersreinforcedHDPEascomparedtotheuntreatedones. 2. Treated20wt.%jutefiberreinforcedHDPEcameoutwiththebesttensileandflex- ural properties, signifying the reinforcing efficiency of jute fiber while the hybrid compositesshowedintermediatepropertyparticularly8wt.%JFand12wt.%OPPFF. 3. TheresearchshowedthatastheweightfractionofOPPFfiberinc s, signifying the reinforcing efficiency of jute fiber while the hybrid compositesshowedintermediatepropertyparticularly8wt.%JFand12wt.%OPPFF. 3. TheresearchshowedthatastheweightfractionofOPPFfiberincreasesinthemix, microstructuralfeaturessuchasacavity,fiberfracture,andfibertouchingweremore prominent. Thisledtoareductioninflexuralandtensilepropertieswhiletheincrease injutefiberresultedinimprovedadhesionandreducedcavitiesandfiberfracture. AuthorContributions: Conceptualization,O.O.D.andO.A.B.; methodology,O.O.D.andO.A.B.; software, O.A.B.; validation, O.A.B. and S.O.S.; formal analysis, O.A.B.; investigation, O.O.D.; resources,O.A.B.;datacuration,O.O.D.,O.A.B.,A.A.A.,S.O.S.,andI.O.O.;writing--originaldraft preparation,O.O.D.,O.A.B.,A.A.A.,S.O.S.,I.O.O.,andE.T.A.;writing--reviewandediting,I.O.O.; visualization, O.O.D.; supervision, O.A.B.; project administration, O.A.B.; funding acquisition, O.O.D.,O.A.B.,A.A.A.,S.O.S.,I.O.O.,andE.T.A.Allauthorshavereadandagreedtothepublished versionofthemanuscript. Funding:TheAPCwasfundedbyUniversityofJohannesburgandPanAfricanUniversityofLife SciencesInstitute,Ibadan. InstitutionalReviewBoardStatement:Notapplicable. InformedConsentStatement:Notapplicable. DataAvailabilityStatement:Thedatapresentedinthisstudyareavailablewithinthemanuscript. Acknowledgments:AuthorsappreciatethefollowingInstitution:TheFederalUniversityofTech- nology,Akure,LandmarkUniversitySDGs-17ResearchGroup,andUniversityofJohannesburgfor theirsupport. ConflictsofInterest:Theauthorsdeclarenoconflictofinterest. References 1. Gibson,F.R.PrincipleofCompositeMaterialMechanics;CRCPress:BocaRaton,FL,USA,2011;Volume3,pp.7-14. 2. Bisht,S.;Lamba,N.UseofSimulationDrivenDesignforNewProductDevelopment.Int.J.Emerg.Technol.2014,5,201-205. 3. Akbarov,S.D.;Guz,A.N.MechanicsofCurvedComposites;KluwerAcademicPublishers:Dordrecht,TheNetherlands,2000;p.446. 4. Mochane,M.J.;Mokhena,T.C.;Mokhothu,T.H.;Mtibe,A.;Sadiku,E.R.;Ray,S.S.;Ibrahim,I.D.;Daramola,O.O.Recentprogress onnaturalfiberhybri ites;KluwerAcademicPublishers:Dordrecht,TheNetherlands,2000;p.446. 4. Mochane,M.J.;Mokhena,T.C.;Mokhothu,T.H.;Mtibe,A.;Sadiku,E.R.;Ray,S.S.;Ibrahim,I.D.;Daramola,O.O.Recentprogress onnaturalfiberhybridcompositesforadvancedapplications:Areview.ExpressPolym.Lett.2019,13,159-198.[CrossRef] 5. Oladele,I.O.;Ayanleye,O.T.;Adediran,A.A.;Makinde-Isola,B.A.;Taiwo,A.S.;Akinlabi,E.T.CharacterizationofWearand PhysicalPropertiesofPawpaw-GlassFiberHybridReinforcedEpoxyCompositesforStructuralApplication.Fibers2020,8,44. [CrossRef] 6. Ahmad,F.;Choi,H.S.;Park,M.K.Areview:Naturalfibercompositesselectioninviewofmechanical,lightweight,andeconomic properties.Macromol.Mater.Eng.2015,300,10-24.[CrossRef] 7. Alamri,H.;Low,I.M.Effectofwaterabsorptiononthemechanicalpropertiesofn-SiCfilledrecycledcellulosefibrereinforced epoxyeco-nanocomposites.Polym.Test.2012,31,810-818.[CrossRef] 8. Jawaid,M.;Khalil,H.P.S.A.;Bakar,A.A.MechanicalPerformanceofOilPalmEmptyFruitBunches/JuteFibersReinforcedEpoxy HybridComposites.Mater.Sci.Eng.A2010,527,7944-7949.[CrossRef] 9. Oladele,I.O.;Oladejo,M.O.;Adediran,A.A.;Makinde-Isola,B.A.;Owa,A.F.;Akinlabi,E.T.Influenceofdesignatedpropertieson thecharacteristicsofdombeyabuettnerifiber/graphitehybridreinforcedpolypropylenecomposites.Sci.Rep.2020,10,1-13. [CrossRef] 10. Dalbehera, S.; Acharya, S.K.StudyonMechanicalPropertiesofNaturalFiberReinforcedWovenJute-GlassHybridEpoxy Composites.Adv.Polym.Sci.Technol.2014,4,1-6. 11. Debiprasad,G.;Kousik,D.;Palash,P.;Subhankar,M.JuteCompositesasWoodSubstitute.Int.J.Text.Sci.2012,1,84-93. Fibers2021,9,71 11of12 12. Shahbandeh,M.PalmOil:GlobalProductionVolume2012/13-2020/21.Availableonline:https://www.statista.com/statistics/ 613471/palm-oil-production-volume-worldwide(accessedon27May2021). 13. Singh,E.;Deepak,D.;Aggarwal,L.;Gupta,V.K.FabricationandCharacterizationofJuteFiber-Reinforced-RecycledPolyethylene Composites.InProceedingsoftheInternationalConferenceonResearchandInnovationsinMechanicalEngineering;LectureNotesin MechanicalEn abricationandCharacterizationofJuteFiber-Reinforced-RecycledPolyethylene Composites.InProceedingsoftheInternationalConferenceonResearchandInnovationsinMechanicalEngineering;LectureNotesin MechanicalEngineering;Khangura,S.,Singh,P.,Singh,H.,Brar,G.,Eds.;Springer:NewDelhi,India,2014.[CrossRef] 14. Chestee,S.S.;Poddar,P.;Sheel,T.K.;Rashid,M.M.;Khan,R.A.;Chowdhury,A.M.S.ShortJuteFiberReinforcedPolypropylene Composites:EffectofNonhalogenatedFireRetardants.Adv.Chem.2017,2017,1-8.[CrossRef] 15. Ovalı,S.;Sancak,E.InvestigationofMechanicalPropertiesofJuteFiberReinforcedLowDensityPolyethyleneComposites.J.Nat. Fibers2020,1-18.[CrossRef] 16. AbuBakar,A.;Hassan,A.;MohdYusof,A.F.MechanicalandThermalPropertiesofOilPalmEmptyFruitBunch-FilledUnplasti- cizedPoly(VinylChloride)Composites.Polym.Polym.Compos.2005,13,607-617. 17. Karina,M.; Onggo,H.; Abdullah,A.H.D.; Syampurwadi,A.Effectofoilpalmemptyfruitbunchfiberonthephysicaland mechanicalpropertiesoffiberglassreinforcedpolyesterresin.J.Biol.Sci.2008,8,101-106. 18. Wong,K.J.;Nirmal,U.;Lim,B.K.Impactbehaviorofshortandcontinuousfiber-reinforcedpolyestercomposites.J.Reinf.Plast. Compos.2010,29,3463-3474.[CrossRef] 19. Anuar,H.;Ahmad,S.H.;Rasid,R.;Daud,N.S.N.Tensileandimpactpropertiesofthermoplasticnaturalrubberreinforcedshort glassfiberandemptyfruitbunchhybridcomposites.Polym.-Plast.Technol.Eng.2006,45,1059-1063.[CrossRef] 20. Amin,M.;Anuar,K.;Badri,H.K.Palm-basedbio-compositeshybridizedwithkaolinite.J.Appl.Polym.Sci.2007,105,2488-2496. [CrossRef] 21. Jacob, M.; Varughese, K.T.; Thomas, S. Water sorption studies of hybrid biofiber-reinforced natural rubber biocomposites. Biomacromolecules2005,6,2969-2979.[CrossRef] 22. Jacob, M.; Varughese, K.T.; Thomas, S. Dielectric characteristics of sisal-oil palm hybrid biofibre reinforced natural rubber biocomposites.J.Mater.Sci.2006,41,5538-5547.[CrossRef] 23. Jacob, M.; Thomas, S.; Varughese, K.T. Biodegradability and Aging Studies of Hybrid Biofiber Reinforced Natural Rubber Biocomposites.J.Biob r biocomposites.J.Mater.Sci.2006,41,5538-5547.[CrossRef] 23. Jacob, M.; Thomas, S.; Varughese, K.T. Biodegradability and Aging Studies of Hybrid Biofiber Reinforced Natural Rubber Biocomposites.J.BiobasedMater.Bioenergy2007,1,118-126.[CrossRef] 24. Daramola,O.O.;Akinwekomi,A.D.;Adediran,A.A.;Akindote-White,O.;Sadiku,E.R.MechanicalPerformanceandWaterUptake BehaviourofTreatedBambooFibre-ReinforcedHigh-DensityPolyethyleneComposites.Heliyon2019,5,e02028.[CrossRef] 25. VanSoest,P.J.;Wine,R.H.DeterminationofligninandcelluloseinAcid-Detergentfiberwithpermanganate.J.Assoc.Off.Agric. Chem.1968,51,780-785.[CrossRef] 26. Georing,H.K.;VanSoest,P.J.ForageFiberAnalysis.USDAAgriculturalHandbook;USDAARS:Washington,DC,USA,1970;Volume 397,pp.1-12. 27. ASTMD636.StandardTestMethodforTensilePropertiesofPlastics;ASTMInternational:WestConshohocken,PA,USA,2014. 28. ASTMD790.StandardTestMethodforFlexuralPropertiesofUnreinforcedandReinforcedPlasticsandElectricalInsulatingMaterials; ASTMInternational:WestConshohocken,PA,USA,2017. 29. Benmansour,N.;Agoudjil,B.;Gherabli,A.;Abdelhak,K.;Boudenne,A.Thermalandmechanicalperformanceofnaturalmortal reinforcedwithdatepalmfibersforuseasinsulatingmaterialsinbuilding.EnergyBuild.2014,81,98-104.[CrossRef] 30. Oladele, I.; Oghie, I.I.; Adediran, A.A.; Akinwekomi, A.; Adetula, Y.; Olayanju, T.M.A. Modified palm kernel shell fiber/particulatecassavapeelhybridreinforcedepoxycomposites.ResultsMater.2019,5,10053.[CrossRef] 31. Wang,H.;Memon,H.;Hassan,E.A.;Maih,M.S.;Ali,M.A.EffectofJuteFiberModificationontheMechanicalPropertiesofJute FiberComposites.Materials2019,12,1226.[CrossRef] 32. Mohammed,L.;Ansari,M.N.M.;Pua,G.;Jawaid,M.;Saiful,I.M.AReviewonNaturalFibreReinforcedPolymerCompositeand ItsApplications.Int.J.Polym.Sci.2015,2015,243947.[CrossRef] 33. Adediran,A.A.;Balogun,O.A.;Akinwande,A.A.;Adesina,O.S.;Olasoju,O.S.Influenceofchemicaltreatmentontheproperties ofcement-paperhybridcompositesforceilingboardapplication.Heliyon2020,6,e04512.[CrossRef] 34. Daramola,O. alogun,O.A.;Akinwande,A.A.;Adesina,O.S.;Olasoju,O.S.Influenceofchemicaltreatmentontheproperties ofcement-paperhybridcompositesforceilingboardapplication.Heliyon2020,6,e04512.[CrossRef] 34. Daramola,O.O.;Oladele,I.O.;Adewuyi,B.O.;Sadiku,R.;Agwuncha,S.C.InfluenceofSubmicronAgroWasteSilicaParticlesand VinylAcetateonMechanicalPropertiesofHigh-DensityPolyethyleneMatrixComposites.WestIndianJ.Eng.2015,38,96-107. 35. Yan,L.;Chouw,N.;Yuan,X.Improvingthemechanicalpropertiesofnaturalfiberfabricreinforcedepoxycompositesbyalkali treatment.J.Reinf.Plast.Compos.2012,31,425-437.[CrossRef] 36. Jawaid,M.;AbdulKhalila,H.P.S.;Bakar,A.A.;NoorunnisaKhanam,P.Chemicalresistance,voidcontentandtensileproperties ofoilpalm/jutefibrereinforcedpolymerhybridcomposites.Mater.Des.2011,32,1014-1019.[CrossRef] 37. Shanmugam,D.;Thiruchitrambalam,M.Influenceofalkalitreatmentandlayeringpatternonthetensileandflexuralproperties ofPalmyrapalmleafstalkfiber(PPLSF)/jutefiberpolyesterhybridcomposites.Compos.Interfaces2014,21,3-12.[CrossRef] 38. Bernal,C.R.DeformationandFractureBehaviorofNaturalFiberReinforcedPolypropylene.InPolyolefinComposites;JohnWiley &Sons:Hoboken,NJ,USA,2008;Chapter7;pp.178-203. 39. Jacob,M.;Thomas,S.;Varughese,K.T.Naturalrubbercompositesreinforcedwithsisal/oilpalmhybridfibers:Tensileandcure characteristics.J.Appl.Polym.Sci.2004,93,2305-2312.[CrossRef] 40. Jacob,M.;Thomas,S.;Varughese,K.T.Mechanicalpropertiesofsisal/oilpalmhybridfiberreinforcednaturalrubbercomposites. Compos.Sci.Technol.2004,64,955-965.[CrossRef] Fibers2021,9,71 12of12 41. Obasi,H.C.;Iheaturu,N.C.;Onuoha,F.N.;Chike-Onyegbula,C.O.;Akanbi,M.N.;Eze,V.O.Influenceofalkalitreatmentandfiber contentonthepropertiesofoilpalmpressfiberreinforcedepoxybiocomposites.Am.J.Eng.Res.2014,3,117-123. 42. Hamma,A.;Kaci,M.;Ishak,Z.A.M.;Pegoretti,A.Starch-grafted-polypropylene/kenaffibrescomposites.Part1:Mechanical performancesandviscoelasticbehavior.Compos.PartAAppl.Sci.Manuf.2014,56,328-335.[CrossRef] 43. Elbadry,E.A.;Aly-Hassan,M.S.;Hamada, A.Starch-grafted-polypropylene/kenaffibrescomposites.Part1:Mechanical performancesandviscoelasticbehavior.Compos.PartAAppl.Sci.Manuf.2014,56,328-335.[CrossRef] 43. Elbadry,E.A.;Aly-Hassan,M.S.;Hamada,H.MechanicalPropertiesofNaturalJuteFabric/JuteMatFiberReinforcedPolymer MatrixHybridComposites.Adv.Mech.Eng.2012,4,354547.[CrossRef] 44. Mohd, N.N.; Khalina, A.; Sapuan, S.M.; Dayang, A.H.; Rahmah, M.; Hanafee, Z.AReview: Fibres, PolymerMatricesand Composites.PertanikaJ.Sci.Technol.2017,25,1085-1102. 45. Yusoff,M.Z.M.;Sapuan,S.M.;Ismail,N.;Wirawan,R.MechanicalPropertiesofShortRandomOilPalmFibreReinforcedEpoxy Composites.SainsMalays.2010,39,87-92. 46. Selver,E.;Ucar,N.;Gulmez,T.EffectofStackingSequenceonTensile,FlexuralandThermomechanicalPropertiesofHybrid Flax/GlassandJute/GlassThermosetComposites.J.Ind.Text.2018,48,494-520.[CrossRef] 47. Swain,P.T.R.;Biswas,S.InfluenceofFiberSurfaceTreatmentsonPhysico-MechanicalBehaviourofJute/EpoxyComposites ImpregnatedwithAluminiumOxideFiller.J.Compos.Mater.2017,51,3909-3922.[CrossRef] 48. Jawaid,M.;AbdulKhalila,H.P.S.;Bakar,A.A.Tensileandflexuralpropertiesofoilpalm-wovenjutefibersbasedepoxycomposites. Mater.Sci.Eng.A2011,528,5190-5195.[CrossRef]"
+}

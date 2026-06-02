@@ -19,7 +19,7 @@ import random
 from datetime import datetime
 from typing import Dict, Any, Optional, List
 
-from config import LLM_MODEL
+from config import LLM_MODEL, ORCHESTRATOR_MODEL
 from experiment_runner import predict_properties, calculate_composite_score
 
 
@@ -288,7 +288,7 @@ Return ONLY this JSON:
             from llm import get_client
             client = get_client()
             result = client.generate(
-                model=LLM_MODEL,
+                model=ORCHESTRATOR_MODEL,
                 prompt=prompt,
                 system="You are a materials science expert. Return only valid JSON.",
                 temperature=0.4,
@@ -439,7 +439,7 @@ Return JSON:
             from llm import get_client
             client = get_client()
             result = client.generate(
-                model=LLM_MODEL,
+                model=ORCHESTRATOR_MODEL,
                 prompt=prompt,
                 system="Return only valid JSON.",
                 temperature=0.3,

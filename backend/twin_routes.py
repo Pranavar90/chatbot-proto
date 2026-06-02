@@ -33,7 +33,7 @@ twin_router = APIRouter(prefix="/api/twin", tags=["digital-twin"])
 
 async def _in_thread(fn, *args, **kwargs):
     """Run a blocking function in a thread pool executor."""
-    loop = asyncio.get_event_loop()
+    loop = asyncio.get_running_loop()
     return await loop.run_in_executor(None, functools.partial(fn, *args, **kwargs))
 
 

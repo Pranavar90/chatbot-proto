@@ -47,7 +47,11 @@
       "Bash(tasklist /fi \"imagename eq python.exe\")",
       "Bash(xargs cat:*)",
       "Bash(node -e \"const l = require\\('./node_modules/lucide-react'\\); console.log\\('Activity:', !!l.Activity, 'Database:', !!l.Database, 'Zap:', !!l.Zap\\)\")",
-      "Bash(node -e ':*)"
+      "Bash(node -e ':*)",
+      "Bash(find /e/rlresearchassistant/backend -name \"*.py\" -exec grep -l \"export\\\\|to_json\\\\|write.*json\" {} \\\\;)",
+      "Bash(xargs ls:*)",
+      "Bash(mkdir -p _kaggle_project)",
+      "Bash(mv kaggle_data lora-adapters lora-checkpoints kgltest.ipynb _kaggle_project/)"
     ]
   }
 }

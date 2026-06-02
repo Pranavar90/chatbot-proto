@@ -1,0 +1,238 @@
+{
+  "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+  "filename": "fibers-07-00082.pdf",
+  "doc_type": "paper",
+  "material_name": "fibers",
+  "extraction_confidence": 0.9249999999999999,
+  "methodology": "Ceramic fibers were prepared by electrospinning zirconium acetylacetonate/yttrium nitrate/polyacrylonitrile fibers and then calcined at various temperatures (1100-1300°C). The microstructure, phase composition, and mechanical properties of the nanofibers were characterized using scanning electron microscopy, X-ray diffraction, and nitrogen adsorption.",
+  "research_objective": "To prepare and characterize yttria-stabilized tetragonal zirconia nanofibers with controlled grain size and composition for potential use in composite reinforcement.",
+  "key_findings": [
+    {
+      "finding": "Fully tetragonal nanofibrous zirconia can be obtained with yttrium concentrations in the range of 2-3 mol% at all used calcination temperatures.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "The addition of 2-3 mol% yttrium to zirconia inhibited ZrO grain growth, preventing nanofibers' destruction at high calcination temperatures.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "Electrospinning is the most commonly used method for large-scale fabrication of nanofibers due to its simplicity, adaptability, cost-efficiency, versatility, and capability to control diameter, composition, and morphology.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "Calcination at 1300°C results in a chain-like structure formation for 2-3 mol% yttria-stabilized zirconia nanofibers",
+      "confidence": 0.9
+    },
+    {
+      "finding": "The addition of yttrium to zirconia inhibits grain growth at high calcination temperatures",
+      "confidence": 0.85
+    },
+    {
+      "finding": "Cracking along grain boundaries due to ZrO2 → m-ZrO2 transition upon cooling may have contributed to fiber destruction",
+      "confidence": 0.9
+    }
+  ],
+  "processing_conditions": [],
+  "properties_count": 18,
+  "properties": [
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "thermal conductivity",
+      "value": "not explicitly measured or mentioned",
+      "unit": "-",
+      "confidence": 0.8,
+      "context": "thermogravimetric (TG) curve of electrospun composite fibers",
+      "created_at": "2026-04-25T22:08:17.192338"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "porosity",
+      "value": "<not specified>",
+      "unit": "-",
+      "confidence": 0.8,
+      "context": "calcination temperature effects on YSZ nanofibers in [9,14]",
+      "created_at": "2026-04-25T22:08:16.884303"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "d-spacing",
+      "value": "<not specified>",
+      "unit": "Å",
+      "confidence": 1.0,
+      "context": "XRD crystallinity %",
+      "created_at": "2026-04-25T22:08:16.603106"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "viscosity",
+      "value": "<not specified>",
+      "unit": "Pa·s",
+      "confidence": 0.9,
+      "context": "measurement of electrospinning solutions using rotational viscometer DV2T in [15]",
+      "created_at": "2026-04-25T22:08:16.917669"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "electrical conductivity",
+      "value": "<not specified>",
+      "unit": "S/m or S/cm",
+      "confidence": 0.9,
+      "context": "fabrication methods and properties of yttria-stabilized zirconia (YSZ) nanofibers",
+      "created_at": "2026-04-25T22:08:16.850607"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "glass transition temperature",
+      "value": "1150°C",
+      "unit": "°C",
+      "confidence": 0.9,
+      "context": "calcined at 1300 °C",
+      "created_at": "2026-04-25T22:08:17.155715"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "tensile strength",
+      "value": "2.6 GPa",
+      "unit": "GPa",
+      "confidence": 1.0,
+      "context": "fabricated in [5]",
+      "created_at": "2026-04-25T22:08:16.786964"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "calcination temperature",
+      "value": "1100-1300°C",
+      "unit": "",
+      "confidence": 0.95,
+      "context": "Calcination process for composite fibers",
+      "created_at": "2026-04-25T22:08:17.095314"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "grain structure",
+      "value": "<not specified>",
+      "unit": "",
+      "confidence": 0.9,
+      "context": "SEM and XRD measurements at room temperature",
+      "created_at": "2026-04-25T22:08:17.062269"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "fiber diameter",
+      "value": "<ca. 140 nm>",
+      "unit": "nm",
+      "confidence": 1.0,
+      "context": "Diameter of nanofibers with ca. 140 nm",
+      "created_at": "2026-04-25T22:08:16.719522"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "grain size",
+      "value": "<fiber diameter>",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Coarse-grain structure transformed from fine-grain structure at high calcination temperatures",
+      "created_at": "2026-04-25T22:08:16.750951"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "grain size of ZrO nanofibers",
+      "value": "<not specified>",
+      "unit": "nm",
+      "confidence": 0.85,
+      "context": "XRD analysis and comparison with SEM images",
+      "created_at": "2026-04-25T22:08:17.125424"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "calcination temperature",
+      "value": "<1100-1300°C>",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Calcination of electrospun fibers at 1100-1300°C",
+      "created_at": "2026-04-25T22:08:16.686538"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "tensile strength",
+      "value": "11 GPa",
+      "unit": "GPa",
+      "confidence": 1.0,
+      "context": "obtained in [7] for electrospun aluminum nanofibers",
+      "created_at": "2026-04-25T22:08:16.818508"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "average grain size",
+      "value": "<not specified>",
+      "unit": "",
+      "confidence": 0.8,
+      "context": "XRD pattern analysis from SEM images",
+      "created_at": "2026-04-25T22:08:17.027798"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "average diameter of fibers",
+      "value": "544±38nm",
+      "unit": "",
+      "confidence": 0.9,
+      "context": "SEM measurements and as-spun composite fibers",
+      "created_at": "2026-04-25T22:08:16.988030"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "specific surface area",
+      "value": "<not specified>",
+      "unit": "m²/g",
+      "confidence": 0.85,
+      "context": "BET method for nitrogen adsorption-desorption isotherms",
+      "created_at": "2026-04-25T22:08:16.951878"
+    },
+    {
+      "doc_id": "d7d47d13-c88e-4eb3-894a-305e7c9be895",
+      "filename": "fibers-07-00082.pdf",
+      "material_name": "fibers",
+      "property_name": "nitrogen adsorption",
+      "value": "<not specified>",
+      "unit": "-",
+      "confidence": 1.0,
+      "context": "Characterization by nitrogen adsorption",
+      "created_at": "2026-04-25T22:08:16.651023"
+    }
+  ],
+  "source_text": "fibers Article Microstructure and Phase Composition of Yttria-Stabilized Zirconia Nanofibers Prepared by High-Temperature Calcination of Electrospun / Zirconium Acetylacetonate Yttrium / Nitrate Polyacrylonitrile Fibers VyacheslavV.Rodaev*,SvetlanaS.Razlivalova,AlexanderI.Tyurin,AndreyO.Zhigachevand YuriI.Golovin InstituteforNanotechnologyandNanomaterials,DerzhavinTambovStateUniversity,Internatsionalnayastr.33, 392000Tambov,Russia;razlivalova8@yandex.ru(S.S.R.);tyurin@tsu.tmb.ru(A.I.T); andreyzhig2009@yandex.ru(A.O.Z.);golovin@tsu.tmb.ru(Y.I.G.) * Correspondence: rodaev1980@mail.ru;Tel.:+7-910-6522328;Fax:+7-4752-532680 (cid:1)(cid:2)(cid:3)(cid:1)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:1) (cid:1)(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7) Received: 14August2019;Accepted: 19September2019;Published: 25September2019 Abstract: Forthefirsttime,densenanofibersofyttria-stabilizedtetragonalzirconiawithdiameter of ca. 140 nm were prepared by calcination of electrospun zirconium acetylacetonate/yttrium nitrate/polyacrylonitrilefibersat1100-1300◦ C.Ceramicfilamentswerecharacterizedbyscanning electronmicroscopy,X-raydiffractometry,andnitrogenadsorption. Withariseinthecalcination ◦ temperaturefrom1100to1300 C,thefine-grainstructureofthenanofiberstransformedtocoarse-grain oneswiththegrainsizeequaltothefiberdiameter. Itwasrevealedthatfullytetragonalnanofibrous zirconiamaybeobtainedatY O concentrationsintherangeof2-3mol%atallusedcalcination 2 3 temperatures. Theadditionof2-3mol%yttriatozirconiainhibitedZrO graingrowth,preventing 2 nanofibers'destructionathighcalcinationtemperatures. Synthesizedwell-sintered, non-porous, yttria-stabilized tetragonal zirconia nanofibers can be considered as a promising material for composites'reinforcement,includingcompositeswithceramicmatrix. Keywords: electrospinning; ceramic nanofibers; yttria doped zirconia; microstructure; phase composition;compositesreinforcement 1. Introduction Pure zirconia (ZrO ) is a polymorphic material which may exist in electrospinning; ceramic nanofibers; yttria doped zirconia; microstructure; phase composition;compositesreinforcement 1. Introduction Pure zirconia (ZrO ) is a polymorphic material which may exist in three crystalline forms: 2 Monoclinic(m-ZrO ),tetragonal(t-ZrO ),andcubic(c-ZrO ). Them-ZrO isstableattemperatures 2 2 2 2 ◦ ◦ ◦ upto1170 C,t-ZrO intherangeof1170-2370 C,andc-ZrO atover2370 C[1]. Anoticeable~4% 2 2 increaseinthevolumeofsinteredpurezirconiaceramicduringthecoolingprocessassociatedwith t-ZrO → m-ZrO transformation was accompanied by the material microcracking [2]. Therefore, 2 2 m-ZrO ceramic with poor mechanical properties is hardly ever used for applications requiring 2 mechanicalstrength. Tostabilizet-ZrO andc-ZrO atroomtemperaturesandtopreventceramic 2 2 volumeexpansionduringthecoolingprocess,zirconiawasdopedbydifferentoxides(Y O ,CeO ,CaO, 2 3 2 MgO,andothers). Animportantfeatureofzirconiaceramicsisthatvaryingt-ZrO andc-ZrO content 2 2 bychangingthedopantconcentrationitispossibletoproducematerialsfordifferentapplications. Herein,c-ZrO contentincreasedwiththeriseindopantconcentration. Forexample,introductionof 2 3mol%Y O inzirconiaallowsthepreparationofengineeringceramicswithhighvaluesofbending 2 3 strength and fracture toughness [1]. Such characteristics as thermal expansion coefficient close to Fibers2019,7,82;doi:10.3390/fib7100082 www.mdpi.com/journal/fibers Fibers2019,7,82 2of8 thatofsuperalloys,lowthermalconductivity,andhigherosionresistancemakezirconiaceramics withY O contentintherangeof6-8mol%verysuitablematerialsforthermalbarriercoatings[3]. 2 3 Ceramicscontaining8-10mol%ofY O areusedinsolidfuelcellsaselectrolytematerialduetothe 2 3 highoxygenionconductivity[4]. Stabilizedzirconiaceramicscanbeusednotonlyasbulkmaterialsorcoatings,butalsointheform offibers,too,forexample,forcomposites'reinforcement. Microfibersofyttria-stabilizedtetragonal zirconiawithtensilestrengthupto2.6GPawerefabricatedin[5]. Duetothesizeeffects,nanofibers showremarkableprop ffibers,too,forexample,forcomposites'reinforcement. Microfibersofyttria-stabilizedtetragonal zirconiawithtensilestrengthupto2.6GPawerefabricatedin[5]. Duetothesizeeffects,nanofibers showremarkablepropertiescomparedtomicrofibers,namely,highsurface-to-massratio,flexibilityin surfacefunctionalization,andhighmechanicalstrength[6]. In[7],electrospunaluminananofiberswith thetensilestrengthaveragevalueca. 11GPawereobtained,whilecommercialaluminamicrofibers onlyreachedastrengthvalueof3.3GPa(Nextel™610,3M,SaintPaul,MN,USA). Amonganumberofnanofibers'fabricationtechniques,electrospinningisthemostcommonly usedmethodduetoitssimplicity,adaptability,cost-efficiency,versatility,andcapabilitytocontrolthe diameter,composition,andmorphologyofnanofibers. Besides,electrospinningistheonlymethod applicableforthelarge-scalefabricationofnanofibers[6]. Previously,8mol%Y O --stabilizedzirconiananofiberswerepreparedbyelectrospinningand 2 3 calcination at elevated temperatures with zirconium acetate hydroxide and zirconium propoxide as zirconia precursors [8,9]. These nanofibers of c-ZrO can be used as a part of an electrode of 2 solid oxide fuel cells for improved electrode performance, as was shown in [10]. In [11], 3 mol% Y O --stabilized zirconia nanofibers composed of t-ZrO grains were obtained. The electrospun 2 3 2 macroporousmembranesoft-ZrO nanofibersprovidingefficientgastransportareprospectivefor 2 catalytic applications, for example, in hydrogenation [12] and oxidation [13] processes. Besides, nanofibersoft-ZrO aremorepreferredforreinforcementthansimilarmicrofibers,mentionedabove, 2 duetotheirexpectedhigherstrengthandbettermatrix-fiberadhesionwhichimprovesloadtransfer fromthematrixtothereinforcingfibers. Itiswellknownthatporosityreducesstrengthinnanofibers. In[9,14], itwasrevealedthata riseincalcinationtemperatureledtozirconiananofibers'densification. Inthisstudyweexamined theopportunityforcontrollingdensezirconiananofibers'phasecompositiontofabricatenon-porous t-ZrO nanofibers,which iseincalcinationtemperatureledtozirconiananofibers'densification. Inthisstudyweexamined theopportunityforcontrollingdensezirconiananofibers'phasecompositiontofabricatenon-porous t-ZrO nanofibers,whichcanbeconsideredasapromisingmaterialforcompositereinforcementvia 2 varyingdopantcontentonanexampleofacommonlyusedstabilizer,Y O . Asfarasweknow,there 2 3 isnoinformationabouttherangeofY O concentrationstoobtaint-ZrO nanofibers. 2 3 2 2. MaterialsandMethods Tenidentical10wt.%polymersolutionswerepreparedbyadding1gpolyacrylonitrile(PAN) (molecularweightMw=150,000,Sigma-Aldrich,SaintLouis,MO,USA)into9gdimethylformamide ◦ (DMF)withperiodicstirringbyhandfor2hat50 C.Tosynthesizenanofibersofyttria-stabilized zirconia,zirconiumacetylacetonateZr(C H O ) (hereinafterreferredtoasZrAA)(Sigma-Aldrich,Saint 5 7 2 4 Louis,MO,USA)aszirconiaprecursorandyttriumnitratehexahydrateY(NO ) ·6H O(Sigma-Aldrich, 3 3 2 SaintLouis,MO,USA)asyttriaprecursorwereaddedintopolymersolutionsunderstirringinthe ultrasonicbathfor6minat42kHzatroomtemperaturetopreparetentransparentelectrospinning solutions. The ZrAA/PAN mass ratio in all solutions was 0.3 to 1. Yttrium nitrate hexahydrate wasaddedtosolutionsinamountstoobtain0-9mol%Y O concentrationinzirconiananofibers. 2 3 Herein,insignificantchangeofsolutions'viscositywasobserved. Itwasimportantsinceviscosity of the electrospinning solution significantly affects the diameter and morphology of the obtained nanofibers [15]. The dynamic viscosity of all electrospinning solutions was measured using the rotationalviscometerDV2T(AMETEKBrookfield,Middleborough,MA,USA). Eachpreparedcompositesolutionwastransferredintoa10mLplasticsyringeandelectrospun usingtheelectrospinningmachineNANON-01A(MECC,Fukuoka,Japan)atafeedingrateof1.2mL/h througha21Gblunt-tipneedle. Thedistancesbetweentheneedletipandtheflatcollectorof21cm andtheacceleratingvoltageof23kVwerechosenasoperativeparameterstofabricatebead-freeand Fibers2019,7,82 3of8 smoothcompositefibers. Theflatcollectorwascovered etweentheneedletipandtheflatcollectorof21cm andtheacceleratingvoltageof23kVwerechosenasoperativeparameterstofabricatebead-freeand Fibers2019,7,82 3of8 smoothcompositefibers. Theflatcollectorwascoveredbyaluminumfoil. Thefiberswerecollectedon aluminumfoilasnon-wovenmats. ◦ As-spunmatswerecalcinedattemperaturesintherangeof1100-1300 Cfor1husingtwo-stage heating: Heating to 500 ◦ C with a heating rate of 1 ◦ C/min, and then further heating to the target temperature with a heating rate of 5 ◦ C/min. According to the thermogravimetric (TG) analysis, ◦ compositefiberstransformedtoZrO fibersat500 C(Figure1a)andtherewasnofurtherweightloss 2 offilamentsobservedathighertemperature. Topreventfiberdestruction,alowheatingrateatthefirst annealingstagewaschosentoensuredelicateremovalofthedecompositionproductsoftheceramic precursor,thestabilizerprecursor,andbindingpolymer. The fibers' surface texture was analyzed using a scanning electron microscope (SEM) Merlin (CarlZeiss,Oberkochen,Germany). Theaveragediameterofthefibersandtheaveragegrainsize weredeterminedfromtheSEMimages. X-raydiffraction(XRD)patternswereregisteredinthe20-80◦ 2 θ range by an X-ray diffractometer D2 Phaser (Bruker AXS, Karlsruhe, Germany) using CuKα1 monochromaticradiation. XRDpatternswereidentifiedusingthePDF-2DiffractionDatabaseFile oftheInternationalCentreforDiffraction. TheTOPASsoftware(BrukerAXS,Karlsruhe,Germany) wasusedtodeterminenanofibers'quantitativephasecompositionbytheRietveldmethod. SEMand XRDmeasurementswerecarriedoutatroomtemperature. Nitrogenadsorption-desorptionisotherms at 77 K were registered with a gas sorption analyzer, Autosorb iQ-C (Quantachrome Instruments, BoyntonBeach,FL,USA).Beforenitrogenadsorptionmeasurements,thesampleswereevacuated ◦ at 300 C for 3 h under vacuum to remove contaminants. Specific surface areas of the nanofibers weredeterminedwiththeBrunauer-Emmett-Teller(BET)method. Totalporevolumewascalculated throughthequantityofadsorbedN attherelativepressureof0.995. TheTGanalysiswa pecific surface areas of the nanofibers weredeterminedwiththeBrunauer-Emmett-Teller(BET)method. Totalporevolumewascalculated throughthequantityofadsorbedN attherelativepressureof0.995. TheTGanalysiswasperformed 2 onthethermalanalyzerEXSTARTG/DTA7200(SIINanoTechnology,Tokyo,Japan)inairatmosphere withaheatingrateof10◦ C/min. 3. ResultsandDiscussion AsshowninFigure1b,as-spuncompositefiberswereuniforminshapewithasmoothsurface andtheaveragediameterof544±38nm. Randomlydistributed,cylindrical,bead-freefibersformeda macroporousnon-wovenmat,typicalforelectrospinning. Thetransformationofcompositefibersto ZrO oneswasaccompaniedwiththedecreaseintheirthicknessduetoresidualsolventremovaland 2 ZrAAandPANdecomposition(Figure1a). ◦ Aftercalcinationat1100 C,theaveragediameteroffibersdecreaseddistinctlytoca. 140nm (Figure1c). Theobtainednanofibershadroughsurfacesandwerecharacterizedbygrainstructure. Zirconiananofiberswith2-3mol%ofY O possessedthesmallestgrainsizeofca. 60nmamong 2 3 ◦ ◦ alltheceramicfiberspreparedat1100 C.Withariseinthecalcinationtemperaturefrom1100 Cto ◦ 1300 C,fine-grainstructureof2-3mol%yttria-stabilizedzirconiananofibers(Figure1c)transformed to coarse-grain ones (Figure 1d) and an insignificant decrease within the measurement error was ◦ detectedinthenanofibers'averagediameter. Atacalcinationtemperatureof1300 C,achain-like structurewasformedwhenthegrainswiththeaveragesizeofca. 130nmreachedthesizeequaltothe nanofiberdiameter. Theobservedgraingrowthwasassociatedwiththerecrystallizationrateincrease ◦ inducedbytemperaturerising. Asin[9], itwasnotedthat, atcalcinationtemperatureof1300 C, thegrainsizeof8mol%Y O -ZrO nanofibersexceeded200nm(Figure1e). Thegraingrowthof 2 3 2 8mol%yttria-stabilizedzirconiabeingfullycubiczirconia[9]iswellknowntobeacceleratedduring ◦ sinteringabove1100 C,andgrainsreachedmicrometersize[16]. ComparingSEMimagesbothof ◦ 2mol%Y O -ZrO nanofibersandundopedZrO nanofiberscalcinedat1300 C(Figure1d,f)itcanbe 2 3 2 2 concludedthattheadditionofasmallamou ve1100 C,andgrainsreachedmicrometersize[16]. ComparingSEMimagesbothof ◦ 2mol%Y O -ZrO nanofibersandundopedZrO nanofiberscalcinedat1300 C(Figure1d,f)itcanbe 2 3 2 2 concludedthattheadditionofasmallamountofyttriatozirconiainhibitedZrO graingrowthathigh 2 calcinationtemperatures. Creatingadiffusionbarrierpreventednanofibers'destruction. Cracking alongthegrainboundariesduetot-ZrO →m-ZrO transitionuponcoolinginundopedzirconia 2 2 nanofibersmayalsohavecontributedtotheirdestruction,presentedinFigure1f. Fibers2019,7,82 4of8 Fibers 2019, 7, x FOR PEER REVIEW 4 of 8 Figure 1. (a) Thermogravimetric (TG) curve of electrospun composite fibers. Microstructure of (b) Figure 1. (a) Thermogravimetric (TG) curve of electrospun composite fibers. Microstructure of (b)as-spa us- nsp cu on m c pom osp io tesit fie b f eib re sr ,s (, c ( )c) 2 2 m m oo l%l% YY2 OO3- -Z ZrO rO2 fib fier bs e rca sl cci an le cd in a et d 11 a0 t0 1 1°C 0, 0 (◦d C) ,2 (m d)ol 2% m Y o2O l%3-Z YrO O2 -ZrO fibers calcined at 1 ◦300 °C, (e) 8 mol% Y2 2O3 3-ZrO2 2fibers calcined at 1300 °C, a ◦nd (f) undoped Zr2O2 3 2 fiberscalcinedat1300 C,(e)8mol%Y O -ZrO fiberscalcinedat1300 C,and(f)undopedZrO fibers calcined at 1300 °C. 2 3 2 2 ◦ fiberscalcinedat1300 C. After calcination at 1100 °C, the average diameter of fibers decreased distinctly to ca. 140 nm The(Feigvuorleu 1tci)o. nThoef otbhteaicnreyds ntaalnloinfiebesrtsr uhacdtu rroeugohf szuirrcfaocnesia annda nwoefireb cehrasradcotepreizdedw biyth grvaainr isoturusctaumreo. untsof yttriumZoixrciodneiai snasnhoofwibnersi nwFitihg 2u-r3e m2oal%nd oft hYe2Op3 hpaosseseassneadl ythseis smreaslulelstts girnaitnh seizwe hofo clae. r6a0n ngme aomfostnugd ailel dY 2O 3 the ceramic fibers prepared at 1100 °C. With a rise in the calcination temperature from 1100 °C to concentrationsarepresentedinFigure3. F1ib3e0rs0 2 0°1C9, ,7 , xfi FnOeR-g PrEaEinR RsEtVrIuEcWtu re of 2-3 mol% yttria-stabilized zirconia nanofibers (Figure5 o1f c8) transformed to coarse-grain ones (Figur trationsarepresentedinFigure3. F1ib3e0rs0 2 0°1C9, ,7 , xfi FnOeR-g PrEaEinR RsEtVrIuEcWtu re of 2-3 mol% yttria-stabilized zirconia nanofibers (Figure5 o1f c8) transformed to coarse-grain ones (Figure 1d) and an insignificant decrease within the measurement error was detected in the nanofibers' average diameter. At a calcination temperature of 1300 °C, a chain-like structure was formed when the grains with the average size of ca. 130 nm reached the size equal to the nanofiber diameter. The observed grain growth was associated with the recrystallization rate increase induced by temperature rising. As in [9], it was noted that, at calcination temperature of 1300 °C, the grain size of 8 mol% Y2O3-ZrO2 nanofibers exceeded 200 nm (Figure 1e). The grain growth of 8 mol% yttria-stabilized zirconia being fully cubic zirconia [9] is well known to be accelerated during sintering above 1100 °C, and grains reached micrometer size [16]. Comparing SEM images both of 2 mol% Y2O3-ZrO2 nanofibers and undoped ZrO2 nanofibers calcined at 1300 °C (Figure 1d,f) it can be concluded that the addition of a small amount of yttria to zirconia inhibited ZrO2 grain growth at high calcination temperatures. Creating a diffusion barrier prevented nanofibers' destruction. Cracking along the grain boundaries due to t-ZrO2 → m-ZrO2 transition upon cooling in undoped zirconia nanofibers may also have contributed to their destruction, presented in Figure 1f. The evolution of the crystalline structure of zirconia nanofibers doped with various amounts of yttrium oxide is shown in Figure 2 and the phase analysis results in the whole range of studied Y2O3 concentrations are presented in Figure 3. FigureF2i.gurXeR 2D. XpRaDt tperanttsernosf ozfi rzciorcnoinaian naannoofifibbeerrss wwitiht hdidffeiffreenrte nytttryiat tcroiantecnotn ctaelncitnecda lacti n1e1d00 a°tC,1 100 ◦ C, m-monoclinic phase, t-tetragonal phase, and c-cubic phase. m-monoclinicphase,t-tetragonalphase,andc-cubicphase. Figure 3. Phase com tttryiat tcroiantecnotn ctaelncitnecda lacti n1e1d00 a°tC,1 100 ◦ C, m-monoclinic phase, t-tetragonal phase, and c-cubic phase. m-monoclinicphase,t-tetragonalphase,andc-cubicphase. Figure 3. Phase composition of zirconia nanofibers with different dopant concentration. The content of m-ZrO2, t-ZrO2 and c-ZrO2 phases in nanofibers is marked in color dots (black, blue, and red dots, correspondingly). The lines are given for eye guidance. Filaments prepared at 1100 °C were selected for investigation of phase composition variation in zirconia nanofibers, since undoped zirconia nanofibers cease to be fibers at a calcination temperature of 1300 °C (Figure 1f). The XRD pattern of undoped zirconia nanofibers contained two intensive peaks at 28.2° and 31.5° and a large number of low-intensity peaks in the 2 θ range of 20-80° which Fibers 2019, 7, x FOR PEER REVIEW 5 of 8 Fibers2019,7,82 5of8 Figure 2. XRD patterns of zirconia nanofibers with different yttria content calcined at 1100 °C, m-monoclinic phase, t-tetragonal phase, and c-cubic phase. FigureF3i.gPurhea 3s.e Pchoamsep coomsitpioosnitioofnz oifr czoirncoianina annaonfiofbibeerrss wwiitthh ddiiffffeerreennt tddopoapnat nctonccoennctreantitorant. iTohne. cTohnteencot ntentof m-ZrOof, mt-Z-ZrrOO2, ta-nZdrOc2 -aZnrdO c-ZprOh2a psheassiens inna nnaonfiofbibeerrss iiss mmaarkrkede din icnolcoor ldoortsd (obtlasc(kb, lbalucke,, abnldu ree,da dnodtsr, eddots, 2 2 2 correspondingly). The lines are given for eye guidance. correspondingly). Thelinesaregivenforeyeguidance. Filaments prepared at 110◦0 °C were selected for investigation of phase composition variation in Filamentspreparedat1100 Cwereselectedforinvestigationofphasecompositionvariationin zirconia nanofibers, since undoped zirconia nanofibers cease to be fibers at a calcination temperature zirconiananofibers,sinceundopedzirconiananofibersceasetobefibersatacalcinationtemperature of 1300 °C (Figure 1f). The XRD pattern of undoped zirconia nanofibers contained two intensi ation temperature zirconiananofibers,sinceundopedzirconiananofibersceasetobefibersatacalcinationtemperature of 1300 °C (Figure 1f). The XRD pattern of undoped zirconia nanofibers contained two intensive ◦ of1300peCak(sF aigt u28r.e2°1 af)n.dT 3h1e.5°X aRnDd ap laatrtgeer nnuomfbuenrd oof ploewd-iznitrecnosnitiya pneaankso ifinb tehres 2c θo nratanignee odf t2w0-o80i°n wtehniscihv epeaks ◦ ◦ ◦ at28.2 and31.5 andalargenumberoflow-intensitypeaksinthe2θrangeof20-80 whichbelongto ◦ m-ZrO (Figure2). Alow-intensitypeakoft-ZrO at30.2 wasobserved,too. Thecontentofm-ZrO 2 2 2 ◦ was determined as 93%. So, undoped zirconia nanofibers calcined at 1100 C mostly consisted of m-ZrO grains. Previously,nanofibersofm-ZrO werealsodetectedwhenintermediatecomposite 2 2 fiberswithzirconiumoxychloride[17]andzirconiumacetate[18]aszirconiaprecursorsandcontaining ◦ nostabilizingagentwereheat-treatedatelevatedtemperatures. Fromthereflectionat28.2 viathe Scherrerequation, theaveragem-ZrO grainsizewasestimatedtobeabout70nm. Accordingto 2 Garvie'stheory,stabilizer-freet-ZrO grainswithsizenotexceeding30nmmaybestableatroom 2 temperature[19]. Otherwise,theyaresubjectfort-ZrO →m-ZrO transition. 2 2 Introductionofyttriaintozirconiananofibersledtoadramaticdecreaseinm-ZrO contentto0% 2 at2mol%Y O (Figure3). Fullytetragonalzirconiawasobservedintheyttriumoxideconcentration 2 3 rangeof2-3mol%. XRDpatternscontainedonlycharacteristicreflectionsoft-ZrO . Maint-ZrO 2 2 ◦ ◦ ◦ ◦ ◦ ◦ ◦ peakslocalizedat30.2 ,34.6 ,35.2 ,50.2 ,50.7 ,59.3 ,and60.2 (Figure2). Furtherincreaseinyttria concentrationcausedamonotonicdecreaseinvolumefractionoft-ZrO to0%at8mol%Y O . Asharp 2 2 3 dropint-ZrO contentfrom100%to32%occurredintheintervalof3-5mol%Y O . Atthesametime, 2 2 3 acorrespondingmonotonicriseinc-ZrO contentattainingsaturationat8mol%Y O wasobserved. 2 2 3 Yttria-stabilizedzirconiananofiberswerecomposedoft-ZrO andc-ZrO grainsintheintervalof 2 2 ◦ 3-8mol%Y O . At8mol%Y O XRDpatterncontainedonlyintensivereflectionsofc-ZrO at30 t8mol%Y O wasobserved. 2 2 3 Yttria-stabilizedzirconiananofiberswerecomposedoft-ZrO andc-ZrO grainsintheintervalof 2 2 ◦ 3-8mol%Y O . At8mol%Y O XRDpatterncontainedonlyintensivereflectionsofc-ZrO at30.1 , 2 3 2 3 2 ◦ ◦ ◦ 35.0 ,50.2 ,and59.7 thatindicatedfullycubicnanofibrouszirconia(Figure2). Fort-ZrO nanofibersofinterest,theeffectofcalcinationtemperatureontheirphasecomposition 2 ◦ wasinvestigated. ComparisonoftheXRDpatternsobtainedforthesamplescalcinedat1100 Cand ◦ 1300 C(Figure4)revealedthatariseinheattreatmenttemperaturemakest-ZrO peakssharperand 2 narrower,indicatinggrainsizegrowthconfirmedbySEM(Figure1c,d). Fibers 2019, 7, x FOR PEER REVIEW 6 of 8 belong to m-ZrO2 (Figure 2). A low-intensity peak of t-ZrO2 at 30.2° was observed, too. The content of m-ZrO2 was determined as 93%. So, undoped zirconia nanofibers calcined at 1100 °C mostly consisted of m-ZrO2 grains. Previously, nanofibers of m-ZrO2 were also detected when intermediate composite fibers with zirconium oxychloride [17] and zirconium acetate [18] as zirconia precursors and containing no stabilizing agent were heat-treated at elevated temperatures. From the reflection at 28.2° via the Scherrer equation, the average m-ZrO2 grain size was estimated to be about 70 nm. According to Garvie's theory, stabilizer-free t-ZrO2 grains with size not exceeding 30 nm may be stable at room temperature [19]. Otherwise, they are subject for t-ZrO2 → m-ZrO2 transition. Introduction of yttria into zirconia nanofibers led to a dramatic decrease in m-ZrO2 content to 0% at 2 mol% Y2O3 (Figure 3). Fully tetragonal zirconia was observed in the yttrium oxide concentration range of 2-3 mol%. XRD patterns contained only characteristic reflections of t-ZrO2. Main t-ZrO2 peaks localized at 30.2°, 34.6°, 35.2°, 50.2°, 50.7°, 59.3°, and 60.2° (Figure 2). Further increase in yttria concentration caused a monotonic decrease in volume fraction of t-ZrO2 to 0% at 8 mol% Y2O3. A sharp drop in t-ZrO2 content from 100% to 32% occurred in t 60.2° (Figure 2). Further increase in yttria concentration caused a monotonic decrease in volume fraction of t-ZrO2 to 0% at 8 mol% Y2O3. A sharp drop in t-ZrO2 content from 100% to 32% occurred in the interval of 3-5 mol% Y2O3. At the same time, a corresponding monotonic rise in c-ZrO2 content attaining saturation at 8 mol% Y2O3 was observed. Yttria-stabilized zirconia nanofibers were composed of t-ZrO2 and c-ZrO2 grains in the interval of 3-8 mol% Y2O3. At 8 mol% Y2O3 XRD pattern contained only intensive reflections of c-ZrO2 at 30.1°, 35.0°, 50.2°, and 59.7° that indicated fully cubic nanofibrous zirconia (Figure 2). For t-ZrO2 nanofibers of interest, the effect of calcination temperature on their phase composition was investigated. Comparison of the XRD patterns obtained for the samples calcined at 1F1ib0e0rs °2C01 9a,n7d,8 12300 °C (Figure 4) revealed that a rise in heat treatment temperature makes t-ZrO2 pe6aokfs8 sharper and narrower, indicating grain size growth confirmed by SEM (Figure 1c,d). ◦ ◦ FFiigguurree 44.. XXRRDD ppaatttteerrnnss ooff 22 mmooll%% YY 22OO 33--ZZrrOO 2 2nnaannoofifibbeersrs ccaalclcinineedd aat t11110000 °CC aanndd 11330000 °CC. . NNoo aaddddiittiioonnaall rreefflleeccttiioonnss ooff aannootthheerr zziirrccoonniiaa pphhaassee wweerree ddeetteecctteedd iinn tthhee XXRRDD ppaatttteerrnn ooff tthhee ◦ ssaammppllee ccaalclcinineedd aat t1133000 0°CC. T.hTeh eobosbesrevrevde desessesnetniatli ainlcinrecaresea sien itn-Ztr-OZr 2 Ogr2aginra siinzes ifzreomfr ocma. 6c0a .n6m0 ntom cato. 1c3a0. n13m0 unnmacucnoamccpoamnipeadn bieyd tb-ZyrtO-Z 2 r→O 2m→ -ZmrO-Z 2 rtrOa2ntsriatinosnit iinodniicnadteicda tpehdapseh astsaebsitlaitbyi loitfy thoef tnhaennoafniboefirbs eorfs yotftryiatt-rsitaa-bsitlaibzeildiz etedtrtaegtroangaoln zailrzcoirncioan aiat astusffuiffi ciecnietlnyt lyhihgihg hhehaeta ttrteraetamtmenent ttetemmppeeraratutureres saanndd rreevveeaalleedd thatthegrainsizeof130nmisnotyetcriticalfort-ZrO retentioninnanofibersofyttria-stabiliz astusffuiffi ciecnietlnyt lyhihgihg hhehaeta ttrteraetamtmenent ttetemmppeeraratutureres saanndd rreevveeaalleedd thatthegrainsizeof130nmisnotyetcriticalfort-ZrO retentioninnanofibersofyttria-stabilized 2 zirconiaatroomtemperature. ◦ Theporousstructureofnanofibersofyttria-stabilizedtetragonalzirconiacalcinedat1100 Cand ◦ 1300 C was examined by nitrogen adsorption measurements (Figure 5). In both cases nanofibers showed type II isotherms. According to the International Union of Pure and Applied Chemistry (IUPAC),classificationtypeIIisothermsareinherentinnon-porousmaterials. Inourcase,thatwas confirmedbysmalltotalporevolumevaluesof0.019cm3/gand0.013cm3/gforzirconiananofibers ◦ ◦ calcinedat1100 Cand1300 C,correspondingly. FeeblymarkedtypeH4hysteresisloopsbyIUPAC classificationareassociatedwithnarrowslit-likepores,fewinnumber. Inourcase,theslit-likepores were most likely formed by the boundaries of adjacent ZrO grains. An observed slight decrease 2 oftotalporevolume(porosityreduction)isduetohighersinteringefficiencyathighertemperature. Theriseincalcinationtemperaturealsoledtoadecreaseinzirconiananofibers'specificsurfacearea from9.9m2/gat1100◦ Cto5.0m2/gat1300◦ C. Fibers 2019, 7, x FOR PEER REVIEW 7 of 8 that the grain size of 130 nm is not yet critical for t-ZrO2 retention in nanofibers of yttria-stabilized zirconia at room temperature. The porous structure of nanofibers of yttria-stabilized tetragonal zirconia calcined at 1100 °C and 1300 °C was examined by nitrogen adsorption measurements (Figure 5). In both cases nanofibers showed type II isotherms. According to the International Union of Pure and Applied Chemistry (IUPAC), classification type II isotherms are inherent in non-porous materials. In our case, that was confirmed by small total pore volume values of 0.019 cm3/g and 0.013 cm3/g for zirconia nanofibers calcined at 1100 °C and 1300 °C, correspondingly. Feebly marked type H4 hysteresis loops by IUPAC classification are associated with narrow slit-like pores, /g and 0.013 cm3/g for zirconia nanofibers calcined at 1100 °C and 1300 °C, correspondingly. Feebly marked type H4 hysteresis loops by IUPAC classification are associated with narrow slit-like pores, few in number. In our case, the slit-like pores were most likely formed by the boundaries of adjacent ZrO2 grains. An observed slight decrease of total pore volume (porosity reduction) is due to higher sintering efficiency at higher temperature. The rise in cFaiblcerins2a0t1io9,n7 ,te82mperature also led to a decrease in zirconia nanofibers' specific surface area from 9.9 m72o/fg8 at 1100 °C to 5.0 m2/g at 1300 °C. FFiigguurree 55.. NNiittrrooggeenna dasdosroprtpiotino-nd-edseosroprtpiotnioins oitshoetrhmersmats 7a7tK 7o7f 2Km oofl %2 Ym2Ool3%-Z YrO 2O23n-aZnroOfi 2b enrasncoaflicbineresd ◦ ◦ caatlc1i1n0e0d aCt 1a1n0d01 °3C0 0anCd .1300 °C. 4. Conclusions 4. Conclusions Dense nanofibers of yttria-stabilized tetragonal zirconia with a diameter of ca. 140 nm were Dense nanofibers of yttria-stabilized tetragonal zirconia with a diameter of ca. 140 nm were fabricatedbycalcinationofelectrospunzirconiumacetylacetonate/yttriumnitrate/polyacrylonitrile fabricated by calcination of electrospun zirconium acetylacetonate/yttrium nitrate/polyacrylonitrile ◦ ◦ fibersat1100-1300 C.Withariseinthecalcinationtemperaturefrom1100to1300 C,thefine-grain fibers at 1100-1300 °C. With a rise in the calcination temperature from 1100 to 1300 °C, the fine-grain structureofthenanofiberstransformedtoacoarse-grainonewiththegrainsizeequaltothefiber structure of the nanofibers transformed to a coarse-grain one with the grain size equal to the fiber diameter. It was revealed that fully tetragonal nanofibrous zirconia may be obtained at Y O diameter. It was revealed that fully tetragonal nanofibrous zirconia may be obtained at Y2 2O33 concentrationsintherangeof2-3mol%atalltheusedcalcinationtemperatures. Theadditionof2-3 concentrations in the range of 2-3 mol% at all the used calcination temperatures. Th a may be obtained at Y2 2O33 concentrationsintherangeof2-3mol%atalltheusedcalcinationtemperatures. Theadditionof2-3 concentrations in the range of 2-3 mol% at all the used calcination temperatures. The addition of 2-3 mol%yttriatozirconiainhibitedZrO graingrowth,thuspreventingnanofibers'destructionathigh mol% yttria to zirconia inhibited ZrO22 grain growth, thus preventing nanofibers' destruction at high calcinationtemperatures. Sinceweconsideredsynthesized,well-sintered,non-porous,yttria-stabilized calcination temperatures. Since we considered synthesized, well-sintered, non-porous, tetragonal zirconia nanofibers as a promising material for composites' reinforcement, including yttria-stabilized tetragonal zirconia nanofibers as a promising material for composites' composites with ceramic matrix, the aim of further investigations will be their strength testing by reinforcement, including composites with ceramic matrix, the aim of further investigations will be nanoindentationmethod. their strength testing by nanoindentation method. AuthorContributions: Writing--Originaldraftpreparation,editing,V.V.R.;investigation,S.S.R.,A.I.T.,A.O.Z.; Asuuptheorvr isCioonn,tYri.Ib.Gut.ions: Writing--Original draft preparation, editing, V.V.R.; investigation, S.S.R., A.I.T., A.O.Z.; supervision, Y.I.G. Funding: ThereportedstudywasfundedbytheRussianFoundationforBasicResearch(RFBR),accordingtothe researchprojectNo.18-29-17047. ConflictsofInterest: Theauthorsdeclarethattheyhavenoconflictofinterest. References 1. Gautam,C.;Joyner,J.;Gautam,A.;Rao,J.;Vajtai,R.Zirconiabaseddentalceramics: Structure,mechanical properties,biocompatibilityandapplications. DaltonTrans. 2006,45,19194-19215. [CrossRef][PubMed] 2. Hannink,R.H.J.;Kelly,P.M.;Muddle,B.C.Transformationtougheninginzirconia-containingceramics. J.Am. Ceram. Soc. 2000,83,461-487. [CrossRef] 3. Saravanan, S.; Srinivas, G.H.; Jayaram, V.; Manidurai, P.; Asokan, S. Synthesis and characterization of Y Al O andZrO -Y O thermalbarriercoatings mics. J.Am. Ceram. Soc. 2000,83,461-487. [CrossRef] 3. Saravanan, S.; Srinivas, G.H.; Jayaram, V.; Manidurai, P.; Asokan, S. Synthesis and characterization of Y Al O andZrO -Y O thermalbarriercoatingsbycombustionspraypyrolysis. Surf. Coat. Technol. 2008, 3 5 12 2 2 3 202,4653-4659. [CrossRef] Fibers2019,7,82 8of8 4. Revankar,S.T.;Majumdar,P.FuelCells: Principles,Design,andAnalysis;CRCPress: BocaRaton,FL,USA, 2014;p.748. 5. Marshall, D.B.; Lange, F.F.; Morgan, P.D. High-strength zirconia fibers. J. Am. Ceram. Soc. 1987, 70, C187-C188. [CrossRef] 6. Liu,Y.;Wang,C.AdvancedNanofibrousMaterialsManufactureTechnologyBasedonElectrospinning;CRCPress: BocaRaton,FL,USA,2019;p.370. 7. Sun,W.FabricationandCharacterizationofElectrospunAluminaNanofibreReinforcedPolycarbonate Composites. Ph.D.Thesis,QueenMaryUniversity,London,UK,2017;p.201. 8. Koo, J.Y.; Hwang, S.; Ahn, M.; Choi, M.; Byun, D.; Lee, W. Controlling the diameter of electrospun yttria-stabilizedzirconiananofibers. J.Am. Ceram. Soc. 2016,99,3146-3150. [CrossRef] 9. Castkova,K.;Maca,K.;Sekaninova,J.;Nemcovsky,J.;Cihlar,J.Electrospinningandthermaltreatmentof yttriadopedzirconiafibres. Ceram. Int. 2017,43,7581-7587. [CrossRef] 10. Koo, J.Y.; Lim, Y.; Kim, Y.B.; Byun, D.; Lee, W. Electrospun yttria-stabilized zirconia nanofibers for low-temperaturesolidoxidefuelcells. Int. J.Hydrog. Energy2017,42,15903-15907. [CrossRef] 11. Sun,G.-X.;Liu,F.-T.;Bi,J.-Q.;Wang,C.-A.Electrospunzirconiananofibersandcorrespondingformation mechanismstudy. J.AlloysCompd. 2015,649,788-792. [CrossRef] 12. Grabowski,R.; Słoczyn´ski,J.; S´liwa,M.; Mucha,D.; Socha,R.P.; Lachowska,M.; Skrzypek,J.Influence of polymorphic ZrO phases and the silver electronic state on the activity of Ag/ZrO catalysts in the 2 2 hydrogenationofCO tomethanol. ACSCatal. 2011,1,266-278. [CrossRef] 2 13. Campa,M.C.;Ferraris,G.;Gazzoli,D.;Pettiti,I.;Pietrogiacomi,D.Rhodiumsupportedontetragonalor monoclinicZrO ascatalystforthepartialoxidationofmethane. Appl. Catal. BEnviron. 2013, -278. [CrossRef] 2 13. Campa,M.C.;Ferraris,G.;Gazzoli,D.;Pettiti,I.;Pietrogiacomi,D.Rhodiumsupportedontetragonalor monoclinicZrO ascatalystforthepartialoxidationofmethane. Appl. Catal. BEnviron. 2013,142-143, 2 423-431. [CrossRef] 14. Rodaev, V.V.; Razlivalova, S.S.; Zhigachev, A.O.; Vasyukov, V.M.; Golovin, Y.I. Preparation of zirconia nanofibersbyelectrospinningandcalcinationwithzirconiumacetylacetonateasprecursor. Polymers2019, 11,1067. [CrossRef][PubMed] 15. Ramakrishna,S.;Fujihara,K.;Teo,W.-E.;Lim,T.-C.;Ma,Z.AnIntroductiontoElectrospinningandNanofibers; WorldScientificPublishing: Singapore,2005;p.396. 16. Pouchly,V.;Maca,K.Sinteringkineticwindowforyttria-stabilizedcubiczirconia. J.Eur. Ceram. Soc. 2016, 36,2931-2936. [CrossRef] 17. Rodaev,V.V.;Zhigachev,A.O.;Golovin,Y.I.FabricationandcharacterizationofelectrospunZrO /Al O 2 2 3 nanofibers. Ceram. Int. 2017,43,16023-16026. [CrossRef] 18. Saligheh,O.;Khajavi,R.;Yazdanshenas,M.E.;Rashidi,A.Productionandcharacterizationofzirconia(ZrO ) 2 ceramicnanofibersbyusingelectrospunpoly(vinylalcohol)/zirconiumacetatenanofibersasaprecursor. J.Macromol. Sci. B2016,55,605-616. [CrossRef] 19. Garvie,R.C.Theoccurrenceofmetastabletetragonalzirconiaasacrystallitesizeeffect. J.Phys. Chem. 1965, 69,1238-1243. [CrossRef] ©2019bytheauthors. LicenseeMDPI,Basel,Switzerland. Thisarticleisanopenaccess articledistributedunderthetermsandconditionsoftheCreativeCommonsAttribution (CCBY)license(http://creativecommons.org/licenses/by/4.0/)."
+}

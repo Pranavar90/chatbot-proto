@@ -35,6 +35,9 @@ from config import (
     QDRANT_URL,
     OLLAMA_BASE,
     EMBED_MODEL,
+    EMBED_DIM,
+    CHUNK_SIZE_CHARS,
+    CHUNK_OVERLAP_CHARS,
     COLL_DOCUMENTS,
     COLL_CHUNKS,
     COLL_PROPERTIES,
@@ -46,10 +49,6 @@ from config import (
 )
 
 logger = logging.getLogger(__name__)
-
-EMBED_DIM = 768
-CHUNK_SIZE_CHARS = 2000
-CHUNK_OVERLAP_CHARS = 200
 
 # In-memory cache for document lookups (60s TTL avoids stale data during ingestion)
 _doc_lookup_cache = InMemoryCache(maxsize=500, ttl=60)

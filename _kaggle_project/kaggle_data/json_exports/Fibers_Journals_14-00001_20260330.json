@@ -1,0 +1,477 @@
+{
+  "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+  "filename": "Fibers_Journals_14-00001_20260330.pdf",
+  "doc_type": "paper",
+  "material_name": "Article",
+  "extraction_confidence": 0.8875000000000001,
+  "methodology": "The study evaluated printability through fluidity tests, filament extrusion tests, and slump tests using different fiber types (copper-coated steel, polypropylene, basalt) incorporated into concrete mixtures under controlled conditions of superplasticizer content, accelerator content, and silica fume replacement level.",
+  "research_objective": "Investigate the fundamental workability of 3D printed fiber-reinforced concretes incorporating different fiber types, focusing on fluidity, extrudability, and buildability.",
+  "key_findings": [
+    {
+      "finding": "Copper-coated steel fibers lead to deteriorated workability, manifested as reduced fluidity, increased fluidity loss over time, poor pumpability, discontinuous extrusion, and low slump.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "Polypropylene fibers increase the air content in concrete, thereby improving workability; they exhibit good extrusion continuity, appropriate slump and filament width, and favorable buildability.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "Basalt fibers significantly enhance air content and workability; however, due to the high stiffness of the fibers, extrusion continuity is only moderate.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "The study aims to analyze the effects of admixture content and fiber type on the fresh workability (particularly printability) of 3D printed concrete materials.",
+      "confidence": 0.9
+    },
+    {
+      "finding": "The mix proportions were designed using the controlled variable method with four investigated factors including superplasticizer dosage, accelerator dosage, silica fume replacement rate, and fiber types.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "Mixes P1 to P4 were used to investigate the effect of superplasticizer dosage on workability; Mixes P1 and P5 to P7 were used to examine the influence of accelerator dosage; Mixes P1 and P8 to P10 were formulated to assess the impact of silica fume replacement rate; and Mixes P1, P11, and P12 were employed to evaluate the effect of fiber type.",
+      "confidence": 1.0
+    },
+    {
+      "finding": "Effectiveness of silica fume replacement rate on concrete mix design",
+      "confidence": 0.9
+    },
+    {
+      "finding": "Impact of different fiber types (Copper-coated, Steel, Basalt, Polypropylene) in concrete mixes P11 and P12",
+      "confidence": 0.9
+    }
+  ],
+  "processing_conditions": [],
+  "properties_count": 39,
+  "properties": [
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "BasaltFiberElasticModulus(GPa)",
+      "value": "100",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Fiber Type Performance Indicator Value in Table 5.Mix proportion design (Unit: kg/m³)",
+      "created_at": "2026-04-26T05:30:13.433134"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "cement CaO content",
+      "value": "0.25%",
+      "unit": "%",
+      "confidence": 0.9,
+      "context": "provided in Table1",
+      "created_at": "2026-04-26T05:30:12.674605"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "cement MgO content",
+      "value": "1.40%",
+      "unit": "%",
+      "confidence": 0.9,
+      "context": "provided in Table1",
+      "created_at": "2026-04-26T05:30:12.640674"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "BulkDensity",
+      "value": "310",
+      "unit": "kg/m³",
+      "confidence": 1.0,
+      "context": "Table 3.Main performance indicators of fibers",
+      "created_at": "2026-04-26T05:30:13.208134"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "nozzle horizontal moving speed",
+      "value": "20 mm/s",
+      "unit": "",
+      "confidence": 0.9,
+      "context": "previously optimized parameters for the printing process",
+      "created_at": "2026-04-26T05:30:12.499295"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "extrudability",
+      "value": "accelerator content between 0.60% and 0.85%",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "optimal ranges for printability",
+      "created_at": "2026-04-26T05:30:12.289593"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "cement Cl−1 content",
+      "value": "0.01%",
+      "unit": "%",
+      "confidence": 0.9,
+      "context": "provided in Table1",
+      "created_at": "2026-04-26T05:30:12.703265"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "cement type",
+      "value": "P.O52.5 ordinary Portland cement",
+      "unit": "",
+      "confidence": 0.9,
+      "context": "provided in Table1",
+      "created_at": "2026-04-26T05:30:12.578121"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "silica fume loss on ignition",
+      "value": "<=6%",
+      "unit": "%",
+      "confidence": 0.9,
+      "context": "provided in Table3",
+      "created_at": "2026-04-26T05:30:12.935400"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "printing layer height",
+      "value": "10 mm",
+      "unit": "",
+      "confidence": 0.9,
+      "context": "fixed value set during the experiment",
+      "created_at": "2026-04-26T05:30:12.532970"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "cement final setting time",
+      "value": "<180 min",
+      "unit": "",
+      "confidence": 0.9,
+      "context": "provided in Table1",
+      "created_at": "2026-04-26T05:30:12.769872"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "pumpability",
+      "value": "poor pumpability",
+      "unit": "-",
+      "confidence": 1.0,
+      "context": "printability assessment through corresponding test methods including fluidity tests",
+      "created_at": "2026-04-26T05:30:12.393748"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "SiO",
+      "value": "≥85",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "Table 3.Main performance indicators of fibers",
+      "created_at": "2026-04-26T05:30:13.073481"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "BasaltFiberTensileStrength(MPa)",
+      "value": "3500",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Fiber Type Performance Indicator Value in Table 5.Mix proportion design (Unit: kg/m³)",
+      "created_at": "2026-04-26T05:30:13.401281"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "LossonIgnition",
+      "value": "≤6",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "Table 3.Main performance indicators of fibers",
+      "created_at": "2026-04-26T05:30:13.143808"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "Diameter(mm)",
+      "value": "0.2",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Fiber Type Performance Indicator Value in Table 5.Mix proportion design (Unit: kg/m³)",
+      "created_at": "2026-04-26T05:30:13.273393"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "extrusion continuity",
+      "value": "discontinuous extrusion, low slump",
+      "unit": "-",
+      "confidence": 1.0,
+      "context": "printability assessment through corresponding test methods including filament extrusion tests and slump tests",
+      "created_at": "2026-04-26T05:30:12.425213"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "buildability",
+      "value": "silica fume replacement level between 7.5% and 10%",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "optimal ranges for printability",
+      "created_at": "2026-04-26T05:30:12.325618"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "fluidity",
+      "value": "superplasticizer content between 0.35% and 0.45%",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "optimal ranges for printability",
+      "created_at": "2026-04-26T05:30:12.251738"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "cement SO content",
+      "value": "2.35%",
+      "unit": "%",
+      "confidence": 0.9,
+      "context": "provided in Table1",
+      "created_at": "2026-04-26T05:30:12.608987"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "silica fume residue on 45 µm sieve",
+      "value": "<=10%",
+      "unit": "%",
+      "confidence": 0.9,
+      "context": "provided in Table3",
+      "created_at": "2026-04-26T05:30:13.002885"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "MoistureContent",
+      "value": "≤3",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "Table 3.Main performance indicators of fibers",
+      "created_at": "2026-04-26T05:30:13.110233"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "silica fume moisture content",
+      "value": "<=3%",
+      "unit": "%",
+      "confidence": 0.9,
+      "context": "provided in Table3",
+      "created_at": "2026-04-26T05:30:12.902866"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "Silica Fume Replacement Rate",
+      "value": "Not specified in the provided data",
+      "unit": "%",
+      "confidence": 1.0,
+      "context": "Mixes P1 and P8 to P10 were formulated to assess the impact of silica fume replacement rate",
+      "created_at": "2026-04-26T05:30:13.499206"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "silica fume bulk density",
+      "value": ">310 kg/m³",
+      "unit": "kg/m³",
+      "confidence": 0.9,
+      "context": "provided in Table3",
+      "created_at": "2026-04-26T05:30:13.038719"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "quartz sand maximum particle size",
+      "value": "≤2 mm",
+      "unit": "",
+      "confidence": 0.9,
+      "context": "provided in Table1",
+      "created_at": "2026-04-26T05:30:12.835283"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "fluidity loss over time",
+      "value": "reduced fluidity, increased fluidity loss over time",
+      "unit": "-",
+      "confidence": 1.0,
+      "context": "printability assessment through corresponding test methods including fluidity tests",
+      "created_at": "2026-04-26T05:30:12.359430"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "Fiber Type",
+      "value": "Copper-coated, Steel fiber, Basalt fiber, Polypropylene fiber",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Mixes P11 and P12 were employed to evaluate the effect of fiber type",
+      "created_at": "2026-04-26T05:30:13.532830"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "SurfaceCharacteristicsLength(mm)",
+      "value": "12",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Fiber Type Performance Indicator Value in Table 5.Mix proportion design (Unit: kg/m³)",
+      "created_at": "2026-04-26T05:30:13.335720"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "Copper-coatedSteelFiberChemicalCompatibilitywiththeCementitiousMatrix",
+      "value": "-",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Fiber Type Performance Indicator Value in Table 5.Mix proportion design (Unit: kg/m³)",
+      "created_at": "2026-04-26T05:30:13.369715"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "PozzolanicActivityIndex",
+      "value": "≥90",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Table 3.Main performance indicators of fibers",
+      "created_at": "2026-04-26T05:30:13.176213"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "cement compressive strength",
+      "value": ">52.5 MPa",
+      "unit": "MPa",
+      "confidence": 0.9,
+      "context": "provided in Table1",
+      "created_at": "2026-04-26T05:30:12.801492"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "cement initial setting time",
+      "value": ">90 min",
+      "unit": "",
+      "confidence": 0.9,
+      "context": "provided in Table1",
+      "created_at": "2026-04-26T05:30:12.735563"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "extrusion rotation speed",
+      "value": "0.18 rad/s",
+      "unit": "",
+      "confidence": 0.9,
+      "context": "previously optimized parameters for the printing process",
+      "created_at": "2026-04-26T05:30:12.466093"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "Copper-coatedSteelFiberCorrosionResistance",
+      "value": "-",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Fiber Type Performance Indicator Value in Table 5.Mix proportion design (Unit: kg/m³)",
+      "created_at": "2026-04-26T05:30:13.304444"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "silica fume SiO content",
+      "value": ">85%",
+      "unit": "%",
+      "confidence": 0.9,
+      "context": "provided in Table3",
+      "created_at": "2026-04-26T05:30:12.868492"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "PolypropylenefiberFractureStrength(MPa)",
+      "value": "350",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Fiber Type Performance Indicator Value in Table 5.Mix proportion design (Unit: kg/m³)",
+      "created_at": "2026-04-26T05:30:13.466378"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "silica fume Pozzolanic Activity Index",
+      "value": ">90%",
+      "unit": "%",
+      "confidence": 0.9,
+      "context": "provided in Table3",
+      "created_at": "2026-04-26T05:30:12.969283"
+    },
+    {
+      "doc_id": "21abff28-0886-4426-88b0-85efa2e0ce79",
+      "filename": "Fibers_Journals_14-00001_20260330.pdf",
+      "material_name": "Article",
+      "property_name": "Length(mm)",
+      "value": "12",
+      "unit": "",
+      "confidence": 1.0,
+      "context": "Fiber Type Performance Indicator Value in Table 5.Mix proportion design (Unit: kg/m³)",
+      "created_at": "2026-04-26T05:30:13.241588"
+    }
+  ],
+  "source_text": "Article Research on the Workability of 3D Printed Fiber-Reinforced Concrete Materials QunyiHuang1,QingyuHuang1,* ,HongYang1 ,JiahangZhang2andYajieWu1 1 SchoolofCivilEngineering,SouthwestJiaotongUniversity,Chengdu610031,China; hqy1986@swjtu.edu.cn(Q.H.);pepsiyh525@163.com(H.Y.);wyjswjtu@163.com(Y.W.) 2 SchoolofCivilEngineering,SoutheastUniversity,Nanjing211189,China;220241359@seu.edu.cn * Correspondence:Huangqingyu@my.swjtu.edu.cn Abstract Thispaperinvestigatesthefundamentalworkabilityof3Dprintedconcretematerialsincor- poratingdifferentfibertypes. Fluidity,extrudability,andbuildabilitywereproposedas keyindicatorsforassessingprintability,evaluatedthroughcorrespondingtestmethods, includingfluiditytests,filamentextrusiontests,andslumptests. Theresultsdemonstrate thattheoptimalrangesforprintabilityaresuperplasticizercontentbetween0.35%and 0.45%,acceleratorcontentbetween0.60%and0.85%,andsilicafumereplacementlevel between 7.5% and 10%. The incorporation of copper-coated steel fibers led to deterio- ratedworkability,manifestedasreducedfluidity,increasedfluiditylossovertime,poor pumpability, discontinuous extrusion, and low slump, although buildability remained satisfactory. Polypropylenefibersincreasedtheaircontentinconcrete,therebyimproving workability; they exhibited good extrusion continuity, appropriate slump and filament width, and favorable buildability. Basalt fibers significantly enhanced air content and workability. However,duetothehighstiffnessofthefibers,extrusioncontinuitywasonly moderate. Whiletheslumpandfilamentwidthweresuitable,thepresenceofminorvoids intheprintedfilamentsresultedinaveragebuildability. Keywords: 3Dprintingtechnology;concrete;fiber;workability;mixratio;admixture 1. Introduction Three-dimensionalprintingtechnology,withitsadvantagesofhighefficiency,digital- ization,andenvironmentalfriendliness,providesanewpathwayforthetransformation andupgradingofconstructionmethods. However,researchon3D-printedconcretetech- nology,especiallysystemsinvolvingfibe digital- ization,andenvironmentalfriendliness,providesanewpathwayforthetransformation andupgradingofconstructionmethods. However,researchon3D-printedconcretetech- nology,especiallysystemsinvolvingfiberreinforcement,isstillinitsearlystages,witha particularlackofstudiesontheapplicabilityofrawmaterialsandmixdesigns. Ordinaryconcreteexhibitspoortensileperformanceandrequiresreinforcementfor AcademicEditor:CatalinR.Picu use. Tomitigatethebrittlenessofcement-basedmaterials,fiber-reinforcedconcrete(FRC) Received:3November2025 andhigh-performancecement-basedcompositeshavebeenwidelydemonstratedtoef- Revised:4December2025 fectivelyenhancestructuralmechanicalpropertiesanddurability[1-4]. Thishighlights Accepted:12December2025 Published:19December2025 the significant potential of fiber reinforcement in improving load-bearing capacity and Copyright:©2025bytheauthors. durability. However,traditionalFRCconstructionreliesonformworkcasting,whichlimits LicenseeMDPI,Basel,Switzerland. geometricfreedomandincreasescosts. Thisarticleisanopenaccessarticle Three-dimensional-printedfiber-reinforcedconcrete(3DP-FRC)eliminatestheneedfor distributedunderthetermsand formwork,enablingtherapidconstructionofcomplexcomponents. However,thisprocess conditionsoftheCreativeCommons imposesstringentrequirementsontheextrudabilityandstackingstabilityoffreshmaterials. Attribution(CCBY)license. Fibers2026,14,1 https://doi.org/10.3390/fib14010001 Fibers2026,14,1 2of14 While the incorporation of fibers can enhance the mechanical properties of hardened concrete, it often significantly alters the rheological characteristics of the paste, posing severe challenges to printability. Currently, to address reinforcement issues in printed structures,researchershaveexploredmethodssuchaspost-castreinforcedconcrete[5], synchronousplacementofreinforcementmeshes[6,7],orsynchronousprintingofsteel bars[8]. However,thesemethodseitherunderminetheconvenienceofprintingtechnology or incur high costs. In contrast, direct utilization nousplacementofreinforcementmeshes[6,7],orsynchronousprintingofsteel bars[8]. However,thesemethodseitherunderminetheconvenienceofprintingtechnology or incur high costs. In contrast, direct utilization of fiber reinforcement is regarded as apotentialsolutionthatcombinesworkability,costadvantages,andcrackresistance[9]. Nevertheless,howtodesignfiber-reinforcedconcretemixturesthatmeettheworkability requirementsfor3Dprintingandwhatthekeyperformanceindicatorsareremaincritical challengesyettoberesolved. Therefore,thisstudyfocuseson3D-printedfiber-reinforcedconcretematerials,aim- ing to systematically analyze the effects of factors such as admixture content and fiber typeonthefreshworkability(particularlyprintability)ofthematerial. Itseekstoiden- tify key workability indicators and propose performance criteria for materials that sat- isfyprintabilityrequirements,therebylayingthefoundationforsubsequentresearchon mechanicalproperties. 2. 3DPrintingDeviceandExperimentalMaterials 2.1. PrintingDevice The 3D printing equipment used in this experiment was a concrete (mortar) 3D printing system developed by our research group. This system consists of me- chanical components, a print head with a 20 mm diameter nozzle, a hardware con- trol system, and dedicated 3D printing control software. The overall dimensions of the system are 1100mm×1100mm×1000mm, with an effective printing volume of 800mm×800mm×600mm. Thedevicesupportstheuseofvariouscement-basedmate- rialsin3Dprinting,asshowninFigure1. (a) (b) Figure1. Three-dimensionalprintingequipment. (a)Photographofthe3Dprintingequipment. (b)Schematicdiagramofthe3Dprintingequipment. Theprintingprocessemployedpreviouslyoptimizedparameters,includinganextru- sionrotationspeedof0.18rad/sandanozzlehorizontalmovingspeedof20mm/s,as determinedthroughsystematiccalibration[10]. Theprintinglayerheightwassettoafixed valueof10mm. Real-timetorquedataduringtheextrusionprocesswasnotmonitoredin thisexperimentandwillbeconsideredinsubsequentstudies. https://d stematiccalibration[10]. Theprintinglayerheightwassettoafixed valueof10mm. Real-timetorquedataduringtheextrusionprocesswasnotmonitoredin thisexperimentandwillbeconsideredinsubsequentstudies. https://doi.org/10.3390/fib14010001 Fibers2026,14,1 3of14 2.2. ExperimentalMaterials The3Dprintedfiber-reinforcedconcretematerialspreparedinthisexperimentcon- sistedofcement,quartzsand,silicafume,fiber,superplasticizer,accelerator,andretarder. EachmaterialisillustratedinFigure2. (a) (b) (c) (d) (e) (f) (g) (h) Figure 2. Raw materials. (a) Cement. (b) Silica fume. (c) Superplasticizer. (d) Accelerator. (e)Standardquartzsand.(f)Polypropylenefiber.(g)Copper-coatedsteelfiber.(h)Basaltfiber. (1)Cement: P.O52.5ordinaryPortlandcement,ofwhichthechemicalcomposition andphysicalpropertiesareprovidedinTable1. Table1.ChemicalcompositionandphysicalpropertiesofP.O52.5cement. IndicatorType Parameter Value SO (%) 2.35 3 MgO(%) 1.40 ChemicalComposition CaO(%) 0.25 Cl−1 0.01 Initialsettingtime >90min PhysicalProperties Finalsettingtime <180min 28-dcompressivestrength >52.5MPa (2)Quartzsand: ChineseISOstandardsandwithamaximumparticlesizenotexceed- ing2mm. Thesilicondioxide(SiO )contentisgreaterthan96%;thelossonignitiondoes 2 notexceed0.40%;andtheclaycontent(includingsolublesalts)isnomorethan0.20%. (3)Silicafume: Grade92silicafume,theperformanceparametersofwhicharepro- videdinTable2. (4)Fibers: Thisexperimentemployedcopper-coatedsteelfibers, basaltfibers, and polypropylenefibers,allwithalengthof12mm[11]. Theirkeyperformanceparameters aresummarizedinTable3. (5)Superplasticizer: Apowderedpolycarboxylatesuperplasticizerwithawaterreduc- tionrateof45%. (6)Accelerator: Apowderedsetting-acceleratingadmixtureusedtoenhancetheearly strengthofconcrete. https://doi.org/10.3390/fib14010001 Fibers2026,14,1 4of14 (7) Retarder: A powdered cement retarder employed to maintain the plasticity of concreteforanextendedperiod,therebyfacilitatingtheprintingprocess. (8)Water: Tapwaterwasusedformixing. Table2.Mainperformanc Retarder: A powdered cement retarder employed to maintain the plasticity of concreteforanextendedperiod,therebyfacilitatingtheprintingprocess. (8)Water: Tapwaterwasusedformixing. Table2.Mainperformanceindicatorsofsilicafume. IndicatorType PerformanceIndicator Value SiO ≥85 2 ChemicalIndicators MoistureContent(%) ≤3 LossonIgnition(%) ≤6 PozzolanicActivityIndex(%) ≥90 PhysicalIndicators Residueon45µmsieve(%) ≤10 BulkDensity(kg/m3) 310 Table3.Mainperformanceindicatorsoffibers. FiberType PerformanceIndicator Value SurfaceCharacteristics Length(mm) 12 Itiscoatedwithapurecopperlayer,designedtoenhanceits Diameter(mm) 0.2 Copper-coatedsteelfiber corrosionresistanceandchemicalcompatibilitywiththe Tensilestrength(MPa) 285 cementitiousmatrix. Elasticmodulus(GPa) 200 Length(mm) 12 Itisarawfiberwithoutsurfacetreatment,exhibitingan Basaltfiber Tensilestrength(MPa) 3500 inertsurface.Itsbondingwiththematrixprimarilyrelieson Elasticmodulus(GPa) 100 physicalmechanicalinterlock. Length(mm) 12 Thefibersurfaceundergoeshydrophilicandphysical Polypropylenefiber Fracturestrength(MPa) 350 rougheningtreatmentstoimproveitsdispersioninthe Elasticmodulus(GPa) 15 cementpasteandenhancetheinterfacialbondstrength. 3. ExperimentalProgram Theprintabilityof3Dprintedfiber-reinforcedconcretedependsonthepumpability ofthematerialwithinthepipeline[12],itsresistancetoplasticdeformationundershear straininsidetheprinthead[13],aswellasitsload-bearingcapacityandshapestabilityafter deposition[14]. Thesepropertiesarecloselyrelatedtothematerial'sfluidity,extrudability, and buildability. Therefore, the above three characteristics were selected as evaluation indicatorsforprintabilityperformance,representedbyfluidity,printedfilamentwidthand continuity,andslump,respectively. Allmixing,printing,andperformancetestingofmaterialswereconductedinalabora- toryunderconstanttemperatureandhumidityconditions,withtheambienttemperature controlledat(20±2)◦Candtherelativehumiditymaintainedat(60±5)%. 3.1. MixProportionDesign Themixpr ialswereconductedinalabora- toryunderconstanttemperatureandhumidityconditions,withtheambienttemperature controlledat(20±2)◦Candtherelativehumiditymaintainedat(60±5)%. 3.1. MixProportionDesign Themixproportionsinthisstudyweredesignedusingthecontrolledvariablemethod, withsuperplasticizerdosage,acceleratordosage,silicafumereplacementrate,andfiber typeselectedasthefourinvestigatedfactors. Thedosagesofchemicaladmixturesand the silica fume replacement rate were each set at four levels, while the fiber type was setatthreelevels. Basedontheworkabilityrequirementsfor3Dprintedfiber-reinforced concrete[15],thewater-to-binderratio(massofwatertomassofcementitiousmaterials) was set at 0.32, and the binder-to-sand ratio was set at 1:1 (mass of standard sand to massofcementitiousmaterials). ThepreviouslyvalidatedLevel2formulation[16]was adoptedasthebenchmark,asdetailedinTable1. Usingthecontrolledvariableapproach, 12additionalpreliminarymixdesignsweredeveloped,aspresentedinTable4.Thesemixes weresubjectedtofluidity,extrudability,buildability,andopentimeteststosystematically https://doi.org/10.3390/fib14010001 Fibers2026,14,1 5of14 investigate the influence of each specified factor on the workability of the 3D printed fiber-reinforcedconcrete. Table4.Factorsandleveldesign. Level SuperplasticizerA AcceleratorB SilicaFumeC FiberTypeD 1 A1(0.3%) B1(0.6%) C1(0%) D1(0.2%Basaltfiber) 2 A2(0.4%) B2(0.8%) C2(10%) D2(0.2%Copper-coatedsteelfiber) 3 A3(0.5%) B3(1.0%) C3(15%) D3(0.3%Polypropylenefiber) 4 A4(0.6%) B4(1.2%) C4(20%) -- Note:Thedosagesofchemicaladmixtures(superplasticizerandaccelerator)areexpressedaspercentagesby massofthetotalcementitiousmaterials(cement+silicafume);fibercontentisexpressedasvolumefraction;and silicafumecontentisexpressedasreplacementpercentagebymassofcement. A total of 13 mix proportions, as detailed in Table 5, were evaluated in this study. Amongthese,mixP2servedasthebenchmarkandwasdesignatedastheexperimental control. MixesP1toP4weredesignedtoinvestigatetheeffectof 13 mix proportions, as detailed in Table 5, were evaluated in this study. Amongthese,mixP2servedasthebenchmarkandwasdesignatedastheexperimental control. MixesP1toP4weredesignedtoinvestigatetheeffectofsuperplasticizerdosageon workability;mixesP1andP5toP7wereusedtoexaminetheinfluenceofacceleratordosage; mixesP1andP8toP10wereformulatedtoassesstheimpactofsilicafumereplacement rate;andmixesP1,P11,andP12wereemployedtoevaluatetheeffectoffibertype. Table5.Mixproportiondesign(Unit:kg/m3). Standard Silica MixID Cement Water Superplasticizer Accelerator Retarder Fiber(0.2%) Sand Fume P1 900 1000 100 320 3 8 2 -- P2 900 1000 100 320 4 8 2 -- P3 900 1000 100 320 5 8 2 -- P4 900 1000 100 320 6 8 2 -- P5 900 1000 100 320 4 6 2 -- P6 900 1000 100 320 4 10 2 -- P7 900 1000 100 320 4 12 2 -- P8 1000 1000 0 320 4 8 2 -- P9 850 1000 150 320 4 8 2 -- P10 800 1000 200 320 4 8 2 -- Copper-coated P11 900 1000 100 320 4 8 2 steelfiber P12 900 1000 100 320 4 8 2 Basaltfiber P13 900 1000 100 320 4 8 2 Polypropylenefiber Note: (1)Allmaterialdosagesinthistablerepresenttheabsolutemasspercubicmeterofconcrete. (2)The dosageofchemicaladmixturesiscalculatedbasedontheirdesigneddosageasapercentageofthetotalmass ofcementitiousmaterials(cement+silicafume). Forexample,inMixP2,themassofcementitiousmateri- alsis900+100=1000kg/m3,andthedesignedsuperplasticizerdosageis0.4%. Consequently,itsdosageis 1000×0.4%=4.0kg/m3.(3)Thefibercontentis0.2%byvolume,anditscorrespondingabsolutemassislisted. Pre-printingtestsonthetrialmixturesdemonstratedthatmaterialsexhibitingaflowdi- ameterof125-145mm,aslumpof10-25mm,andcontinuousfilamentformationpossessed adequateprintability. Thesecriticalprintabilitythresholdswereempiricallydetermined throughaseriesofpreliminarytestsconductedbeforethemainexperimentalprogram. Inallmixdesignsofthisstudy,thefibervolumefractionwassetat0.2%,withthemix proportionprimarilytargetingthe3Dprintingofnon-structuralanddecorativecomponents. This selection was primarily dictated by the stringent printab thisstudy,thefibervolumefractionwassetat0.2%,withthemix proportionprimarilytargetingthe3Dprintingofnon-structuralanddecorativecomponents. This selection was primarily dictated by the stringent printability requirements of the 3D printing process. Preliminary tests indicated that higher fiber dosages (e.g., >0.5%) substantially increased mortar viscosity and yield stress, resulting in severe extrusion difficulties,frequentnozzleclogging,andexacerbatedfiberballing. Theselecteddosageof 0.2%representsanoptimalbalance,aimingtoutilizefibersforplasticshrinkageinhibition https://doi.org/10.3390/fib14010001 Fibers2026,14,1 6of14 andearly-agestrengthenhancementwithoutcompromisingkeyfreshpropertiessuchas fluidity,extrudability,andbuildability. To clarify the experimental design framework and enhance its reproducibility, the factorsinvestigatedinthisstudyandtheirrespectivevaluerangesarespecifiedasfollows: thedosagesofsuperplasticizerandaccelerator(bymassofcementitiousmaterials)were setat0.3-0.6%and0.6-1.2%, respectively; thesilicafumereplacementrate(bymassof cement)wassetat0-15%;andthefibertypewasselectedfromcopper-coatedsteelfiber, basaltfiber,andpolypropylenefiberforcomparison,withtheirvolumefractionfixedat 0.2%. Allmixproportionsweredesignedbasedonafixedwater-to-binderratioof0.32and abinder-to-sandratioof1:1. 3.2. PreparationMethodof3DPrintedFiber-ReinforcedConcrete Thedetailedprocedureforpreparingthe3Dprintedfiber-reinforcedconcretematerials isasfollows: (1) P.O52.5ordinaryPortlandcementandsilicafumeweremixedandstirredfor3min untiluniformlyblended; (2) Chemicaladmixturesweredissolvedinwateruntilahomogeneoussolutionwithout flocculationwasachieved. Thissolutionwasthenpouredintofineaggregatesand mixeduntilapasteformed,followedbycontinuedmixingfor3min; (3) Standardsandwasgraduallyaddedtothepasteandmixedcontinuouslyfor3min. Unliketraditionalprocesseswheresandandcementaredry-mixedfirst,thisstudy employsadelayedsandadditiontechnique,whichutilizesthepreparedrheological pastetocoatt ddedtothepasteandmixedcontinuouslyfor3min. Unliketraditionalprocesseswheresandandcementaredry-mixedfirst,thisstudy employsadelayedsandadditiontechnique,whichutilizesthepreparedrheological pastetocoattheaggregateparticles. Researchindicatesthateffectivepastecoating is crucial for forming a \"lubrication layer,\" which significantly reduces frictional resistancealongthepipewall,ensuringstablepumpingandextrusionofthematerial intheformof\"plugflow\"[17]; (4) Duringthemixingprocess,fibersweregraduallyincorporated. Afterallfiberswere added, mixing continued for another 3 min until a homogeneous fibrous mortar wasobtained. 3.3. FluidityTest The3Dprintedconcretematerialmustfirstexhibitadequatefluidity,whichisessential forsuccessfulpumpingthroughthepipelineandsmoothextrusionfromthenozzle. The fluiditytestoftheprintingmaterialwasconductedinaccordancewiththeChinesestandard GB/T2419-2005[18]\"Testmethodforfluidityofcementmortar\". Thetestwasperformed using a flow table. The fluidity was measured at 5 min and 15 min after mixing. The diametersofthesampleintwoorthogonaldirections,denotedasD andD ,weremeasured, 1 2 and their average value D was taken as the test result, as illustrated in Figure 3. The 10mintestingintervalwasselectedbasedonthefollowingrationale: First,thematerial contains a compound admixture system comprising both an accelerator and a retarder. Pre-testing confirmed that the fluidity of the material decays at the highest rate within thefirst30minaftermixing. The10mininterval,therefore,allowsforprecisecaptureof theearly-stagefluidityevolution. Second, consideringtheactualprintingscenario, the maximumprintingdurationforasinglecomponentinthisstudydoesnotexceed20min (withavolume≤0.384m3).Thetestingpointsat5and15mincanthuseffectivelycover thekeyworkingstagesofthematerial,fromthecompletionofmixingtotheendofprinting. https://doi.org/10.3390/fib14010001 Fibers2026,14,1 7of14 (a) (b) Figure3.Fluiditytest.(a)Cementmortarfluiditytester.(b)Fluiditymeasurementmethod. 3.4. Extrudabil completionofmixingtotheendofprinting. https://doi.org/10.3390/fib14010001 Fibers2026,14,1 7of14 (a) (b) Figure3.Fluiditytest.(a)Cementmortarfluiditytester.(b)Fluiditymeasurementmethod. 3.4. ExtrudabilityTest The3Dprintedconcretematerialisrequiredtobeextrudedsmoothlyfromthenozzle. Based on the 3D printing equipment used in this experiment, which features a nozzle diameterof20mm,preliminaryprintingtestswereconducted. Thewidthsofthethickest andthinnestsectionsoftheprintedfilament,denotedasS andS ,weremeasured,andtheir 1 2 averagevalueSwastakenasthetestresult. Extrudabilitywasconsideredsatisfactoryfor practicalprintingrequirementsifthefilamentexhibitedgoodcontinuityandtheaverage width S remained within 25% deviation from the nozzle diameter. The test setup and measurementareillustratedinFigure4. (a) (b) Figure4.Extrudabilitytest.(a)Extrusiontest.(b)Measurementmethodforfilamentwidth. 3.5. BuildabilityTest Theprincipleof3Dprintingrequireseachprintedlayertoexhibitadequatestability, which primarily involves two types of failures: material failure and structural stability failure[19]. Theformerdependsontherheologicalpropertiesofthefreshconcrete,while thelatterisinfluencedbythestructuralcharacteristicsoftheprintedobject,suchasthe slendernessratio. Thisimpliesthattheprintedstructuremustmaintainitsstabilitywithout collapsingbeforehardening,andeachlayermustpossesssufficientflowabilityandextensi- bility. Therefore,theconcretematerialshouldhaveanappropriateslumpvalue. Theslump shouldnotbetoohigh,asthelowerlayersmustsupporttheweightoftheupperlayers withoutexcessivedeformationorcollapse. Conversely,theslumpshouldnotbetoolow, sothattheprintedlayerscanfullycontacteachotherafterdeposition,ensuringadequate interlayerbondingandconformingtothelayer-by-layerstackingprinciple. TheslumptestoftheconcretematerialwasconductedinaccordancewiththeChinese standard GB/T 50080-2016 [20] \"Standard for test method of performance of ordinary concretemixtures\".Asawidelyusedmethodforevaluatingconcreteandm concretematerialwasconductedinaccordancewiththeChinese standard GB/T 50080-2016 [20] \"Standard for test method of performance of ordinary concretemixtures\".Asawidelyusedmethodforevaluatingconcreteandmortar,theslump testcanbeappliedtoassessthebuildabilityof3Dprintedconcretematerials. Theheight H of theconcrete cylinderafter slump under gravitational force is used tocharacterize theyieldstressandbuildabilityoftheprintingmaterial. Iftheconcretespecimenexhibits https://doi.org/10.3390/fib14010001 Fibers2026,14,1 8of14 anappropriateslumpafterdemolding,itindicatesthatthe3Dprintedconcretepossesses satisfactorybuildability. Thecylindricalmoldusedinthetesthadaheightanddiameterof 6cm,asshowninFigure5. Figure5.Slumptest. 4. ResultsandAnalysis 4.1. EffectofAdmixtureDosage Thesuperplasticizerdispersescementparticles,improvesworkability,andreduces unitwaterconsumption,significantlyinfluencingtheperformanceoftheconcretemixture. Inthisexperiment,thedosagelevelsofthesuperplasticizerfromLevel1toLevel4were 0.3%,0.4%,0.5%,and0.6%,respectively. Theacceleratorshortensthesettingtimeofthe paste, increases the early strength of the printed object, and alters various workability properties of the material. The dosage levels of the accelerator from Level 1 to Level 4 were0.6%,0.8%,1.0%,and1.2%,respectively. Theincorporationofsilicafumeimproves the workability of the material, increases its density, and enhances both the early-age andultimatestrengthoftheconcrete, therebymodifyingitsworkabilitycharacteristics. ThereplacementratesofsilicafumefromLevel1toLevel4were0%,5%,10%,and15%, respectively. ThetestresultsoftheworkabilitypropertiesarepresentedinTable6. Table6.Workabilitytestresultsofsuperplasticizerexperimentalgroups. Fluidity(mm) Extrudability Buildability MixID 5minFluidity 15minFluidity FilamentContinuity FilamentWidthS(mm) SlumpH(mm) P1 139 132 Good 23 12 P2 126 125 Fair 21 6 P3 149 137 Fair 29 32 P4 158 139 Poor 32 41 P5 144 141 Good 25 26 P6 127 118 Fair 21 7 P7 118 105 Discontinuous 1 entContinuity FilamentWidthS(mm) SlumpH(mm) P1 139 132 Good 23 12 P2 126 125 Fair 21 6 P3 149 137 Fair 29 32 P4 158 139 Poor 32 41 P5 144 141 Good 25 26 P6 127 118 Fair 21 7 P7 118 105 Discontinuous 18 3 P8 197 172 Unformed -- -- P9 150 137 Poor 29 33 P10 119 116 Discontinuous 19 4 Amongthetestedmixtures,MixP8exhibitedafluidityof197mmat5min,demonstrat- ingnegligibleshaperetentioncapacityandthuslackingprintability. Duringtheextrusion test,thismixturefailedtoformacoherentfilament. Consequently,nofurthertestswere conductedonthisspecificmixture. TheexperimentalresultswerecompiledandarepresentedgraphicallyinFigure6. AsshowninFigure6a,anincreaseinsuperplasticizerdosagesignificantlyenhances the fluidity of the material paste. Insufficient fluidity fails to meet the extensibility re- quirementsforprintablematerials,whileexcessivefluiditycompromisesthelowdynamic characteristicsrequiredforprinting. Anincreaseinacceleratordosagereducesthefluidity https://doi.org/10.3390/fib14010001 Fibers2026,14,1 9of14 of the paste, though its effect is less pronounced compared to that of the superplasti- cizer. Conversely,ahighersilicafumereplacementrateconsiderablydecreasesthefluidity of the paste. When the silica fume replacement rate is below 5%, the fluidity becomes excessively high, rendering the material unprintable. Figure 6b illustrates the effect of admixturedosageonfluiditylossovertime,wherethefluiditylossrateV iscalculatedas LR V = (f − f )/(t −t ). FromFigure6a,b,itcanbeobservedthatthefluiditygradually LR t1 t2 2 1 decreasesovertime. Thefluiditylossrateincreaseswithhigherdosagesofsuperplasticizer oraccelerator,butdecreaseswithanincreaseinsilicafumereplacementrate. Theinfluence ofsilicafumereplacementrateisparticularlynotable. (a) (b) (c) (d) Figure 6. Effect of admixture dosage on workability. (a) Effect of admixture dosage on fluidity. (b)Effectofadmixturedosageonfluiditylossovertime.(c)Effectofadmixturedosageonfilament width.(d)Effectofadmixturedosageonslump. AsseeninFigure6c,a rkability. (a) Effect of admixture dosage on fluidity. (b)Effectofadmixturedosageonfluiditylossovertime.(c)Effectofadmixturedosageonfilament width.(d)Effectofadmixturedosageonslump. AsseeninFigure6c,anincreaseinsuperplasticizerdosageleadstoalargerfilament width. Specifically,whenthesuperplasticizerdosageis0.3%,theprintedfilamentisthin, with a width smaller than the nozzle diameter, and exhibits poor extrusion continuity. When the superplasticizer dosage exceeds 0.45%, the material lacks sufficient stability to support extrusion, causing the paste to spread laterally after extrusion, resulting in afilamentwidthsignificantlylargerthanthenozzlediameter,whichisunfavorablefor printing. Ontheotherhand,anincreaseinacceleratordosagereducesthefilamentwidth. A sharp decrease in filament width occurs when the dosage rises from 1.0% to 1.2%, correspondingtoLevel3toLevel4. Atanacceleratordosageof0.6%,thematerialspreads slightlyafterextrusion,withthefilamentwidthnearthecriticalrequirement. Whenthe acceleratordosageexceeds1.1%,theprintedfilamentbecomesthin,withawidthdeviating https://doi.org/10.3390/fib14010001 Fibers2026,14,1 10of14 considerablyfromthenozzlediameter,andextrusioncontinuitydeteriorates,eventually leadingtoextrusionfailure. Additionally,ahighersilicafumereplacementratereduces the filament width. When the silica fume replacement rate is below 7.5%, the filament widthdeviatessignificantlyfromthenozzlediameter,andthemateriallacksthestability for continuousextrusion, occasionally exhibitingdroplet-likeextrusion, failing tomeet extrudability requirements. When the silica fume replacement rate exceeds 12.5%, the filamentbecomesthinwithpoorextrusioncontinuity,resultinginintermittentextrusion, whichalsofailstosatisfyextrudabilityrequirements. AsshowninFigure6d,theslumpexhibitsanon-linearincreasingrelationshipwiththe dosageofsuperplasticizer. Asuddenincreaseinslumpoccurswhenthesuperplasticizer dosagerisesfrom0.4%to0.5%,correspondingtoLevel2toLevel3. Whenthesuperplasti- cizer non-linearincreasingrelationshipwiththe dosageofsuperplasticizer. Asuddenincreaseinslumpoccurswhenthesuperplasticizer dosagerisesfrom0.4%to0.5%,correspondingtoLevel2toLevel3. Whenthesuperplasti- cizerdosageislessthan0.35%,theslumpistoosmall,leadingtofrequentcloggingofthe pumpingpipeandessentiallynoextrudability. Whenthesuperplasticizerdosageexceeds 0.45%,theslumpbecomesexcessivelyhigh,resultingininsufficientsupportcapacity,poor shapestabilityafterprinting,andinadequatebuildability. Additionally,theslumpdemon- stratesanon-lineardecreasingtrendwithanincreaseinacceleratordosage. Thedecrease israpidinitiallyandgraduallyslowsathigherdosages. Atanacceleratordosageof0.6%, therelativelyhighslumpflowallowedforadequateshaperetention. Whenthesilicafume replacementrateisbelow5%,theslumpisexcessivelyhigh,resultinginpoorplasticity. For silica fume replacement rates between 5% and 7.5%, the slump remains large with insufficientsupportcapacity,makingitdifficulttomaintaintheprintedshape. Whenthe silicafumereplacementrateexceeds10%,theslumpbecomestoosmall,adverselyaffecting interlayerbondingperformance. The experimental results demonstrate that the optimal dosage ranges meeting the fluidityrequirementsare: superplasticizerbetween0.30%and0.45%,acceleratorbetween 0.6%and0.85%,andsilicafumereplacementratebetween7.5%and12.5%. Forextrud- abilityrequirements,thesuitablerangesare: superplasticizerbetween0.30%and0.45%, acceleratorbetween0.6%and1.1%,andsilicafumereplacementratebetween7.5%and 12.5%. Regardingslumpperformance,theappropriatedosagesare: superplasticizerbe- tween0.35%and0.45%,acceleratorbetween0.60%and0.85%,andsilicafumereplacement ratebetween7.5%and10%. 4.2. EffectofFiberType Theincorporationoffibersmayincreasetheconsistencyofthepaste,anddifferent typesoffiberscandistinctlyinfluencetheextrusionandshapingprocesses,therebyalter- ingvariousworkabilitypropertiesofthematerial. Duringtheextrusionprocess, fibers experience significant shear forces within the nozzle, leading to preferent heextrusionandshapingprocesses,therebyalter- ingvariousworkabilitypropertiesofthematerial. Duringtheextrusionprocess, fibers experience significant shear forces within the nozzle, leading to preferential alignment alongtheprintingdirection. Thisfiberorientationphenomenoncreatesanisotropicme- chanicalpropertiesthatsubstantiallyinfluenceinterlayerbondingefficiencyandoverall buildability[21]. Thedegreeofalignmentvarieswithfiberstiffnessandgeometry,with stiffer fibers exhibiting more pronounced directional effects. In mixtures P11, P12, and P13,copper-coatedsteelfibers,basaltfibers,andpolypropylenefiberswereincorporated, respectively. TheworkabilitytestresultsofmixturesP1,P11,P12,andP13aresummarized inTable7. TheexperimentalresultswerecompiledandarepresentedgraphicallyinFigure7. Initialobservationsindicatethatthecopper-coatedsteelfibersexhibitamorepronounced tendencytoclusterduringmixingcomparedtootherfibers,whichislikelyattributableto theirrelativelyhigherself-weightandmayadverselyaffecttheiruniformdistribution[22], were difficult to mix and distribute uniformly. Their incorporation led to deteriorated workability,reducedfluidity,significantfluiditylossovertime,andalowerslump. This https://doi.org/10.3390/fib14010001 Fibers2026,14,1 11of14 resultedinpoorpumpabilityanddifficultextrusion,failingtomeettheprintabilityrequire- ments. Polypropylenefibers,characterizedbytheirfinemonofilamentdiameter,facilitate three-dimensionalrandomdistributionwithinthecementitiousmatrix.Theirincorporation moderatelyincreasestheconcrete'saircontent,therebyenhancingmixtureworkability. Theformulatedmaterialdemonstratedflowdiametersof140mmat5minand132mmat 15min,withaminimalflowlossrateof0.3mm/min,allconformingtothespecifiedfluid- itycriteria. Furthermore,themixtureexhibitedaslumpof17mm,anextrudedfilament widthof24mm,andmaintainedexcellentextrusioncontinuity,collectivelysatisfyingall criticalprintabilityrequirements. Basaltfibers,characterizedbytheirlowdensity,reduce the concrete density and sig lament widthof24mm,andmaintainedexcellentextrusioncontinuity,collectivelysatisfyingall criticalprintabilityrequirements. Basaltfibers,characterizedbytheirlowdensity,reduce the concrete density and significantly increase air content upon incorporation, thereby enhancingworkability. Theslumpandfilamentwidthwerealsowithinacceptableranges. However,duetotheirrelativelyhighstiffness[23],basaltfiberswerechallengingtopump andextrude,resultinginonlyfairextrusioncontinuity. Theprintedfilamentsexhibited minorvoids[24],leadingtoaveragebuildabilityperformance. Table7.Workabilitytestresultsoffibertypeexperimentalgroups. Fluidity(mm) Extrudability Buildability MixID SlumpH 5minFluidity 15minFluidity FilamentContinuity FilamentWidthD(mm) (mm) P1 139 132 Good 23 12 P11 119 110 Fair 20 9 P12 140 137 Good 25 15 P13 130 122 Fair 22 12 (a) (b) (c) (d) Figure7.Effectoffibertypeonworkability.(a)Effectoffibertypeonfluidity.(b)Effectoffibertype onfluiditylossovertime.(c)Effectoffibertypeonfilamentwidth.(d)Effectoffibertypeonslump. https://doi.org/10.3390/fib14010001 Fibers2026,14,1 12of14 5. DurabilityAnalysisofCopper-CoatedSteelFibers Copper-coatedsteelfibersdemonstratesignificantpotentialforenhancingthemechan- icalpropertiesofconcrete;however,theirlong-termdurabilityrequirescriticalattention. Thefindingsofthisstudyrevealthattheclusteringphenomenonoffibersduringprinting isnotonlyrelatedtomaterialdensitybutisalsosignificantlyinfluencedbyelectrochemical compatibility. Withinthecementitiouselectrolyteenvironment,thepotentialdifference between the copper coating and the steel core establishes a macroscopic galvanic cell, acceleratingtheanodicdissolutionprocessofthesteelcore. Concurrently,chlorideions,po- tentiallypresentintheaccelerator,cancompromisetheintegrityofthecoatingandinduce localizedpittingcorrosion. Furthermore,thelayeredstructuralcharacteristicsinherentto 3Dprintingprovidefacilitatedpathwaysfortheingressandmigrationofcorrosiveagents. Long-termperformanceinvestigationsindicatethatthe ngcorrosion. Furthermore,thelayeredstructuralcharacteristicsinherentto 3Dprintingprovidefacilitatedpathwaysfortheingressandmigrationofcorrosiveagents. Long-termperformanceinvestigationsindicatethatthevolumetricexpansionasso- ciatedwithcorrosionproductsgeneratessubstantialinternalstresswithintheconcrete, leadingtotheinitiationandpropagationofmicrocracks. Ascorrosionprogresses,thebond performanceatthefiber-matrixinterfaceexhibitsamarkeddecline,directlyimpairingthe stresstransferefficiencyofthecompositematerial. Underhumidenvironmentalconditions, thedurabilityofstructuralcomponentsreinforcedwithcopper-coatedsteelfibersmaybe significantlycompromised. Toenhancethedurabilityofcopper-coatedsteelfibers,thefollowingmeasuresare recommended: controlling the chloride ion content in accelerators, employing surface modificationtechniques,orincorporatinganappropriatevolumeofpolypropylenefibersto formahybridreinforcementsystem. Futureresearchshouldprioritizethecharacterization ofcorrosionkinetics,establishdurabilityassessmentmethodologiesspecificallytailored for3D-printedstructures,anddeveloptargetedfiberprotectiontechnologies. 6. Conclusions (1) Fluidity,extrudability,andbuildabilitywereadoptedasevaluationindicatorsforthe printabilityofmaterials,representedbyflowdiameter,filamentwidthandcontinuity, andslump,respectively. Multiplepreliminaryexperimentsdemonstratedthatthe materialexhibitssatisfactoryprintabilitywhentheflowdiameterrangesfrom125to 145mm,theprintedfilamentiscontinuouswithawidthdeviationwithin25%ofthe nozzlediameter,andtheslumpfallsbetween10and25mm. (2) Theexperimentalresultsindicatethattheoptimaldosagerangesmeetingthefluidity requirementsareasfollows: superplasticizerbetween0.30%and0.45%,accelerator between0.6%and0.85%,andsilicafumereplacementratebetween7.5%and12.5%. For extrudability requirements, the suitable ranges are: superplasticizer between 0.30%and0.45%,acceleratorbetween0.6%and1.1%,andsilicafumereplacement ratebetween7.5%and12.5%.Regardingslumpperformance,thea xtrudability requirements, the suitable ranges are: superplasticizer between 0.30%and0.45%,acceleratorbetween0.6%and1.1%,andsilicafumereplacement ratebetween7.5%and12.5%.Regardingslumpperformance,theappropriatedosages are: superplasticizerbetween0.35%and0.45%,acceleratorbetween0.60%and0.85%, andsilicafumereplacementratebetween7.5%and10%. (3) Theincorporationofcopper-coatedsteelfibersresultedinpoorworkability,reduced fluidity,andahightendencytoclogtheprintingnozzle,makingthematerialunsuit- ableforprinting. Althoughbasaltfibershadminimaladverseeffectsonworkability and slump, they significantly increased the air content in the concrete, leading to minorvoidsintheprintedfilamentsandmoderatebuildability. Furthermore,dueto theirhighstiffness,basaltfiberswerepronetocausingnozzleblockagesandexhibited onlyfairextrusioncontinuity. Whiletheymetthebasicprintabilityrequirements,they werenotanoptimalchoice. Incontrast,polypropylenefibersimprovedworkability and provided excellent fluidity. Their fine monofilament diameter enabled three- dimensionalrandomdistributionwithintheconcretematrix, shortenedtheinitial https://doi.org/10.3390/fib14010001 Fibers2026,14,1 13of14 settingtime,enhancedearlystrength,anddemonstratedgoodbuildability,making themapreferableadditivefor3Dprinting. (4) Bycomprehensivelyconsideringtheinfluenceofvariousfactorsonworkability,the followingoptimalmixproportionisproposed(unit: kg/m3): Cementitiousmaterials 1000(Cement900,Silicafume100),Standardsand1000,Water320,Superplasticizer 4.0(Dosage0.4%),Accelerator8.0(Dosage0.8%),Polypropylenefiber1.8(Volume fraction0.2%). Thismixproportiondemonstratesexcellentperformanceinfluidity, extrudability,andbuildability,representingtheoptimalprintingformulation. (5) Preliminary mechanical property validation was conducted on this optimal mix. The 28-day cube compressive strength reached 72.96 MPa, and the axial compres- sive strength reached 48.58 MPa. Although the weakened interlayer bonding in printedelementsleadstoanisotropi ptimal mix. The 28-day cube compressive strength reached 72.96 MPa, and the axial compres- sive strength reached 48.58 MPa. Although the weakened interlayer bonding in printedelementsleadstoanisotropicmechanicalproperties,theobtainedstrength values fully meet the mechanical requirements for non-load-bearing components (such as partition walls and decorative panels), demonstrating its feasibility for engineeringapplications. (6) Theexperimentalfindingsonworkabilityprovideessentialparametersforsubsequent numericalmodelingof3D-printedfiber-reinforcedconcrete.Advancedcomputational frameworks,includingcohesive-zonemodelingforinterfacialbehaviorandphase- fielddamagemodelsforcrackpropagation,offerpromisingapproachesforsimulating the mechanical performance and damage evolution of printed structures [25,26]. Futureresearchintegratingtheworkabilityparametersestablishedinthisstudywith suchnumericalmethodscouldenablemoreaccuratepredictionsofstructuralbehavior andoptimizeprintingprocesses. AuthorContributions: AuthorContributions: Conceptualization,Q.H.(QunyiHuang)andQ.H. (QingyuHuang); methodology, Q.H.(QunyiHuang)andQ.H.(QingyuHuang); software, Q.H. (Qunyi Huang) and Q.H. (Qingyu Huang); validation, Q.H. (Qunyi Huang) and Q.H. (Qingyu Huang); formalanalysis,Q.H.(QunyiHuang),Q.H.(QingyuHuang),H.Y.,Y.W.andJ.Z.; inves- tigation,Q.H.(QunyiHuang),Q.H.(QingyuHuang),H.Y.,Y.W.andJ.Z.;resources,Q.H.(Qunyi Huang);datacuration,Q.H.(QunyiHuang),Q.H.(QingyuHuang)andH.Y.;writing--originaldraft preparation,Q.H.(QingyuHuang)andH.Y.;writing--reviewandediting,Q.H.(QunyiHuang),Q.H. (QingyuHuang)andH.Y.;visualization,Y.W.andJ.Z.;supervision,Q.H.(QunyiHuang);project administration,Q.H.(QunyiHuang);fundingacquisition,Q.H.(QunyiHuang).Allauthorshave readandagreedtothepublishedversionofthemanuscript. Funding:ThisresearchwasfundedbytheScienceandTechnologyDepartmentofXinjiangUygur AutonomousRegion,grantnumber2025B04050-001.AndTheAPCwasfundedbytheScienceand TechnologyDepartmentofXinjiangUygurAutonomousR ding:ThisresearchwasfundedbytheScienceandTechnologyDepartmentofXinjiangUygur AutonomousRegion,grantnumber2025B04050-001.AndTheAPCwasfundedbytheScienceand TechnologyDepartmentofXinjiangUygurAutonomousRegion. DataAvailabilityStatement:Theoriginalcontributionspresentedinthisstudyareincludedinthe articlematerial.Furtherinquiriescanbedirectedtothecorrespondingauthor. ConflictsofInterest:Theauthorsdeclarenoconflictofinterest. References 1. Liu,P.;Tang,J.-P.;Feng,R.;Fan,Y.;Zhu,J.-H.InterfacialbehaviourandshearperformanceofpolarizedCFRCM-strengthened corrodedRCcontinuousbeams.Constr.Build.Mater.2025,472,140786.[CrossRef] 2. Liu,P.;Tang,J.-P.;Feng,R.;Fan,Y.;Zhu,J.-H.TensilebehaviorandflexuralperformanceofpolarizedCFRCM-strengthened corrodedRCcontinuousbeams.Structures2025,76,109022.[CrossRef] 3. Tang,J.-P.;Feng,R.;Quach,W.-M.;Zeng,J.-J.Evaluationofflexuralperformanceoncorrosion-damagedRCbeamsretrofitted withUHPFRCCundermarineexposure.Eng.Struct.2025,333,120193.[CrossRef] 4. Tang,J.-P.;Feng,R.;Quach,W.M.;Zeng,J.-J.Axialcompressivebehaviourofsimulatedcorrosion-damagedRCcolumnsretrofitted withUHPFRCjacketssubjectedtodry-wetcyclingcondition.Constr.Build.Mater.2024,424,135956.[CrossRef] https://doi.org/10.3390/fib14010001 Fibers2026,14,1 14of14 5. Ngo,T.D.;Kashani,A.;Imbalzano,G.;Nguyen,K.T.Q.;Hui,D.Additivemanufacturing(3Dprinting):Areviewofmaterials, methods,applicationsandchallenges.Compos.PartBEng.2018,143,172-196.[CrossRef] 6. Marchment,T.;Sanjayan,J.Meshreinforcingmethodfor3DConcretePrinting.Autom.Constr.2020,109,102992.[CrossRef] 7. Li,Z.;Wang,L.;Ma,G.Mechanicalimprovementofcontinuoussteelmicrocablereinforcedgeopolymercompositesfor3D printingsubjectedtodifferentloadingconditions.Compos.PartBEng.2020,187,107796.[CrossRef] 8. Mechtcherine,V.;Grafe,J.;Nerella,V.N.;Spaniol,E.;Hertel,M.;Füssel,U.3D-printedsteelreinforcementfordigitalconcrete construction-Manufacture,mechanicalpropertiesandbondbehaviour.Constr.Build.Mater.2018,179,125-137.[CrossRef] 9. Xie, C.Y.ResearchProgresso el,M.;Füssel,U.3D-printedsteelreinforcementfordigitalconcrete construction-Manufacture,mechanicalpropertiesandbondbehaviour.Constr.Build.Mater.2018,179,125-137.[CrossRef] 9. Xie, C.Y.ResearchProgressonMechanicalPropertiesandDurabilityofFiberReinforcedConcrete. Technol. Wind. 2021, 3, 108-109+145.[CrossRef] 10. Xiao,J.;Zou,S.;Yu,Y.;Wang,Y.;Ding,T.;Zhu,Y.;Yu,J.;Li,S.;Duan,Z.;Wu,Y.;etal. 3Drecycledmortarprinting: System development,processdesign,materialpropertiesandon-siteprinting.J.Build.Eng.2020,32,101779.[CrossRef] 11. Li,C.F.;Liu,J.P.;Liu,J.Z.;Yang,Z.Q.;Cui,G.ResearchProgressonCharacterizationandRegulationofFiberDistributioninFiber ReinforcedConcrete.Concrete2014,7,108-113.[CrossRef] 12. DeSchutter,G.;Lesage,K.;Mechtcherine,V.;Nerella,V.N.;Habert,G.;Agusti-Juan,I.Visionof3DprintingwithConcrete-- Technical,economicandenvironmentalpotentials.Cem.Concr.Res.2018,112,25-36.[CrossRef] 13. Roussel,N.Rheologicalrequirementsforprintableconcretes.Cem.Concr.Res.2018,112,76-85.[CrossRef] 14. Perrot,A.;Rangeard,D.;Pierre,A.Structuralbuilt-upofcement-basedmaterialsusedfor3D-printingextrusiontechniques. Mater.Struct.2016,49,1213-1220.[CrossRef] 15. Lei,B.;Ma,Y.;Xiong,Y.C.;Hu,X.R.Researchonevaluationmethodofformabilityfor3Dprintedconcrete.Bull.Chin.Ceram.Soc. 2017,36,3278-3284.[CrossRef] 16. Qu,Z.N.StudyonBondBehaviorBetween3DPrintedConcreteandSteelBar.Master'sThesis,HarbinInstituteofTechnology, Harbin,China,2021.[CrossRef] 17. Fasihi, A.; Libre, N.A.Frompumpingtodeposition: AComprehensivereviewoftestmethodsforcharacterizingconcrete printability.Constr.Build.Mater.2024,414,134968.[CrossRef] 18. GB/T2419-2005;TestMethodforFluidityofCementMortar.StandardsPressofChina:Beijing,China,2005. 19. Li, V.C.; Bos, F.P.; Yu, K.; McGee, W.; Ng, T.Y.; Figueiredo, S.C.; Nefs, K.; Mechtcherine, V.; Nerella, V.N.; Pan, J.; etal. On theemergenceof3DprintableEngineered,StrainHardeningCementitiousComposites(ECC/SHCC).Cem. Concr. Res. 2020, 132,106038.[CrossRef] 20. GB/T50080-2016;StandardforTestMeth Nerella, V.N.; Pan, J.; etal. On theemergenceof3DprintableEngineered,StrainHardeningCementitiousComposites(ECC/SHCC).Cem. Concr. Res. 2020, 132,106038.[CrossRef] 20. GB/T50080-2016;StandardforTestMethodofPerformanceonOrdinaryFreshConcrete.ChinaArchitecture&BuildingPress: Beijing,China,2017. 21. Ding,T.;Xiao,J.;Zou,S.;Zhou,X.Anisotropicbehaviorinbendingof3Dprintedconcretereinforcedwithfibers.Compos.Struct. 2020,254,112808.[CrossRef] 22. Arunothayan,A.R.;Nematollahi,B.;Ranade,R.;Bong,S.H.;Sanjayan,J.G.;Khayat,K.H.Fiberorientationeffectsonultra-high performanceconcreteformedby3Dprinting.Cem.Concr.Res.2021,143,106384.[CrossRef] 23. Ma,G.;Li,Z.;Wang,L.;Wang,F.;Sanjayan,J.Mechanicalanisotropyofalignedfiberreinforcedcompositeforextrusion-based3D printing.Constr.Build.Mater.2019,202,770-783.[CrossRef] 24. Šeta,B.;Sandberg,M.;Brander,M.;Mollah,T.;Pokkalla,D.K.;Kumar,V.;Spangenberg,J.Numericalmodelingoffiberorientation inmulti-layer,isothermalmaterial-extrusionbigareaadditivemanufacturing.Addit.Manuf.2024,92,104396.[CrossRef] 25. DeMaio,U.;Gaetano,D.;Greco,F.;Lonetti,P.;Pranno,A.Anadaptivecohesiveinterfacemodelforfracturepropagationanalysis inheterogeneousmedia.Eng.Fract.Mech.2025,325,111330.[CrossRef] 26. Wang,L.;Wang,F.;Li,R.;Wang,Q.Interfacialconstitutivemodelof3Dprintedfiberreinforcedconcretecompositesandits experimentalvalidation.CaseStud.Constr.Mater.2023,20,e02807.[CrossRef] Disclaimer/Publisher'sNote: Thestatements, opinionsanddatacontainedinallpublicationsaresolelythoseoftheindividual author(s)andcontributor(s)andnotofMDPIand/ortheeditor(s).MDPIand/ortheeditor(s)disclaimresponsibilityforanyinjuryto peopleorpropertyresultingfromanyideas,methods,instructionsorproductsreferredtointhecontent. https://doi.org/10.3390/fib14010001"
+}

@@ -1,0 +1,25 @@
+{
+  "doc_id": "4e5c441c-d3ae-44e4-ba69-484ba0b89dd5",
+  "filename": "ADK STAB FP-2600_TDS.pdf",
+  "doc_type": "tds",
+  "material_name": "ADK STAB FP-2500S",
+  "extraction_confidence": 0.9,
+  "methodology": "",
+  "research_objective": "",
+  "key_findings": [],
+  "processing_conditions": [
+    {
+      "name": "挤出和注塑成型温度",
+      "value": 250,
+      "confidence": 1
+    },
+    {
+      "name": "耐酸加工机器",
+      "value": true,
+      "confidence": 1
+    }
+  ],
+  "properties_count": 0,
+  "properties": [],
+  "source_text": "ADK STAB FP-2500S -聚烯烃阻燃剂- ADK STAB FP-2500S 是一种新近研发的氮磷基阻燃剂，主要用于聚烯烃并具有以下优势 <特性> ·是一种低尘型无卤阻燃剂。 ·推荐用于聚丙烯（PP）均聚物和共聚物，高，低 密度聚乙烯（PE）， 乙烯-乙酸乙烯酯共聚等。 ·可通过膨胀作用为聚烯烃提供优异的阻燃性，减 少燃烧期间产生的黑烟和 CO 气体。 ·全球安全科学组织 UL 授权使用标志（参见右 图），与经溴素处理的 PP 相比，烟雾和 CO 排放 量减少。 · 提供具有低密度和高机械性能的阻燃聚烯烃。 <加工建议> ·含 FP-2500S 聚合物的适宜挤出和注塑成型温度低于 250℃。 ·由于 FP-2500S 本质上为酸性阻燃剂，必须在挤出和成型工艺中使用耐酸加工机器。"
+}

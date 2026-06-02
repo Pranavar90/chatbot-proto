@@ -14,10 +14,7 @@ import json
 import re
 from datetime import datetime
 from typing import Dict, List, Optional, Any, Tuple
-from langchain_ollama import OllamaLLM
-from langchain_qdrant import QdrantVectorStore
-
-from config import OLLAMA_BASE, LLM_MODEL, QDRANT_COLLECTION
+from config import OLLAMA_BASE, LLM_MODEL, CHAT_MODEL, QDRANT_COLLECTION
 from qdrant_mgr import get_qdrant_manager
 
 # ── 6D: Extended memory window ─────────────────────────────────────────────────
@@ -406,7 +403,7 @@ def generate_response(
 
         client = get_client()
         result = client.generate(
-            model=LLM_MODEL,
+            model=CHAT_MODEL,
             prompt=full_prompt,
             system="You are a materials science expert. Answer based on the provided context.",
             temperature=0.1,

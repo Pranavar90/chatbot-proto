@@ -20,9 +20,9 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(os.getcwd())
 try:
     from config import (
-        QDRANT_URL, COLL_DOCUMENTS, COLL_CHUNKS, COLL_PROPERTIES, 
-        COLL_EXPERIMENTS, COLL_EDGES, COLL_FOLDERS, COLL_JOBS, 
-        COLL_CHAT_SESSIONS, DATA_DIR, DB_PATH
+        QDRANT_URL, COLL_DOCUMENTS, COLL_CHUNKS, COLL_PROPERTIES,
+        COLL_EXPERIMENTS, COLL_EDGES, COLL_FOLDERS, COLL_JOBS,
+        COLL_CHAT_SESSIONS, DATA_DIR,
     )
 except ImportError:
     print("Could not import config. Using defaults.")
@@ -36,7 +36,8 @@ except ImportError:
     COLL_JOBS = "job_status"
     COLL_CHAT_SESSIONS = "chat_sessions"
     DATA_DIR = Path("data")
-    DB_PATH = DATA_DIR / "research.db"
+
+DB_PATH = DATA_DIR / "research.db"
 
 def kill_python_processes():
     print("Stopping python processes...")

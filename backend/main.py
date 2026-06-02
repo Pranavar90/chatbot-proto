@@ -1,15 +1,16 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException, Body
+from fastapi import FastAPI, UploadFile, File, HTTPException, Body, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
+import logging
 import uvicorn
 import os
 import json
 import asyncio
 from pathlib import Path
 
-from config import API_PORT, DATA_DIR, PARSED_DIR
+from config import API_PORT, DATA_DIR, PARSED_DIR, CORS_ORIGINS
 from parser import extract_text
 from extractor import extract_from_text, extract_properties_list
 from llm import get_client, shutdown_client
@@ -19,19 +20,19 @@ from job_queue import get_job_queue, JobStatus
 from twin_routes import twin_router
 from cache import get_stats_cache, clear_all_caches
 
+logger = logging.getLogger(__name__)
+
 app = FastAPI(title="Planet Material Labs Backend", version="0.5.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "http://localhost:5174",
-    ],
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(twin_router)
 
 
 @app.on_event("startup")
@@ -55,6 +56,19 @@ async def startup():
 async def shutdown():
     shutdown_client()
     print("LLM client connection pool closed.")
+
+
+def _validate_folder_path(folder_path: str) -> Path:
+    """Resolve and validate a user-supplied folder path to prevent path traversal."""
+    if "\x00" in folder_path:
+        raise HTTPException(status_code=400, detail="Invalid path")
+    try:
+        p = Path(folder_path).resolve()
+    except (ValueError, OSError):
+        raise HTTPException(status_code=400, detail="Invalid folder path")
+    if not p.exists() or not p.is_dir():
+        raise HTTPException(status_code=400, detail="Folder does not exist")
+    return p
 
 
 @app.get("/")
@@ -395,6 +409,8 @@ class BulkParseRequest(BaseModel):
 async def bulk_parse_folder(req: BulkParseRequest):
     from bulk_parser import run_bulk_parse
 
+    _validate_folder_path(req.folder_path)
+
     async def generate():
         try:
             async for event in run_bulk_parse(req.folder_path, req.resume):
@@ -410,6 +426,8 @@ async def bulk_parse_folder(req: BulkParseRequest):
 @app.post("/api/bulk-scan-recursive")
 async def bulk_scan_recursive(folder_path: str = Body(..., embed=True)):
     from crawler import start_recursive_scan
+
+    _validate_folder_path(folder_path)
 
     async def generate():
         try:
@@ -525,7 +543,7 @@ async def scan_and_queue_folder(
     queued_jobs = []
 
     for file_path in all_files:
-        file_size = os.path.getsize(file_path)
+        file_size = file_path.stat().st_size
         job = job_queue.create_job(
             filename=file_path.name, file_path=str(file_path), file_size=file_size
         )
@@ -665,12 +683,50 @@ async def get_experiment(exp_id: str):
 async def update_experiment(exp_id: str, actual_output: Dict[str, Any],
                              result_analysis: Optional[str] = None,
                              recommendation: Optional[str] = None):
-    return {"success": True, "message": "Experiment updated"}
+    store = get_store()
+    exps = store.get_recent_experiments(limit=200)
+    exp = next((e for e in exps if e.get("exp_id") == exp_id), None)
+    if not exp:
+        raise HTTPException(status_code=404, detail="Experiment not found")
+    candidates = json.loads(exp["candidates"]) if isinstance(exp.get("candidates"), str) else exp.get("candidates", [])
+    best = json.loads(exp["best_candidate"]) if isinstance(exp.get("best_candidate"), str) else exp.get("best_candidate", {})
+    store.upsert_experiment(
+        exp_id=exp_id,
+        name=exp.get("name", ""),
+        goal=exp.get("goal", ""),
+        iteration=exp.get("iteration", 0),
+        material_name=exp.get("material_name", ""),
+        candidates=candidates,
+        best_candidate={**best, "actual_output": actual_output},
+        reasoning=result_analysis or exp.get("reasoning", ""),
+        composite_score=exp.get("composite_score", 0),
+        schema_id=exp.get("schema_id"),
+    )
+    return {"success": True, "exp_id": exp_id}
 
 
 @app.post("/api/experiments/{exp_id}/results")
 async def add_experiment_results(exp_id: str, result_input: ExperimentResultInput):
-    return {"success": True, "message": f"Results noted for {exp_id}"}
+    store = get_store()
+    exps = store.get_recent_experiments(limit=200)
+    exp = next((e for e in exps if e.get("exp_id") == exp_id), None)
+    if not exp:
+        raise HTTPException(status_code=404, detail="Experiment not found")
+    candidates = json.loads(exp["candidates"]) if isinstance(exp.get("candidates"), str) else exp.get("candidates", [])
+    best = json.loads(exp["best_candidate"]) if isinstance(exp.get("best_candidate"), str) else exp.get("best_candidate", {})
+    store.upsert_experiment(
+        exp_id=exp_id,
+        name=exp.get("name", ""),
+        goal=exp.get("goal", ""),
+        iteration=exp.get("iteration", 0),
+        material_name=exp.get("material_name", ""),
+        candidates=candidates,
+        best_candidate={**best, "results": result_input.results},
+        reasoning=exp.get("reasoning", ""),
+        composite_score=exp.get("composite_score", 0),
+        schema_id=exp.get("schema_id"),
+    )
+    return {"success": True, "exp_id": exp_id, "results_stored": len(result_input.results)}
 
 
 @app.delete("/api/experiments/{exp_id}")
@@ -764,7 +820,7 @@ async def chat(request: ChatRequest):
         compliance_standard=request.compliance_standard,
         force_web_search=request.force_web_search,
     )
-    loop = asyncio.get_event_loop()
+    loop = asyncio.get_running_loop()
     response, sources, web_used = await loop.run_in_executor(None, fn)
     return {"response": response, "sources": sources, "session_id": request.session_id, "web_used": web_used}
 
@@ -919,7 +975,7 @@ from orchestrator import get_orchestrator
 
 async def _in_thread(fn, *args, **kwargs):
     """Run a blocking function in a thread without blocking the event loop."""
-    loop = asyncio.get_event_loop()
+    loop = asyncio.get_running_loop()
     return await loop.run_in_executor(None, functools.partial(fn, *args, **kwargs))
 
 
@@ -977,18 +1033,26 @@ async def edit_hypothesis(req: HypothesisEditRequest):
     return {"success": True, "hypothesis": req.hypothesis}
 
 
+async def _do_reprocess(doc_id: str):
+    try:
+        await reprocess_document(doc_id)
+    except Exception as e:
+        logger.warning(f"Background reprocess failed for {doc_id}: {e}")
+
+
 @app.post("/api/documents/reprocess-all")
-async def reprocess_all_documents():
+async def reprocess_all_documents(background_tasks: BackgroundTasks):
     """Re-run LLM extraction on all documents that have 0 properties."""
     store = get_store()
     all_docs = store.get_all_documents(limit=10000)
-    results = []
+    queued = []
     for d in all_docs:
         doc_id = d["payload"].get("doc_id", str(d["id"]))
         props_count = d["payload"].get("properties_count", 0)
         if props_count == 0:
-            results.append({"doc_id": doc_id, "queued": True})
-    return {"total": len(results), "queued": results}
+            background_tasks.add_task(_do_reprocess, doc_id)
+            queued.append({"doc_id": doc_id, "queued": True})
+    return {"total": len(queued), "queued": queued}
 
 
 # ── Knowledge Graph endpoints ─────────────────────────────────────────────────

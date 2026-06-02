@@ -39,11 +39,19 @@ class InMemoryCache:
             if key in self._order:
                 self._order.remove(key)
             return None
+        # Move to end (most recently used)
+        if key in self._order:
+            self._order.remove(key)
+            self._order.append(key)
         return value
 
     def set(self, key: str, value: Any):
         if key in self._cache:
             self._cache[key] = (time.time(), value)
+            # Move to end (most recently used)
+            if key in self._order:
+                self._order.remove(key)
+            self._order.append(key)
             return
         if len(self._order) >= self._maxsize:
             oldest = self._order.pop(0)
