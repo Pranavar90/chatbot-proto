@@ -184,15 +184,3 @@ frontend:
   sidebar:
     expanded_width: 220
     collapsed_width: 56
-
-# ── Tauri Desktop (Phase 9) ──────────────────────────────────────────────────
-tauri:
-  enabled: false                  # Set true when packaging desktop app
-  product_name: "MatResOps"
-  identifier: "com.matresops.app"
-  window:
-    title: "MatResOps — AI Research Operator"
-    width: 1400
-    height: 900
-    min_width: 1000
-    min_height: 700
