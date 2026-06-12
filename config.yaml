@@ -30,18 +30,18 @@ llm:
   # Models per task — change these to swap models without code changes
   models:
     extraction: "qwen2.5:3b-instruct-q4_K_S"   # Property extraction from PDFs
-    chat:       "qwen2.5:7b-instruct-q4_K_S"   # RAG chat responses
-    orchestrator: "qwen2.5:3b-instruct-q4_K_M" # Hypothesis generation
+    chat:       "qwen2.5:3b-instruct-q4_K_S"   # RAG chat responses (fast 3B)
+    orchestrator: "qwen2.5:3b-instruct-q4_K_S" # Hypothesis generation
     embedding:  "nomic-embed-text"              # Vector embeddings (768-dim)
 
   # Available models for UI selection
   available_models:
-    - "phi3:mini"
     - "qwen2.5:3b-instruct-q4_K_S"
-    - "qwen2.5:7b-instruct-q4_K_S"
-    - "qwen2.5:14b-instruct-q4_K_S"
-    - "llama3.2:3b"
+    - "qwen2.5:7b-instruct-q4_K_M"
+    - "qwen2.5:3b"
     - "gemma3:4b"
+    - "gemma3:1b"
+    - "llama3.2:3b"
 
   # GPU offload settings (Ollama options)
   gpu:

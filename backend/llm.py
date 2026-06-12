@@ -71,6 +71,37 @@ class OllamaClient:
             print(f"Failed to pull model {model}: {e}")
             return False
 
+    def _resolve_model(self, model: str) -> Optional[str]:
+        """Find the best matching installed model when exact name not found."""
+        available = self.list_models()
+        if not available:
+            return None
+        if model in available:
+            return model
+        # Match by base name (e.g. "qwen2.5" from "qwen2.5:7b-instruct-q4_K_S")
+        base = model.split(":")[0]
+        matches = [m for m in available if m.startswith(base)]
+        if matches:
+            print(f"[llm] Model '{model}' not found — using '{matches[0]}' instead")
+            return matches[0]
+        return None
+
+    def _parse_generate_response(
+        self,
+        result: dict,
+        json_mode: bool,
+        use_cache: bool,
+        cache_key: Optional[str],
+    ) -> Dict[str, Any]:
+        if json_mode and "response" in result:
+            raw_response = result["response"]
+            parsed = extract_json_from_response(raw_response)
+            result_to_return = parsed if parsed is not None else {"raw_text": raw_response}
+            if use_cache and cache_key and result_to_return:
+                store_llm_response(cache_key, result_to_return)
+            return result_to_return
+        return result
+
     def generate(
         self,
         model: str,
@@ -110,15 +141,35 @@ class OllamaClient:
         try:
             response = self.client.post(f"{self.base_url}/api/generate", json=payload)
             if response.status_code == 200:
-                result = response.json()
-                if json_mode and "response" in result:
-                    raw_response = result["response"]
-                    parsed = extract_json_from_response(raw_response)
-                    result_to_return = parsed if parsed is not None else {"raw_text": raw_response}
-                    if use_cache and temperature == 0.0 and json_mode and result_to_return:
-                        store_llm_response(cache_key, result_to_return)
-                    return result_to_return
-                return result
+                return self._parse_generate_response(
+                    response.json(), json_mode, use_cache, cache_key
+                )
+
+            if response.status_code == 404:
+                # Model not found — try to resolve by base name and retry
+                resolved = self._resolve_model(model)
+                if resolved and resolved != model:
+                    payload["model"] = resolved
+                    # Invalidate model list cache so future calls re-check
+                    _model_list_cache.invalidate("models")
+                    retry = self.client.post(f"{self.base_url}/api/generate", json=payload)
+                    if retry.status_code == 200:
+                        return self._parse_generate_response(
+                            retry.json(), json_mode, use_cache, cache_key
+                        )
+
+                # Could not resolve — return a user-visible error
+                available = self.list_models()
+                avail_str = ", ".join(available) if available else "none installed"
+                err_msg = (
+                    f"⚠️ Model '{model}' not found in Ollama.\n"
+                    f"Available: {avail_str}\n"
+                    f"Install it with:  ollama pull {model}"
+                )
+                print(f"[llm] {err_msg}")
+                return {"response": err_msg}
+
+            print(f"[llm] generate() returned HTTP {response.status_code}")
             return None
         except Exception as e:
             print(f"Generation error: {e}")

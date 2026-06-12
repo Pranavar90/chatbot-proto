@@ -14,7 +14,8 @@ import SettingsPanel from './components/SettingsPanel';
 const API_BASE = 'http://localhost:8000';
 
 export default function App() {
-  const [activeNav, setActiveNav] = useState('research');
+  // Chat is the primary view — default just like Claude
+  const [activeNav, setActiveNav] = useState('chat');
   const [selectedExp, setSelectedExp] = useState(null);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(
     () => localStorage.getItem('sidebar-collapsed') === 'true'
@@ -27,19 +28,25 @@ export default function App() {
       return next;
     });
   }, []);
+
   const [counts, setCounts] = useState({ documents: 0, tds: 0, papers: 0, experiments: 0, qdrant_parsed: 0 });
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const [loopState, setLoopState] = useState(null);   // null = not yet fetched
+  const [loopState, setLoopState] = useState(null);
   const [loopLoading, setLoopLoading] = useState(false);
   const loopLoadingRef = useRef(false);
+
+  // ── Session state (lifted from ChatPanel so Sidebar can drive it) ──────────
+  const [sessionId, setSessionId] = useState('default');
+  const [sessions, setSessions] = useState([]);
 
   // ── Polling ────────────────────────────────────────────────────────────────
 
   useEffect(() => {
     fetchStats();
     fetchLoopStatus();
+    fetchSessions();
     const statsInterval = setInterval(fetchStats, 30000);
-    const loopInterval = setInterval(fetchLoopStatus, 10000);
+    const loopInterval  = setInterval(fetchLoopStatus, 10000);
     return () => {
       clearInterval(statsInterval);
       clearInterval(loopInterval);
@@ -60,25 +67,62 @@ export default function App() {
     } catch (_) {}
   };
 
-  // ── View metadata ──────────────────────────────────────────────────────────
+  const fetchSessions = async () => {
+    try {
+      const res = await fetch(`${API_BASE}/api/chat/sessions`);
+      if (res.ok) {
+        const data = await res.json();
+        setSessions(data.sessions || []);
+      }
+    } catch (_) {}
+  };
+
+  // ── Session handlers ───────────────────────────────────────────────────────
+
+  const handleNewSession = useCallback(() => {
+    const newId = 'session-' + Date.now();
+    setSessionId(newId);
+    setActiveNav('chat');
+    // Fetch after a short delay to let backend register it
+    setTimeout(fetchSessions, 400);
+  }, []);
+
+  const handleSessionChange = useCallback((sid) => {
+    setSessionId(sid);
+    setActiveNav('chat');
+  }, []);
+
+  const handleDeleteSession = useCallback(async (sid, e) => {
+    e?.stopPropagation();
+    if (!confirm('Delete this session?')) return;
+    try {
+      await fetch(`${API_BASE}/api/chat/sessions/${encodeURIComponent(sid)}`, { method: 'DELETE' });
+      setSessions(prev => {
+        const remaining = prev.filter(s => s.session_id !== sid);
+        if (sid === sessionId) {
+          setSessionId(remaining[0]?.session_id || 'default');
+        }
+        return remaining;
+      });
+      fetchSessions();
+    } catch (_) {}
+  }, [sessionId]);
+
+  // ── View metadata (non-chat views only) ───────────────────────────────────
 
   const VIEW_META = {
-    research: { title: 'Research Workspace', subtitle: 'Goal · Knowledge · Experiments · Results · Decisions' },
-    papers:   { title: 'Papers & TDS Library', subtitle: `${counts.documents} documents indexed` },
-    experiments: { title: 'Experiment History', subtitle: `${counts.experiments} experiments` },
-    results:  { title: 'Results & Metrics', subtitle: 'Comparative analysis across iterations' },
-    decisions: { title: 'Decision Log', subtitle: 'Review and approve experiment decisions' },
-    chat:     { title: 'Materials Chat', subtitle: 'AI-powered Q&A with RAG' },
+    research:    { title: 'Research Workspace',   subtitle: 'Goal · Knowledge · Experiments · Decisions' },
+    papers:      { title: 'Papers & TDS Library', subtitle: `${counts.documents} documents indexed` },
+    experiments: { title: 'Experiment History',   subtitle: `${counts.experiments} experiments` },
+    results:     { title: 'Results & Metrics',    subtitle: 'Comparative analysis across iterations' },
+    decisions:   { title: 'Decision Log',         subtitle: 'Review and approve experiment decisions' },
   };
-  const meta = VIEW_META[activeNav] || VIEW_META.research;
+  const meta = VIEW_META[activeNav];
 
   // ── Loop handlers ──────────────────────────────────────────────────────────
 
   const handleToggleLoop = useCallback(async ({ active, goal, weights, schema_id }) => {
-    if (!active) {
-      await handleStopLoop();
-      return;
-    }
+    if (!active) { await handleStopLoop(); return; }
     setLoopLoading(true);
     loopLoadingRef.current = true;
     try {
@@ -88,12 +132,8 @@ export default function App() {
         body: JSON.stringify({ goal, weights, schema_id: schema_id || null }),
       });
       if (res.ok) setLoopState(await res.json());
-    } catch (e) {
-      console.error('Loop start error:', e);
-    } finally {
-      setLoopLoading(false);
-      loopLoadingRef.current = false;
-    }
+    } catch (e) { console.error('Loop start error:', e); }
+    finally { setLoopLoading(false); loopLoadingRef.current = false; }
   }, []);
 
   const handleRunIteration = useCallback(async ({ goal, weights, schema_id }) => {
@@ -109,12 +149,8 @@ export default function App() {
         body: JSON.stringify({ goal, weights, schema_id: schema_id || null }),
       });
       if (res.ok) setLoopState(await res.json());
-    } catch (e) {
-      console.error('Iteration error:', e);
-    } finally {
-      setLoopLoading(false);
-      loopLoadingRef.current = false;
-    }
+    } catch (e) { console.error('Iteration error:', e); }
+    finally { setLoopLoading(false); loopLoadingRef.current = false; }
   }, [loopState]);
 
   const handleApprove = useCallback(async () => {
@@ -122,20 +158,15 @@ export default function App() {
     try {
       const res = await fetch(`${API_BASE}/api/loop/approve`, { method: 'POST' });
       if (res.ok) setLoopState(await res.json());
-    } catch (e) {
-      console.error('Approve error:', e);
-    } finally {
-      setLoopLoading(false);
-    }
+    } catch (e) { console.error('Approve error:', e); }
+    finally { setLoopLoading(false); }
   }, []);
 
   const handleStopLoop = useCallback(async () => {
     try {
       const res = await fetch(`${API_BASE}/api/loop/stop`, { method: 'POST' });
       if (res.ok) setLoopState(await res.json());
-    } catch (e) {
-      console.error('Stop error:', e);
-    }
+    } catch (e) { console.error('Stop error:', e); }
   }, []);
 
   const handleEditHypothesis = useCallback(async (hypothesis) => {
@@ -146,9 +177,7 @@ export default function App() {
         body: JSON.stringify({ hypothesis }),
       });
       if (res.ok) fetchLoopStatus();
-    } catch (e) {
-      console.error('Edit hypothesis error:', e);
-    }
+    } catch (e) { console.error('Edit hypothesis error:', e); }
   }, []);
 
   const handleExport = () => {
@@ -156,13 +185,13 @@ export default function App() {
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url;
-    a.download = `decision-log-${Date.now()}.json`;
-    a.click();
+    a.href = url; a.download = `decision-log-${Date.now()}.json`; a.click();
     URL.revokeObjectURL(url);
   };
 
   // ── Render ─────────────────────────────────────────────────────────────────
+
+  const isChat = activeNav === 'chat';
 
   return (
     <div className="app-shell">
@@ -173,51 +202,62 @@ export default function App() {
         collapsed={sidebarCollapsed}
         onToggleCollapse={handleToggleCollapse}
         onOpenSettings={() => setSettingsOpen(true)}
+        sessions={sessions}
+        activeSessionId={sessionId}
+        onSessionChange={handleSessionChange}
+        onNewSession={handleNewSession}
+        onDeleteSession={handleDeleteSession}
       />
       {settingsOpen && <SettingsPanel onClose={() => setSettingsOpen(false)} />}
 
       <div className="main-content">
-        <div className="topbar">
-          <div>
-            <div className="topbar-title">{meta.title}</div>
-            <div className="topbar-subtitle">{meta.subtitle}</div>
+        {/* Topbar — hidden for chat (chat is full-screen like Claude) */}
+        {!isChat && (
+          <div className="topbar">
+            <div>
+              <div className="topbar-title">{meta?.title}</div>
+              <div className="topbar-subtitle">{meta?.subtitle}</div>
+            </div>
+            <div className="topbar-actions">
+              <IterBadge loopState={loopState} loading={loopLoading} />
+              <button className="btn btn-ghost btn-sm" onClick={handleExport}>Export</button>
+            </div>
           </div>
-          <div className="topbar-actions">
-            <IterBadge loopState={loopState} loading={loopLoading} />
-            <button className="btn btn-ghost btn-sm" title="Export decision log" onClick={handleExport}>
-              Export
-            </button>
-          </div>
-        </div>
+        )}
 
-        <div className="workspace">
+        <div className="workspace" style={{ padding: isChat ? 0 : 'var(--pad-lg)' }}>
           <div key={activeNav} className="view-transition">
-          {activeNav === 'research' && (
-            <ResearchView
-              loopState={loopState}
-              loopLoading={loopLoading}
-              onSelectExp={setSelectedExp}
-              selectedExp={selectedExp}
-              onToggleLoop={handleToggleLoop}
-              onRunIteration={handleRunIteration}
-              onApprove={handleApprove}
-              onEditHypothesis={handleEditHypothesis}
-              onStopLoop={handleStopLoop}
-            />
-          )}
-          {activeNav === 'papers'      && <PapersView />}
-          {activeNav === 'experiments' && <ExperimentsView />}
-          {activeNav === 'results'     && <ResultsOnlyView />}
-          {activeNav === 'decisions'   && (
-            <DecisionsView
-              loopState={loopState}
-              loopLoading={loopLoading}
-              onApprove={handleApprove}
-              onEditHypothesis={handleEditHypothesis}
-              onStopLoop={handleStopLoop}
-            />
-          )}
-          {activeNav === 'chat'        && <ChatView />}
+            {isChat && (
+              <ChatView
+                sessionId={sessionId}
+                onSessionDeleted={fetchSessions}
+              />
+            )}
+            {activeNav === 'research' && (
+              <ResearchView
+                loopState={loopState}
+                loopLoading={loopLoading}
+                onSelectExp={setSelectedExp}
+                selectedExp={selectedExp}
+                onToggleLoop={handleToggleLoop}
+                onRunIteration={handleRunIteration}
+                onApprove={handleApprove}
+                onEditHypothesis={handleEditHypothesis}
+                onStopLoop={handleStopLoop}
+              />
+            )}
+            {activeNav === 'papers'      && <PapersView />}
+            {activeNav === 'experiments' && <ExperimentsView />}
+            {activeNav === 'results'     && <ResultsOnlyView />}
+            {activeNav === 'decisions'   && (
+              <DecisionsView
+                loopState={loopState}
+                loopLoading={loopLoading}
+                onApprove={handleApprove}
+                onEditHypothesis={handleEditHypothesis}
+                onStopLoop={handleStopLoop}
+              />
+            )}
           </div>
         </div>
       </div>
@@ -227,35 +267,26 @@ export default function App() {
 
 // ── View layouts ──────────────────────────────────────────────────────────────
 
+function ChatView({ sessionId, onSessionDeleted }) {
+  return (
+    <div style={{ flex: '1 1 0', minHeight: 0, overflow: 'hidden' }}>
+      <ChatPanel sessionId={sessionId} onSessionDeleted={onSessionDeleted} />
+    </div>
+  );
+}
+
 function ResearchView({ loopState, loopLoading, onSelectExp, selectedExp, onToggleLoop, onRunIteration, onApprove, onEditHypothesis, onStopLoop }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--pad-md)', height: '100%', overflow: 'hidden' }}>
-      <GoalPanel
-        loopState={loopState}
-        loopLoading={loopLoading}
-        onToggleLoop={onToggleLoop}
-        onRunIteration={onRunIteration}
-      />
+      <GoalPanel loopState={loopState} loopLoading={loopLoading} onToggleLoop={onToggleLoop} onRunIteration={onRunIteration} />
       <div style={{ display: 'flex', gap: 'var(--pad-md)', flex: '1 1 0', minHeight: 0, overflow: 'hidden' }}>
-        <div style={{ flex: '0 0 320px', overflow: 'hidden' }}>
-          <KnowledgePanel />
-        </div>
-        <div style={{ flex: '1 1 0', overflow: 'hidden' }}>
-          <ExperimentDashboard loopState={loopState} onSelect={onSelectExp} />
-        </div>
+        <div style={{ flex: '0 0 320px', overflow: 'hidden' }}><KnowledgePanel /></div>
+        <div style={{ flex: '1 1 0', overflow: 'hidden' }}><ExperimentDashboard loopState={loopState} onSelect={onSelectExp} /></div>
       </div>
       <div style={{ display: 'flex', gap: 'var(--pad-md)', flex: '1 1 0', minHeight: 0, overflow: 'hidden' }}>
+        <div style={{ flex: '1 1 0', overflow: 'hidden' }}><ResultsPanel selectedExp={selectedExp} loopState={loopState} /></div>
         <div style={{ flex: '1 1 0', overflow: 'hidden' }}>
-          <ResultsPanel selectedExp={selectedExp} loopState={loopState} />
-        </div>
-        <div style={{ flex: '1 1 0', overflow: 'hidden' }}>
-          <DecisionPanel
-            loopState={loopState}
-            loopLoading={loopLoading}
-            onApprove={onApprove}
-            onEditHypothesis={onEditHypothesis}
-            onStopLoop={onStopLoop}
-          />
+          <DecisionPanel loopState={loopState} loopLoading={loopLoading} onApprove={onApprove} onEditHypothesis={onEditHypothesis} onStopLoop={onStopLoop} />
         </div>
       </div>
     </div>
@@ -263,11 +294,7 @@ function ResearchView({ loopState, loopLoading, onSelectExp, selectedExp, onTogg
 }
 
 function ExperimentsView() {
-  return (
-    <div style={{ height: '100%', overflow: 'hidden' }}>
-      <ExperimentsPanel />
-    </div>
-  );
+  return <div style={{ height: '100%', overflow: 'hidden' }}><ExperimentsPanel /></div>;
 }
 
 function ResultsOnlyView() {
@@ -278,23 +305,11 @@ function DecisionsView({ loopState, loopLoading, onApprove, onEditHypothesis, on
   return (
     <div style={{ display: 'flex', gap: 'var(--pad-md)', height: '100%', overflow: 'hidden' }}>
       <div style={{ flex: '1 1 0', overflow: 'hidden' }}>
-        <DecisionPanel
-          loopState={loopState}
-          loopLoading={loopLoading}
-          onApprove={onApprove}
-          onEditHypothesis={onEditHypothesis}
-          onStopLoop={onStopLoop}
-        />
+        <DecisionPanel loopState={loopState} loopLoading={loopLoading} onApprove={onApprove} onEditHypothesis={onEditHypothesis} onStopLoop={onStopLoop} />
       </div>
-      <div style={{ flex: '0 0 340px', overflow: 'hidden' }}>
-        <KnowledgePanel />
-      </div>
+      <div style={{ flex: '0 0 340px', overflow: 'hidden' }}><KnowledgePanel /></div>
     </div>
   );
-}
-
-function ChatView() {
-  return <div style={{ height: '100%', overflow: 'hidden' }}><ChatPanel /></div>;
 }
 
 // ── IterBadge ─────────────────────────────────────────────────────────────────
@@ -302,27 +317,27 @@ function ChatView() {
 function IterBadge({ loopState, loading }) {
   const iter   = loopState?.iteration ?? 0;
   const status = loopState?.status ?? 'idle';
-
   const statusColor = {
-    running:            'var(--score-high)',
-    awaiting_approval:  'var(--accent)',
-    stopped:            'var(--text-muted)',
-    idle:               'var(--text-muted)',
+    running:           'var(--score-high)',
+    awaiting_approval: 'var(--accent)',
+    stopped:           'var(--text-muted)',
+    idle:              'var(--text-muted)',
   }[status] ?? 'var(--text-muted)';
 
   return (
     <div style={{
       display: 'flex', alignItems: 'center', gap: 6,
-      background: 'var(--bg-overlay)', border: '1px solid var(--glass-border)',
-      borderRadius: 'var(--r-md)', padding: '4px 12px', fontSize: 12,
+      background: 'var(--bg-raised)', border: '1px solid var(--glass-border)',
+      borderRadius: 'var(--r-md)', padding: '4px 12px',
+      fontSize: 10, fontFamily: 'var(--font-mono)', letterSpacing: '0.08em',
     }}>
-      {loading && <span style={{ color: 'var(--accent)', animation: 'pulse 1s ease-in-out infinite' }}>⟳</span>}
-      <span style={{ color: 'var(--text-muted)' }}>Loop</span>
-      <span style={{ fontFamily: 'var(--font-mono)', color: statusColor, fontWeight: 700 }}>
-        {loading ? 'Running…' : iter > 0 ? `Iter ${iter}` : 'Idle'}
+      {loading && <span style={{ color: 'var(--accent)', animation: 'pulse 1s ease-in-out infinite', fontSize: 12 }}>◦</span>}
+      <span style={{ color: 'var(--text-muted)', textTransform: 'uppercase' }}>Loop</span>
+      <span style={{ color: statusColor, fontWeight: 500 }}>
+        {loading ? 'RUNNING' : iter > 0 ? `ITER ${iter}` : 'IDLE'}
       </span>
       {status === 'awaiting_approval' && !loading && (
-        <span style={{ fontSize: 10, color: 'var(--accent)', fontWeight: 600 }}>▲ Awaiting</span>
+        <span style={{ fontSize: 9, color: 'var(--accent)' }}>▲ AWAIT</span>
       )}
     </div>
   );
